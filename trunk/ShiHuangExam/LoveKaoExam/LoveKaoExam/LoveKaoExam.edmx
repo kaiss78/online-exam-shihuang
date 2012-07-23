@@ -1,0 +1,2681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LoveKaoExamModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="LoveKaoExamModelStoreContainer">
+          <EntitySet Name="绑定账号表" EntityType="LoveKaoExamModel.Store.绑定账号表" store:Type="Tables" store:Name="绑定账号表">
+            <DefiningQuery>SELECT 
+            [绑定账号表].[ID] AS [ID], 
+            [绑定账号表].[本地账号ID] AS [本地账号ID], 
+            [绑定账号表].[爱考网账号] AS [爱考网账号], 
+            [绑定账号表].[爱考网密码] AS [爱考网密码], 
+            [绑定账号表].[爱考网邮箱] AS [爱考网邮箱], 
+            [绑定账号表].[绑定时间] AS [绑定时间]
+            FROM [绑定账号表] AS [绑定账号表]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="部门表" EntityType="LoveKaoExamModel.Store.部门表" store:Type="Tables" />
+          <EntitySet Name="考生单选题回答表" EntityType="LoveKaoExamModel.Store.考生单选题回答表" store:Type="Tables" />
+          <EntitySet Name="考生多空选择题回答表" EntityType="LoveKaoExamModel.Store.考生多空选择题回答表" store:Type="Tables" />
+          <EntitySet Name="考生多选题回答表" EntityType="LoveKaoExamModel.Store.考生多选题回答表" store:Type="Tables" />
+          <EntitySet Name="考生范围表" EntityType="LoveKaoExamModel.Store.考生范围表" store:Type="Tables" />
+          <EntitySet Name="考生考试回答表" EntityType="LoveKaoExamModel.Store.考生考试回答表" store:Type="Tables" />
+          <EntitySet Name="考生连线题回答表" EntityType="LoveKaoExamModel.Store.考生连线题回答表" store:Type="Tables" />
+          <EntitySet Name="考生判断题回答表" EntityType="LoveKaoExamModel.Store.考生判断题回答表" store:Type="Tables" />
+          <EntitySet Name="考生填空题回答表" EntityType="LoveKaoExamModel.Store.考生填空题回答表" store:Type="Tables" />
+          <EntitySet Name="考生问答题回答表" EntityType="LoveKaoExamModel.Store.考生问答题回答表" store:Type="Tables" />
+          <EntitySet Name="考生选词填空回答表" EntityType="LoveKaoExamModel.Store.考生选词填空回答表" store:Type="Tables" />
+          <EntitySet Name="考生做过的试卷表" EntityType="LoveKaoExamModel.Store.考生做过的试卷表" store:Type="Tables" />
+          <EntitySet Name="考试设置表" EntityType="LoveKaoExamModel.Store.考试设置表" store:Type="Tables" />
+          <EntitySet Name="连线题答案表" EntityType="LoveKaoExamModel.Store.连线题答案表" store:Type="Tables" />
+          <EntitySet Name="连线题选项表" EntityType="LoveKaoExamModel.Store.连线题选项表" store:Type="Tables" />
+          <EntitySet Name="练习设置表" EntityType="LoveKaoExamModel.Store.练习设置表" store:Type="Tables" />
+          <EntitySet Name="判断题答案表" EntityType="LoveKaoExamModel.Store.判断题答案表" store:Type="Tables" />
+          <EntitySet Name="试卷大题中试题表" EntityType="LoveKaoExamModel.Store.试卷大题中试题表" store:Type="Tables" />
+          <EntitySet Name="试卷内容表" EntityType="LoveKaoExamModel.Store.试卷内容表" store:Type="Tables" />
+          <EntitySet Name="试卷外部信息表" EntityType="LoveKaoExamModel.Store.试卷外部信息表" store:Type="Tables" />
+          <EntitySet Name="试卷中大题表" EntityType="LoveKaoExamModel.Store.试卷中大题表" store:Type="Tables" />
+          <EntitySet Name="试题内容表" EntityType="LoveKaoExamModel.Store.试题内容表" store:Type="Tables" />
+          <EntitySet Name="试题外部信息表" EntityType="LoveKaoExamModel.Store.试题外部信息表" store:Type="Tables" />
+          <EntitySet Name="所属分类表" EntityType="LoveKaoExamModel.Store.所属分类表" store:Type="Tables" />
+          <EntitySet Name="问答题答案表" EntityType="LoveKaoExamModel.Store.问答题答案表" store:Type="Tables" />
+          <EntitySet Name="系统分类表" EntityType="LoveKaoExamModel.Store.系统分类表" store:Type="Tables" />
+          <EntitySet Name="系统分类上下级关系表" EntityType="LoveKaoExamModel.Store.系统分类上下级关系表" store:Type="Tables" />
+          <EntitySet Name="修改成绩记录" EntityType="LoveKaoExamModel.Store.修改成绩记录" store:Type="Tables" />
+          <EntitySet Name="用户表" EntityType="LoveKaoExamModel.Store.用户表" store:Type="Tables" />
+          <EntitySet Name="自由题空格表" EntityType="LoveKaoExamModel.Store.自由题空格表" store:Type="Tables" />
+          <EntitySet Name="自由题填空答案表" EntityType="LoveKaoExamModel.Store.自由题填空答案表" store:Type="Tables" />
+          <EntitySet Name="自由题选项表" EntityType="LoveKaoExamModel.Store.自由题选项表" store:Type="Tables" />
+          <EntitySet Name="自由题选项空格答案表" EntityType="LoveKaoExamModel.Store.自由题选项空格答案表" store:Type="Tables" />
+          <EntitySet Name="自由题选项组表" EntityType="LoveKaoExamModel.Store.自由题选项组表" store:Type="Tables" />
+          <AssociationSet Name="绑定账号表_用户表" Association="LoveKaoExamModel.Store.绑定账号表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="绑定账号表" EntitySet="绑定账号表" />
+          </AssociationSet>
+          <AssociationSet Name="部门表_部门表" Association="LoveKaoExamModel.Store.部门表_部门表">
+            <End Role="部门表" EntitySet="部门表" />
+            <End Role="部门表1" EntitySet="部门表" />
+          </AssociationSet>
+          <AssociationSet Name="部门表_用户表" Association="LoveKaoExamModel.Store.部门表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="部门表" EntitySet="部门表" />
+          </AssociationSet>
+          <AssociationSet Name="会员填空题回答_考生考试回答表" Association="LoveKaoExamModel.Store.会员填空题回答_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生填空题回答表" EntitySet="考生填空题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生单选题回答表_考生考试回答表" Association="LoveKaoExamModel.Store.考生单选题回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生单选题回答表" EntitySet="考生单选题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生多空选择题回答表_考生考试回答表" Association="LoveKaoExamModel.Store.考生多空选择题回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生多空选择题回答表" EntitySet="考生多空选择题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生多选题回答表_考生考试回答表" Association="LoveKaoExamModel.Store.考生多选题回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生多选题回答表" EntitySet="考生多选题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生范围表_用户表" Association="LoveKaoExamModel.Store.考生范围表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="考生范围表" EntitySet="考生范围表" />
+          </AssociationSet>
+          <AssociationSet Name="考生考试回答表_考生做过的试卷表" Association="LoveKaoExamModel.Store.考生考试回答表_考生做过的试卷表">
+            <End Role="考生做过的试卷表" EntitySet="考生做过的试卷表" />
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生考试回答表_试卷大题中试题表" Association="LoveKaoExamModel.Store.考生考试回答表_试卷大题中试题表">
+            <End Role="试卷大题中试题表" EntitySet="试卷大题中试题表" />
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生连线题回答表_考生考试回答表" Association="LoveKaoExamModel.Store.考生连线题回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生连线题回答表" EntitySet="考生连线题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生判断题回答表_考生考试回答表" Association="LoveKaoExamModel.Store.考生判断题回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生判断题回答表" EntitySet="考生判断题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生问答题回答表_考生考试回答表" Association="LoveKaoExamModel.Store.考生问答题回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生问答题回答表" EntitySet="考生问答题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生选词填空回答表_考生考试回答表" Association="LoveKaoExamModel.Store.考生选词填空回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生选词填空回答表" EntitySet="考生选词填空回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生做过的试卷表_用户表" Association="LoveKaoExamModel.Store.考生做过的试卷表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="考生做过的试卷表" EntitySet="考生做过的试卷表" />
+          </AssociationSet>
+          <AssociationSet Name="考试设置表_试卷内容表" Association="LoveKaoExamModel.Store.考试设置表_试卷内容表">
+            <End Role="试卷内容表" EntitySet="试卷内容表" />
+            <End Role="考试设置表" EntitySet="考试设置表" />
+          </AssociationSet>
+          <AssociationSet Name="考试设置表_用户表" Association="LoveKaoExamModel.Store.考试设置表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="考试设置表" EntitySet="考试设置表" />
+          </AssociationSet>
+          <AssociationSet Name="连线题答案表_连线题选项表" Association="LoveKaoExamModel.Store.连线题答案表_连线题选项表">
+            <End Role="连线题选项表" EntitySet="连线题选项表" />
+            <End Role="连线题答案表" EntitySet="连线题答案表" />
+          </AssociationSet>
+          <AssociationSet Name="连线题答案表_试题内容表" Association="LoveKaoExamModel.Store.连线题答案表_试题内容表">
+            <End Role="试题内容表" EntitySet="试题内容表" />
+            <End Role="连线题答案表" EntitySet="连线题答案表" />
+          </AssociationSet>
+          <AssociationSet Name="连线题选项表_试题内容表" Association="LoveKaoExamModel.Store.连线题选项表_试题内容表">
+            <End Role="试题内容表" EntitySet="试题内容表" />
+            <End Role="连线题选项表" EntitySet="连线题选项表" />
+          </AssociationSet>
+          <AssociationSet Name="练习设置表_试卷内容表" Association="LoveKaoExamModel.Store.练习设置表_试卷内容表">
+            <End Role="试卷内容表" EntitySet="试卷内容表" />
+            <End Role="练习设置表" EntitySet="练习设置表" />
+          </AssociationSet>
+          <AssociationSet Name="判断题答案表_试题内容表" Association="LoveKaoExamModel.Store.判断题答案表_试题内容表">
+            <End Role="试题内容表" EntitySet="试题内容表" />
+            <End Role="判断题答案表" EntitySet="判断题答案表" />
+          </AssociationSet>
+          <AssociationSet Name="试卷大题中试题表_试卷中大题表" Association="LoveKaoExamModel.Store.试卷大题中试题表_试卷中大题表">
+            <End Role="试卷中大题表" EntitySet="试卷中大题表" />
+            <End Role="试卷大题中试题表" EntitySet="试卷大题中试题表" />
+          </AssociationSet>
+          <AssociationSet Name="试卷内容表_试卷外部信息表" Association="LoveKaoExamModel.Store.试卷内容表_试卷外部信息表">
+            <End Role="试卷外部信息表" EntitySet="试卷外部信息表" />
+            <End Role="试卷内容表" EntitySet="试卷内容表" />
+          </AssociationSet>
+          <AssociationSet Name="试卷内容表_用户表" Association="LoveKaoExamModel.Store.试卷内容表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="试卷内容表" EntitySet="试卷内容表" />
+          </AssociationSet>
+          <AssociationSet Name="试卷外部信息表_用户表" Association="LoveKaoExamModel.Store.试卷外部信息表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="试卷外部信息表" EntitySet="试卷外部信息表" />
+          </AssociationSet>
+          <AssociationSet Name="试卷中大题表_试卷内容表" Association="LoveKaoExamModel.Store.试卷中大题表_试卷内容表">
+            <End Role="试卷内容表" EntitySet="试卷内容表" />
+            <End Role="试卷中大题表" EntitySet="试卷中大题表" />
+          </AssociationSet>
+          <AssociationSet Name="试题内容表_试题内容表" Association="LoveKaoExamModel.Store.试题内容表_试题内容表">
+            <End Role="试题内容表" EntitySet="试题内容表" />
+            <End Role="试题内容表1" EntitySet="试题内容表" />
+          </AssociationSet>
+          <AssociationSet Name="试题外部信息表_试题内容表" Association="LoveKaoExamModel.Store.试题外部信息表_试题内容表">
+            <End Role="试题外部信息表" EntitySet="试题外部信息表" />
+            <End Role="试题内容表" EntitySet="试题内容表" />
+          </AssociationSet>
+          <AssociationSet Name="问答题答案表_试题内容表" Association="LoveKaoExamModel.Store.问答题答案表_试题内容表">
+            <End Role="试题内容表" EntitySet="试题内容表" />
+            <End Role="问答题答案表" EntitySet="问答题答案表" />
+          </AssociationSet>
+          <AssociationSet Name="系统分类表_用户表" Association="LoveKaoExamModel.Store.系统分类表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="系统分类表" EntitySet="系统分类表" />
+          </AssociationSet>
+          <AssociationSet Name="系统分类上下级关系表_系统分类表" Association="LoveKaoExamModel.Store.系统分类上下级关系表_系统分类表">
+            <End Role="系统分类表" EntitySet="系统分类表" />
+            <End Role="系统分类上下级关系表" EntitySet="系统分类上下级关系表" />
+          </AssociationSet>
+          <AssociationSet Name="用户表_部门表" Association="LoveKaoExamModel.Store.用户表_部门表">
+            <End Role="部门表" EntitySet="部门表" />
+            <End Role="用户表" EntitySet="用户表" />
+          </AssociationSet>
+          <AssociationSet Name="自由题空格表_试题内容表" Association="LoveKaoExamModel.Store.自由题空格表_试题内容表">
+            <End Role="试题内容表" EntitySet="试题内容表" />
+            <End Role="自由题空格表" EntitySet="自由题空格表" />
+          </AssociationSet>
+          <AssociationSet Name="自由题空格表_自由题选项组表" Association="LoveKaoExamModel.Store.自由题空格表_自由题选项组表">
+            <End Role="自由题选项组表" EntitySet="自由题选项组表" />
+            <End Role="自由题空格表" EntitySet="自由题空格表" />
+          </AssociationSet>
+          <AssociationSet Name="自由题填空答案表_自由题空格表" Association="LoveKaoExamModel.Store.自由题填空答案表_自由题空格表">
+            <End Role="自由题空格表" EntitySet="自由题空格表" />
+            <End Role="自由题填空答案表" EntitySet="自由题填空答案表" />
+          </AssociationSet>
+          <AssociationSet Name="自由题选项表_自由题选项组表" Association="LoveKaoExamModel.Store.自由题选项表_自由题选项组表">
+            <End Role="自由题选项组表" EntitySet="自由题选项组表" />
+            <End Role="自由题选项表" EntitySet="自由题选项表" />
+          </AssociationSet>
+          <AssociationSet Name="自由题选项空格答案表_自由题空格表" Association="LoveKaoExamModel.Store.自由题选项空格答案表_自由题空格表">
+            <End Role="自由题空格表" EntitySet="自由题空格表" />
+            <End Role="自由题选项空格答案表" EntitySet="自由题选项空格答案表" />
+          </AssociationSet>
+        </EntityContainer>
+        <!--生成过程中发现错误:
+            警告 6002: 表/视图“绑定账号表”未定义主键。已推断出该键，并将定义创建为只读的表/视图。
+            -->
+        <EntityType Name="绑定账号表">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="本地账号ID" />
+            <PropertyRef Name="爱考网账号" />
+            <PropertyRef Name="爱考网密码" />
+            <PropertyRef Name="爱考网邮箱" />
+            <PropertyRef Name="绑定时间" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="本地账号ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="爱考网账号" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="爱考网密码" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="爱考网邮箱" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="绑定时间" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="部门表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="名称" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="上级部门ID" Type="uniqueidentifier" />
+          <Property Name="添加人ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="添加时间" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="考生单选题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="回答的选项ID" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="考生多空选择题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="考生考试回答ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="该空ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="该空的回答ID" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="考生多选题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="考生考试回答ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="回答的选项ID" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="考生范围表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="相关ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="考生ID" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="考生考试回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="考生做过的试卷ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="试卷大题中试题ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="该题的用时" Type="smallint" Nullable="false" />
+          <Property Name="该题的得分" Type="numeric" Precision="3" Scale="1" />
+          <Property Name="评语" Type="nvarchar" Nullable="false" MaxLength="256" />
+        </EntityType>
+        <EntityType Name="考生连线题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="考生考试回答ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="连线题左边小题ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="回答的选项ID" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="考生判断题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="回答的内容" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="考生填空题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="考生考试回答ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="回答的内容" Type="nvarchar" Nullable="false" MaxLength="160" />
+          <Property Name="该空ID" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="考生问答题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="回答的内容" Type="nvarchar" Nullable="false" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="考生选词填空回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="考生考试回答ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="该空ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="该空的回答ID" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="考生做过的试卷表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="考生ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="答题开始时间" Type="datetime" Nullable="false" />
+          <Property Name="答题结束时间" Type="datetime" />
+          <Property Name="客观题得分" Type="numeric" Nullable="false" Precision="4" Scale="1" />
+          <Property Name="主观题得分" Type="numeric" Nullable="false" Precision="4" Scale="1" />
+          <Property Name="是否是已提交的试卷" Type="bit" Nullable="false" />
+          <Property Name="批改状态" Type="tinyint" Nullable="false" />
+          <Property Name="相关ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="类型" Type="tinyint" Nullable="false" />
+          <Property Name="批改时间" Type="datetime" />
+        </EntityType>
+        <EntityType Name="考试设置表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="试卷内容ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="考试开始时间" Type="datetime" Nullable="false" />
+          <Property Name="考试结束时间" Type="datetime" Nullable="false" />
+          <Property Name="考试时长" Type="smallint" Nullable="false" />
+          <Property Name="及格条件" Type="int" Nullable="false" />
+          <Property Name="是否公布考试结果" Type="bit" Nullable="false" />
+          <Property Name="设置人ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="设置时间" Type="datetime" Nullable="false" />
+          <Property Name="是否删除" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="连线题答案表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="试题内容ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="左边ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="右边ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="顺序" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="连线题选项表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="试题内容ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="选项内容HTML" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="选项内容文本" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="连线标记" Type="tinyint" Nullable="false" />
+          <Property Name="顺序" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="练习设置表">
+          <Key>
+            <PropertyRef Name="试卷内容ID" />
+          </Key>
+          <Property Name="试卷内容ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="考试时长" Type="smallint" Nullable="false" />
+          <Property Name="及格条件" Type="int" Nullable="false" />
+          <Property Name="设置人ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="设置时间" Type="datetime" Nullable="false" />
+          <Property Name="是否删除" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="判断题答案表">
+          <Key>
+            <PropertyRef Name="试题内容ID" />
+          </Key>
+          <Property Name="试题内容ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="答案" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="试卷大题中试题表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="试卷中大题ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="试题内容ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="每小题分值" Type="numeric" Nullable="false" Precision="4" Scale="1" />
+          <Property Name="顺序" Type="smallint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="试卷内容表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="试卷外部信息ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="名称" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="说明" Type="nvarchar" Nullable="false" MaxLength="1024" />
+          <Property Name="提交人ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="提交时间" Type="datetime" Nullable="false" />
+          <Property Name="提交备注" Type="nvarchar" Nullable="false" MaxLength="512" />
+        </EntityType>
+        <EntityType Name="试卷外部信息表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="名称" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="说明" Type="nvarchar" Nullable="false" MaxLength="1024" />
+          <Property Name="创建人ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="创建时间" Type="datetime" Nullable="false" />
+          <Property Name="试卷状态Enum" Type="tinyint" Nullable="false" />
+          <Property Name="最新更新时间" Type="datetime" Nullable="false" />
+          <Property Name="总分" Type="int" Nullable="false" />
+          <Property Name="试卷内容ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="试卷类型" Type="tinyint" Nullable="false" />
+          <Property Name="爱考网ID" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="试卷中大题表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="试卷内容ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="名称" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="说明" Type="nvarchar" Nullable="false" MaxLength="320" />
+          <Property Name="顺序" Type="smallint" Nullable="false" />
+          <Property Name="多选题评分策略" Type="numeric" Nullable="false" Precision="3" Scale="1" />
+        </EntityType>
+        <EntityType Name="试题内容表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="解题思路" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="题干HTML" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="题干文本" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="试题外部信息ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="操作时间" Type="datetime" Nullable="false" />
+          <Property Name="操作人ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="小题型Enum" Type="int" Nullable="false" />
+          <Property Name="父试题内容ID" Type="uniqueidentifier" />
+          <Property Name="本题在复合题中顺序" Type="tinyint" Nullable="false" />
+          <Property Name="Json字符串" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="爱考网ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="难易度" Type="numeric" Nullable="false" Scale="1" />
+        </EntityType>
+        <EntityType Name="试题外部信息表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="创建人ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="创建时间" Type="datetime" Nullable="false" />
+          <Property Name="最新更新时间" Type="datetime" Nullable="false" />
+          <Property Name="试题查询内容" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="试题显示列" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="小题型Enum" Type="int" Nullable="false" />
+          <Property Name="试题状态Enum" Type="tinyint" Nullable="false" />
+          <Property Name="试题内容ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="难易度" Type="numeric" Nullable="false" Scale="1" />
+          <Property Name="试题类型" Type="tinyint" Nullable="false" />
+          <Property Name="爱考网ID" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="所属分类表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="相关信息ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="分类名" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="操作人ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="操作时间" Type="datetime" Nullable="false" />
+          <Property Name="相关类型" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="问答题答案表">
+          <Key>
+            <PropertyRef Name="试题内容ID" />
+          </Key>
+          <Property Name="试题内容ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="内容" Type="nvarchar" Nullable="false" MaxLength="1" />
+        </EntityType>
+        <EntityType Name="系统分类表">
+          <Key>
+            <PropertyRef Name="分类名称" />
+          </Key>
+          <Property Name="分类名称" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="操作人ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="操作时间" Type="datetime" Nullable="false" />
+          <Property Name="分类类型" Type="tinyint" Nullable="false" />
+          <Property Name="分类类别名称" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="同义词分类名称" Type="nvarchar" Nullable="false" MaxLength="32" />
+        </EntityType>
+        <EntityType Name="系统分类上下级关系表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="系统分类名称" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="分类关系名称" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="是否上级" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="修改成绩记录">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="会员ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="试卷ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="原来的成绩" Type="numeric" Nullable="false" Scale="1" />
+          <Property Name="修改后的成绩" Type="numeric" Nullable="false" Scale="1" />
+          <Property Name="修改时间" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="用户表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="编号" Type="nvarchar" Nullable="false" MaxLength="64" />
+          <Property Name="密码" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="姓名" Type="nvarchar" Nullable="false" MaxLength="8" />
+          <Property Name="性别" Type="tinyint" Nullable="false" />
+          <Property Name="邮箱" Type="nvarchar" Nullable="false" MaxLength="32" />
+          <Property Name="部门ID" Type="uniqueidentifier" />
+          <Property Name="角色" Type="tinyint" Nullable="false" />
+          <Property Name="添加时间" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="自由题空格表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="试题内容ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="顺序" Type="tinyint" Nullable="false" />
+          <Property Name="自由题选项组ID" Type="uniqueidentifier" />
+          <Property Name="空格类型" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="自由题填空答案表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="自由题空格ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="该空答案" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="顺序" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="自由题选项表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="选项内容HTML" Type="nvarchar" Nullable="false" MaxLength="1" />
+          <Property Name="选项内容文本" Type="nvarchar" Nullable="false" MaxLength="1024" />
+          <Property Name="顺序" Type="tinyint" Nullable="false" />
+          <Property Name="自由题选项组ID" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <EntityType Name="自由题选项空格答案表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="自由题空格ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="自由题选项ID" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="顺序" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="自由题选项组表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+        </EntityType>
+        <Association Name="绑定账号表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.Store.用户表" Multiplicity="1" />
+          <End Role="绑定账号表" Type="LoveKaoExamModel.Store.绑定账号表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="绑定账号表">
+              <PropertyRef Name="本地账号ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="部门表_部门表">
+          <End Role="部门表" Type="LoveKaoExamModel.Store.部门表" Multiplicity="0..1" />
+          <End Role="部门表1" Type="LoveKaoExamModel.Store.部门表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="部门表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="部门表1">
+              <PropertyRef Name="上级部门ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="部门表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.Store.用户表" Multiplicity="1" />
+          <End Role="部门表" Type="LoveKaoExamModel.Store.部门表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="部门表">
+              <PropertyRef Name="添加人ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="会员填空题回答_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.Store.考生考试回答表" Multiplicity="1" />
+          <End Role="考生填空题回答表" Type="LoveKaoExamModel.Store.考生填空题回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生填空题回答表">
+              <PropertyRef Name="考生考试回答ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生单选题回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.Store.考生考试回答表" Multiplicity="1" />
+          <End Role="考生单选题回答表" Type="LoveKaoExamModel.Store.考生单选题回答表" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生单选题回答表">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生多空选择题回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.Store.考生考试回答表" Multiplicity="1" />
+          <End Role="考生多空选择题回答表" Type="LoveKaoExamModel.Store.考生多空选择题回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生多空选择题回答表">
+              <PropertyRef Name="考生考试回答ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生多选题回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.Store.考生考试回答表" Multiplicity="1" />
+          <End Role="考生多选题回答表" Type="LoveKaoExamModel.Store.考生多选题回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生多选题回答表">
+              <PropertyRef Name="考生考试回答ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生范围表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.Store.用户表" Multiplicity="1" />
+          <End Role="考生范围表" Type="LoveKaoExamModel.Store.考生范围表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生范围表">
+              <PropertyRef Name="考生ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生考试回答表_考生做过的试卷表">
+          <End Role="考生做过的试卷表" Type="LoveKaoExamModel.Store.考生做过的试卷表" Multiplicity="1" />
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.Store.考生考试回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="考生做过的试卷表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生考试回答表">
+              <PropertyRef Name="考生做过的试卷ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生考试回答表_试卷大题中试题表">
+          <End Role="试卷大题中试题表" Type="LoveKaoExamModel.Store.试卷大题中试题表" Multiplicity="1" />
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.Store.考生考试回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试卷大题中试题表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生考试回答表">
+              <PropertyRef Name="试卷大题中试题ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生连线题回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.Store.考生考试回答表" Multiplicity="1" />
+          <End Role="考生连线题回答表" Type="LoveKaoExamModel.Store.考生连线题回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生连线题回答表">
+              <PropertyRef Name="考生考试回答ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生判断题回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.Store.考生考试回答表" Multiplicity="1" />
+          <End Role="考生判断题回答表" Type="LoveKaoExamModel.Store.考生判断题回答表" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生判断题回答表">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生问答题回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.Store.考生考试回答表" Multiplicity="1" />
+          <End Role="考生问答题回答表" Type="LoveKaoExamModel.Store.考生问答题回答表" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生问答题回答表">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生选词填空回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.Store.考生考试回答表" Multiplicity="1" />
+          <End Role="考生选词填空回答表" Type="LoveKaoExamModel.Store.考生选词填空回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生选词填空回答表">
+              <PropertyRef Name="考生考试回答ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生做过的试卷表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.Store.用户表" Multiplicity="1" />
+          <End Role="考生做过的试卷表" Type="LoveKaoExamModel.Store.考生做过的试卷表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生做过的试卷表">
+              <PropertyRef Name="考生ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考试设置表_试卷内容表">
+          <End Role="试卷内容表" Type="LoveKaoExamModel.Store.试卷内容表" Multiplicity="1" />
+          <End Role="考试设置表" Type="LoveKaoExamModel.Store.考试设置表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试卷内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考试设置表">
+              <PropertyRef Name="试卷内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考试设置表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.Store.用户表" Multiplicity="1" />
+          <End Role="考试设置表" Type="LoveKaoExamModel.Store.考试设置表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考试设置表">
+              <PropertyRef Name="设置人ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="连线题答案表_连线题选项表">
+          <End Role="连线题选项表" Type="LoveKaoExamModel.Store.连线题选项表" Multiplicity="1" />
+          <End Role="连线题答案表" Type="LoveKaoExamModel.Store.连线题答案表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="连线题选项表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="连线题答案表">
+              <PropertyRef Name="左边ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="连线题答案表_试题内容表">
+          <End Role="试题内容表" Type="LoveKaoExamModel.Store.试题内容表" Multiplicity="1" />
+          <End Role="连线题答案表" Type="LoveKaoExamModel.Store.连线题答案表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试题内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="连线题答案表">
+              <PropertyRef Name="试题内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="连线题选项表_试题内容表">
+          <End Role="试题内容表" Type="LoveKaoExamModel.Store.试题内容表" Multiplicity="1" />
+          <End Role="连线题选项表" Type="LoveKaoExamModel.Store.连线题选项表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试题内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="连线题选项表">
+              <PropertyRef Name="试题内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="练习设置表_试卷内容表">
+          <End Role="试卷内容表" Type="LoveKaoExamModel.Store.试卷内容表" Multiplicity="1" />
+          <End Role="练习设置表" Type="LoveKaoExamModel.Store.练习设置表" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="试卷内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="练习设置表">
+              <PropertyRef Name="试卷内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="判断题答案表_试题内容表">
+          <End Role="试题内容表" Type="LoveKaoExamModel.Store.试题内容表" Multiplicity="1" />
+          <End Role="判断题答案表" Type="LoveKaoExamModel.Store.判断题答案表" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="试题内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="判断题答案表">
+              <PropertyRef Name="试题内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试卷大题中试题表_试卷中大题表">
+          <End Role="试卷中大题表" Type="LoveKaoExamModel.Store.试卷中大题表" Multiplicity="1" />
+          <End Role="试卷大题中试题表" Type="LoveKaoExamModel.Store.试卷大题中试题表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试卷中大题表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试卷大题中试题表">
+              <PropertyRef Name="试卷中大题ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试卷内容表_试卷外部信息表">
+          <End Role="试卷外部信息表" Type="LoveKaoExamModel.Store.试卷外部信息表" Multiplicity="1" />
+          <End Role="试卷内容表" Type="LoveKaoExamModel.Store.试卷内容表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试卷外部信息表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试卷内容表">
+              <PropertyRef Name="试卷外部信息ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试卷内容表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.Store.用户表" Multiplicity="1" />
+          <End Role="试卷内容表" Type="LoveKaoExamModel.Store.试卷内容表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试卷内容表">
+              <PropertyRef Name="提交人ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试卷外部信息表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.Store.用户表" Multiplicity="1" />
+          <End Role="试卷外部信息表" Type="LoveKaoExamModel.Store.试卷外部信息表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试卷外部信息表">
+              <PropertyRef Name="创建人ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试卷中大题表_试卷内容表">
+          <End Role="试卷内容表" Type="LoveKaoExamModel.Store.试卷内容表" Multiplicity="1" />
+          <End Role="试卷中大题表" Type="LoveKaoExamModel.Store.试卷中大题表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试卷内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试卷中大题表">
+              <PropertyRef Name="试卷内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试题内容表_试题内容表">
+          <End Role="试题内容表" Type="LoveKaoExamModel.Store.试题内容表" Multiplicity="0..1" />
+          <End Role="试题内容表1" Type="LoveKaoExamModel.Store.试题内容表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试题内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试题内容表1">
+              <PropertyRef Name="父试题内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试题外部信息表_试题内容表">
+          <End Role="试题外部信息表" Type="LoveKaoExamModel.Store.试题外部信息表" Multiplicity="1" />
+          <End Role="试题内容表" Type="LoveKaoExamModel.Store.试题内容表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试题外部信息表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试题内容表">
+              <PropertyRef Name="试题外部信息ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="问答题答案表_试题内容表">
+          <End Role="试题内容表" Type="LoveKaoExamModel.Store.试题内容表" Multiplicity="1" />
+          <End Role="问答题答案表" Type="LoveKaoExamModel.Store.问答题答案表" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="试题内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="问答题答案表">
+              <PropertyRef Name="试题内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="系统分类表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.Store.用户表" Multiplicity="1" />
+          <End Role="系统分类表" Type="LoveKaoExamModel.Store.系统分类表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="系统分类表">
+              <PropertyRef Name="操作人ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="系统分类上下级关系表_系统分类表">
+          <End Role="系统分类表" Type="LoveKaoExamModel.Store.系统分类表" Multiplicity="1" />
+          <End Role="系统分类上下级关系表" Type="LoveKaoExamModel.Store.系统分类上下级关系表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="系统分类表">
+              <PropertyRef Name="分类名称" />
+            </Principal>
+            <Dependent Role="系统分类上下级关系表">
+              <PropertyRef Name="系统分类名称" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="用户表_部门表">
+          <End Role="部门表" Type="LoveKaoExamModel.Store.部门表" Multiplicity="0..1" />
+          <End Role="用户表" Type="LoveKaoExamModel.Store.用户表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="部门表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="用户表">
+              <PropertyRef Name="部门ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="自由题空格表_试题内容表">
+          <End Role="试题内容表" Type="LoveKaoExamModel.Store.试题内容表" Multiplicity="1" />
+          <End Role="自由题空格表" Type="LoveKaoExamModel.Store.自由题空格表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试题内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="自由题空格表">
+              <PropertyRef Name="试题内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="自由题空格表_自由题选项组表">
+          <End Role="自由题选项组表" Type="LoveKaoExamModel.Store.自由题选项组表" Multiplicity="0..1" />
+          <End Role="自由题空格表" Type="LoveKaoExamModel.Store.自由题空格表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="自由题选项组表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="自由题空格表">
+              <PropertyRef Name="自由题选项组ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="自由题填空答案表_自由题空格表">
+          <End Role="自由题空格表" Type="LoveKaoExamModel.Store.自由题空格表" Multiplicity="1" />
+          <End Role="自由题填空答案表" Type="LoveKaoExamModel.Store.自由题填空答案表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="自由题空格表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="自由题填空答案表">
+              <PropertyRef Name="自由题空格ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="自由题选项表_自由题选项组表">
+          <End Role="自由题选项组表" Type="LoveKaoExamModel.Store.自由题选项组表" Multiplicity="1" />
+          <End Role="自由题选项表" Type="LoveKaoExamModel.Store.自由题选项表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="自由题选项组表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="自由题选项表">
+              <PropertyRef Name="自由题选项组ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="自由题选项空格答案表_自由题空格表">
+          <End Role="自由题空格表" Type="LoveKaoExamModel.Store.自由题空格表" Multiplicity="1" />
+          <End Role="自由题选项空格答案表" Type="LoveKaoExamModel.Store.自由题选项空格答案表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="自由题空格表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="自由题选项空格答案表">
+              <PropertyRef Name="自由题空格ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LoveKaoExamModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="LoveKaoExamEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="绑定账号表" EntityType="LoveKaoExamModel.绑定账号表" />
+          <EntitySet Name="部门表" EntityType="LoveKaoExamModel.部门表" />
+          <EntitySet Name="考生单选题回答表" EntityType="LoveKaoExamModel.考生单选题回答表" />
+          <EntitySet Name="考生多空选择题回答表" EntityType="LoveKaoExamModel.考生多空选择题回答表" />
+          <EntitySet Name="考生多选题回答表" EntityType="LoveKaoExamModel.考生多选题回答表" />
+          <EntitySet Name="考生范围表" EntityType="LoveKaoExamModel.考生范围表" />
+          <EntitySet Name="考生考试回答表" EntityType="LoveKaoExamModel.考生考试回答表" />
+          <EntitySet Name="考生连线题回答表" EntityType="LoveKaoExamModel.考生连线题回答表" />
+          <EntitySet Name="考生判断题回答表" EntityType="LoveKaoExamModel.考生判断题回答表" />
+          <EntitySet Name="考生填空题回答表" EntityType="LoveKaoExamModel.考生填空题回答表" />
+          <EntitySet Name="考生问答题回答表" EntityType="LoveKaoExamModel.考生问答题回答表" />
+          <EntitySet Name="考生选词填空回答表" EntityType="LoveKaoExamModel.考生选词填空回答表" />
+          <EntitySet Name="考生做过的试卷表" EntityType="LoveKaoExamModel.考生做过的试卷表" />
+          <EntitySet Name="考试设置表" EntityType="LoveKaoExamModel.考试设置表" />
+          <EntitySet Name="连线题答案表" EntityType="LoveKaoExamModel.连线题答案表" />
+          <EntitySet Name="连线题选项表" EntityType="LoveKaoExamModel.连线题选项表" />
+          <EntitySet Name="练习设置表" EntityType="LoveKaoExamModel.练习设置表" />
+          <EntitySet Name="判断题答案表" EntityType="LoveKaoExamModel.判断题答案表" />
+          <EntitySet Name="试卷大题中试题表" EntityType="LoveKaoExamModel.试卷大题中试题表" />
+          <EntitySet Name="试卷内容表" EntityType="LoveKaoExamModel.试卷内容表" />
+          <EntitySet Name="试卷外部信息表" EntityType="LoveKaoExamModel.试卷外部信息表" />
+          <EntitySet Name="试卷中大题表" EntityType="LoveKaoExamModel.试卷中大题表" />
+          <EntitySet Name="试题内容表" EntityType="LoveKaoExamModel.试题内容表" />
+          <EntitySet Name="试题外部信息表" EntityType="LoveKaoExamModel.试题外部信息表" />
+          <EntitySet Name="所属分类表" EntityType="LoveKaoExamModel.所属分类表" />
+          <EntitySet Name="问答题答案表" EntityType="LoveKaoExamModel.问答题答案表" />
+          <EntitySet Name="系统分类表" EntityType="LoveKaoExamModel.系统分类表" />
+          <EntitySet Name="系统分类上下级关系表" EntityType="LoveKaoExamModel.系统分类上下级关系表" />
+          <EntitySet Name="修改成绩记录" EntityType="LoveKaoExamModel.修改成绩记录" />
+          <EntitySet Name="用户表" EntityType="LoveKaoExamModel.用户表" />
+          <EntitySet Name="自由题空格表" EntityType="LoveKaoExamModel.自由题空格表" />
+          <EntitySet Name="自由题填空答案表" EntityType="LoveKaoExamModel.自由题填空答案表" />
+          <EntitySet Name="自由题选项表" EntityType="LoveKaoExamModel.自由题选项表" />
+          <EntitySet Name="自由题选项空格答案表" EntityType="LoveKaoExamModel.自由题选项空格答案表" />
+          <EntitySet Name="自由题选项组表" EntityType="LoveKaoExamModel.自由题选项组表" />
+          <AssociationSet Name="绑定账号表_用户表" Association="LoveKaoExamModel.绑定账号表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="绑定账号表" EntitySet="绑定账号表" />
+          </AssociationSet>
+          <AssociationSet Name="部门表_部门表" Association="LoveKaoExamModel.部门表_部门表">
+            <End Role="部门表" EntitySet="部门表" />
+            <End Role="部门表1" EntitySet="部门表" />
+          </AssociationSet>
+          <AssociationSet Name="部门表_用户表" Association="LoveKaoExamModel.部门表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="部门表" EntitySet="部门表" />
+          </AssociationSet>
+          <AssociationSet Name="用户表_部门表" Association="LoveKaoExamModel.用户表_部门表">
+            <End Role="部门表" EntitySet="部门表" />
+            <End Role="用户表" EntitySet="用户表" />
+          </AssociationSet>
+          <AssociationSet Name="考生单选题回答表_考生考试回答表" Association="LoveKaoExamModel.考生单选题回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生单选题回答表" EntitySet="考生单选题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生多空选择题回答表_考生考试回答表" Association="LoveKaoExamModel.考生多空选择题回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生多空选择题回答表" EntitySet="考生多空选择题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生多选题回答表_考生考试回答表" Association="LoveKaoExamModel.考生多选题回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生多选题回答表" EntitySet="考生多选题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生范围表_用户表" Association="LoveKaoExamModel.考生范围表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="考生范围表" EntitySet="考生范围表" />
+          </AssociationSet>
+          <AssociationSet Name="会员填空题回答_考生考试回答表" Association="LoveKaoExamModel.会员填空题回答_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生填空题回答表" EntitySet="考生填空题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生考试回答表_考生做过的试卷表" Association="LoveKaoExamModel.考生考试回答表_考生做过的试卷表">
+            <End Role="考生做过的试卷表" EntitySet="考生做过的试卷表" />
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生考试回答表_试卷大题中试题表" Association="LoveKaoExamModel.考生考试回答表_试卷大题中试题表">
+            <End Role="试卷大题中试题表" EntitySet="试卷大题中试题表" />
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生连线题回答表_考生考试回答表" Association="LoveKaoExamModel.考生连线题回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生连线题回答表" EntitySet="考生连线题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生判断题回答表_考生考试回答表" Association="LoveKaoExamModel.考生判断题回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生判断题回答表" EntitySet="考生判断题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生问答题回答表_考生考试回答表" Association="LoveKaoExamModel.考生问答题回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生问答题回答表" EntitySet="考生问答题回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生选词填空回答表_考生考试回答表" Association="LoveKaoExamModel.考生选词填空回答表_考生考试回答表">
+            <End Role="考生考试回答表" EntitySet="考生考试回答表" />
+            <End Role="考生选词填空回答表" EntitySet="考生选词填空回答表" />
+          </AssociationSet>
+          <AssociationSet Name="考生做过的试卷表_用户表" Association="LoveKaoExamModel.考生做过的试卷表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="考生做过的试卷表" EntitySet="考生做过的试卷表" />
+          </AssociationSet>
+          <AssociationSet Name="考试设置表_试卷内容表" Association="LoveKaoExamModel.考试设置表_试卷内容表">
+            <End Role="试卷内容表" EntitySet="试卷内容表" />
+            <End Role="考试设置表" EntitySet="考试设置表" />
+          </AssociationSet>
+          <AssociationSet Name="考试设置表_用户表" Association="LoveKaoExamModel.考试设置表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="考试设置表" EntitySet="考试设置表" />
+          </AssociationSet>
+          <AssociationSet Name="连线题答案表_连线题选项表" Association="LoveKaoExamModel.连线题答案表_连线题选项表">
+            <End Role="连线题选项表" EntitySet="连线题选项表" />
+            <End Role="连线题答案表" EntitySet="连线题答案表" />
+          </AssociationSet>
+          <AssociationSet Name="连线题答案表_试题内容表" Association="LoveKaoExamModel.连线题答案表_试题内容表">
+            <End Role="试题内容表" EntitySet="试题内容表" />
+            <End Role="连线题答案表" EntitySet="连线题答案表" />
+          </AssociationSet>
+          <AssociationSet Name="连线题选项表_试题内容表" Association="LoveKaoExamModel.连线题选项表_试题内容表">
+            <End Role="试题内容表" EntitySet="试题内容表" />
+            <End Role="连线题选项表" EntitySet="连线题选项表" />
+          </AssociationSet>
+          <AssociationSet Name="练习设置表_试卷内容表" Association="LoveKaoExamModel.练习设置表_试卷内容表">
+            <End Role="试卷内容表" EntitySet="试卷内容表" />
+            <End Role="练习设置表" EntitySet="练习设置表" />
+          </AssociationSet>
+          <AssociationSet Name="判断题答案表_试题内容表" Association="LoveKaoExamModel.判断题答案表_试题内容表">
+            <End Role="试题内容表" EntitySet="试题内容表" />
+            <End Role="判断题答案表" EntitySet="判断题答案表" />
+          </AssociationSet>
+          <AssociationSet Name="试卷大题中试题表_试卷中大题表" Association="LoveKaoExamModel.试卷大题中试题表_试卷中大题表">
+            <End Role="试卷中大题表" EntitySet="试卷中大题表" />
+            <End Role="试卷大题中试题表" EntitySet="试卷大题中试题表" />
+          </AssociationSet>
+          <AssociationSet Name="试卷内容表_试卷外部信息表" Association="LoveKaoExamModel.试卷内容表_试卷外部信息表">
+            <End Role="试卷外部信息表" EntitySet="试卷外部信息表" />
+            <End Role="试卷内容表" EntitySet="试卷内容表" />
+          </AssociationSet>
+          <AssociationSet Name="试卷内容表_用户表" Association="LoveKaoExamModel.试卷内容表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="试卷内容表" EntitySet="试卷内容表" />
+          </AssociationSet>
+          <AssociationSet Name="试卷中大题表_试卷内容表" Association="LoveKaoExamModel.试卷中大题表_试卷内容表">
+            <End Role="试卷内容表" EntitySet="试卷内容表" />
+            <End Role="试卷中大题表" EntitySet="试卷中大题表" />
+          </AssociationSet>
+          <AssociationSet Name="试卷外部信息表_用户表" Association="LoveKaoExamModel.试卷外部信息表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="试卷外部信息表" EntitySet="试卷外部信息表" />
+          </AssociationSet>
+          <AssociationSet Name="试题内容表_试题内容表" Association="LoveKaoExamModel.试题内容表_试题内容表">
+            <End Role="试题内容表" EntitySet="试题内容表" />
+            <End Role="试题内容表1" EntitySet="试题内容表" />
+          </AssociationSet>
+          <AssociationSet Name="试题外部信息表_试题内容表" Association="LoveKaoExamModel.试题外部信息表_试题内容表">
+            <End Role="试题外部信息表" EntitySet="试题外部信息表" />
+            <End Role="试题内容表" EntitySet="试题内容表" />
+          </AssociationSet>
+          <AssociationSet Name="问答题答案表_试题内容表" Association="LoveKaoExamModel.问答题答案表_试题内容表">
+            <End Role="试题内容表" EntitySet="试题内容表" />
+            <End Role="问答题答案表" EntitySet="问答题答案表" />
+          </AssociationSet>
+          <AssociationSet Name="自由题空格表_试题内容表" Association="LoveKaoExamModel.自由题空格表_试题内容表">
+            <End Role="试题内容表" EntitySet="试题内容表" />
+            <End Role="自由题空格表" EntitySet="自由题空格表" />
+          </AssociationSet>
+          <AssociationSet Name="系统分类表_用户表" Association="LoveKaoExamModel.系统分类表_用户表">
+            <End Role="用户表" EntitySet="用户表" />
+            <End Role="系统分类表" EntitySet="系统分类表" />
+          </AssociationSet>
+          <AssociationSet Name="系统分类上下级关系表_系统分类表" Association="LoveKaoExamModel.系统分类上下级关系表_系统分类表">
+            <End Role="系统分类表" EntitySet="系统分类表" />
+            <End Role="系统分类上下级关系表" EntitySet="系统分类上下级关系表" />
+          </AssociationSet>
+          <AssociationSet Name="自由题空格表_自由题选项组表" Association="LoveKaoExamModel.自由题空格表_自由题选项组表">
+            <End Role="自由题选项组表" EntitySet="自由题选项组表" />
+            <End Role="自由题空格表" EntitySet="自由题空格表" />
+          </AssociationSet>
+          <AssociationSet Name="自由题填空答案表_自由题空格表" Association="LoveKaoExamModel.自由题填空答案表_自由题空格表">
+            <End Role="自由题空格表" EntitySet="自由题空格表" />
+            <End Role="自由题填空答案表" EntitySet="自由题填空答案表" />
+          </AssociationSet>
+          <AssociationSet Name="自由题选项空格答案表_自由题空格表" Association="LoveKaoExamModel.自由题选项空格答案表_自由题空格表">
+            <End Role="自由题空格表" EntitySet="自由题空格表" />
+            <End Role="自由题选项空格答案表" EntitySet="自由题选项空格答案表" />
+          </AssociationSet>
+          <AssociationSet Name="自由题选项表_自由题选项组表" Association="LoveKaoExamModel.自由题选项表_自由题选项组表">
+            <End Role="自由题选项组表" EntitySet="自由题选项组表" />
+            <End Role="自由题选项表" EntitySet="自由题选项表" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="绑定账号表">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="本地账号ID" />
+            <PropertyRef Name="爱考网账号" />
+            <PropertyRef Name="爱考网密码" />
+            <PropertyRef Name="爱考网邮箱" />
+            <PropertyRef Name="绑定时间" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="本地账号ID" Type="Guid" Nullable="false" />
+          <Property Name="爱考网账号" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="爱考网密码" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="爱考网邮箱" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="绑定时间" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="用户表" Relationship="LoveKaoExamModel.绑定账号表_用户表" FromRole="绑定账号表" ToRole="用户表" />
+        </EntityType>
+        <EntityType Name="部门表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="名称" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="上级部门ID" Type="Guid" />
+          <Property Name="添加人ID" Type="Guid" Nullable="false" />
+          <Property Name="添加时间" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="部门表1" Relationship="LoveKaoExamModel.部门表_部门表" FromRole="部门表" ToRole="部门表1" />
+          <NavigationProperty Name="部门表2" Relationship="LoveKaoExamModel.部门表_部门表" FromRole="部门表1" ToRole="部门表" />
+          <NavigationProperty Name="用户表" Relationship="LoveKaoExamModel.部门表_用户表" FromRole="部门表" ToRole="用户表" />
+          <NavigationProperty Name="用户表1" Relationship="LoveKaoExamModel.用户表_部门表" FromRole="部门表" ToRole="用户表" />
+        </EntityType>
+        <EntityType Name="考生单选题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="回答的选项ID" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="考生考试回答表" Relationship="LoveKaoExamModel.考生单选题回答表_考生考试回答表" FromRole="考生单选题回答表" ToRole="考生考试回答表" />
+        </EntityType>
+        <EntityType Name="考生多空选择题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="考生考试回答ID" Type="Guid" Nullable="false" />
+          <Property Name="该空ID" Type="Guid" Nullable="false" />
+          <Property Name="该空的回答ID" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="考生考试回答表" Relationship="LoveKaoExamModel.考生多空选择题回答表_考生考试回答表" FromRole="考生多空选择题回答表" ToRole="考生考试回答表" />
+        </EntityType>
+        <EntityType Name="考生多选题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="考生考试回答ID" Type="Guid" Nullable="false" />
+          <Property Name="回答的选项ID" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="考生考试回答表" Relationship="LoveKaoExamModel.考生多选题回答表_考生考试回答表" FromRole="考生多选题回答表" ToRole="考生考试回答表" />
+        </EntityType>
+        <EntityType Name="考生范围表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="相关ID" Type="Guid" Nullable="false" />
+          <Property Name="考生ID" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="用户表" Relationship="LoveKaoExamModel.考生范围表_用户表" FromRole="考生范围表" ToRole="用户表" />
+        </EntityType>
+        <EntityType Name="考生考试回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="考生做过的试卷ID" Type="Guid" Nullable="false" />
+          <Property Name="试卷大题中试题ID" Type="Guid" Nullable="false" />
+          <Property Name="该题的用时" Type="Int16" Nullable="false" />
+          <Property Name="该题的得分" Type="Decimal" Precision="3" Scale="1" />
+          <Property Name="评语" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="考生单选题回答表" Relationship="LoveKaoExamModel.考生单选题回答表_考生考试回答表" FromRole="考生考试回答表" ToRole="考生单选题回答表" />
+          <NavigationProperty Name="考生多空选择题回答表" Relationship="LoveKaoExamModel.考生多空选择题回答表_考生考试回答表" FromRole="考生考试回答表" ToRole="考生多空选择题回答表" />
+          <NavigationProperty Name="考生多选题回答表" Relationship="LoveKaoExamModel.考生多选题回答表_考生考试回答表" FromRole="考生考试回答表" ToRole="考生多选题回答表" />
+          <NavigationProperty Name="考生填空题回答表" Relationship="LoveKaoExamModel.会员填空题回答_考生考试回答表" FromRole="考生考试回答表" ToRole="考生填空题回答表" />
+          <NavigationProperty Name="考生做过的试卷表" Relationship="LoveKaoExamModel.考生考试回答表_考生做过的试卷表" FromRole="考生考试回答表" ToRole="考生做过的试卷表" />
+          <NavigationProperty Name="试卷大题中试题表" Relationship="LoveKaoExamModel.考生考试回答表_试卷大题中试题表" FromRole="考生考试回答表" ToRole="试卷大题中试题表" />
+          <NavigationProperty Name="考生连线题回答表" Relationship="LoveKaoExamModel.考生连线题回答表_考生考试回答表" FromRole="考生考试回答表" ToRole="考生连线题回答表" />
+          <NavigationProperty Name="考生判断题回答表" Relationship="LoveKaoExamModel.考生判断题回答表_考生考试回答表" FromRole="考生考试回答表" ToRole="考生判断题回答表" />
+          <NavigationProperty Name="考生问答题回答表" Relationship="LoveKaoExamModel.考生问答题回答表_考生考试回答表" FromRole="考生考试回答表" ToRole="考生问答题回答表" />
+          <NavigationProperty Name="考生选词填空回答表" Relationship="LoveKaoExamModel.考生选词填空回答表_考生考试回答表" FromRole="考生考试回答表" ToRole="考生选词填空回答表" />
+        </EntityType>
+        <EntityType Name="考生连线题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="考生考试回答ID" Type="Guid" Nullable="false" />
+          <Property Name="连线题左边小题ID" Type="Guid" Nullable="false" />
+          <Property Name="回答的选项ID" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="考生考试回答表" Relationship="LoveKaoExamModel.考生连线题回答表_考生考试回答表" FromRole="考生连线题回答表" ToRole="考生考试回答表" />
+        </EntityType>
+        <EntityType Name="考生判断题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="回答的内容" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="考生考试回答表" Relationship="LoveKaoExamModel.考生判断题回答表_考生考试回答表" FromRole="考生判断题回答表" ToRole="考生考试回答表" />
+        </EntityType>
+        <EntityType Name="考生填空题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="考生考试回答ID" Type="Guid" Nullable="false" />
+          <Property Name="回答的内容" Type="String" Nullable="false" MaxLength="160" Unicode="true" FixedLength="false" />
+          <Property Name="该空ID" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="考生考试回答表" Relationship="LoveKaoExamModel.会员填空题回答_考生考试回答表" FromRole="考生填空题回答表" ToRole="考生考试回答表" />
+        </EntityType>
+        <EntityType Name="考生问答题回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="回答的内容" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="考生考试回答表" Relationship="LoveKaoExamModel.考生问答题回答表_考生考试回答表" FromRole="考生问答题回答表" ToRole="考生考试回答表" />
+        </EntityType>
+        <EntityType Name="考生选词填空回答表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="考生考试回答ID" Type="Guid" Nullable="false" />
+          <Property Name="该空ID" Type="Guid" Nullable="false" />
+          <Property Name="该空的回答ID" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="考生考试回答表" Relationship="LoveKaoExamModel.考生选词填空回答表_考生考试回答表" FromRole="考生选词填空回答表" ToRole="考生考试回答表" />
+        </EntityType>
+        <EntityType Name="考生做过的试卷表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="考生ID" Type="Guid" Nullable="false" />
+          <Property Name="答题开始时间" Type="DateTime" Nullable="false" />
+          <Property Name="答题结束时间" Type="DateTime" />
+          <Property Name="客观题得分" Type="Decimal" Nullable="false" Precision="4" Scale="1" />
+          <Property Name="主观题得分" Type="Decimal" Nullable="false" Precision="4" Scale="1" />
+          <Property Name="是否是已提交的试卷" Type="Boolean" Nullable="false" />
+          <Property Name="批改状态" Type="Byte" Nullable="false" />
+          <Property Name="相关ID" Type="Guid" Nullable="false" />
+          <Property Name="类型" Type="Byte" Nullable="false" />
+          <Property Name="批改时间" Type="DateTime" />
+          <NavigationProperty Name="考生考试回答表" Relationship="LoveKaoExamModel.考生考试回答表_考生做过的试卷表" FromRole="考生做过的试卷表" ToRole="考生考试回答表" />
+          <NavigationProperty Name="用户表" Relationship="LoveKaoExamModel.考生做过的试卷表_用户表" FromRole="考生做过的试卷表" ToRole="用户表" />
+        </EntityType>
+        <EntityType Name="考试设置表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="试卷内容ID" Type="Guid" Nullable="false" />
+          <Property Name="考试开始时间" Type="DateTime" Nullable="false" />
+          <Property Name="考试结束时间" Type="DateTime" Nullable="false" />
+          <Property Name="考试时长" Type="Int16" Nullable="false" />
+          <Property Name="及格条件" Type="Int32" Nullable="false" />
+          <Property Name="是否公布考试结果" Type="Boolean" Nullable="false" />
+          <Property Name="设置人ID" Type="Guid" Nullable="false" />
+          <Property Name="设置时间" Type="DateTime" Nullable="false" />
+          <Property Name="是否删除" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="试卷内容表" Relationship="LoveKaoExamModel.考试设置表_试卷内容表" FromRole="考试设置表" ToRole="试卷内容表" />
+          <NavigationProperty Name="用户表" Relationship="LoveKaoExamModel.考试设置表_用户表" FromRole="考试设置表" ToRole="用户表" />
+        </EntityType>
+        <EntityType Name="连线题答案表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="试题内容ID" Type="Guid" Nullable="false" />
+          <Property Name="左边ID" Type="Guid" Nullable="false" />
+          <Property Name="右边ID" Type="Guid" Nullable="false" />
+          <Property Name="顺序" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="连线题选项表" Relationship="LoveKaoExamModel.连线题答案表_连线题选项表" FromRole="连线题答案表" ToRole="连线题选项表" />
+          <NavigationProperty Name="试题内容表" Relationship="LoveKaoExamModel.连线题答案表_试题内容表" FromRole="连线题答案表" ToRole="试题内容表" />
+        </EntityType>
+        <EntityType Name="连线题选项表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="试题内容ID" Type="Guid" Nullable="false" />
+          <Property Name="选项内容HTML" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="选项内容文本" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="连线标记" Type="Byte" Nullable="false" />
+          <Property Name="顺序" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="连线题答案表" Relationship="LoveKaoExamModel.连线题答案表_连线题选项表" FromRole="连线题选项表" ToRole="连线题答案表" />
+          <NavigationProperty Name="试题内容表" Relationship="LoveKaoExamModel.连线题选项表_试题内容表" FromRole="连线题选项表" ToRole="试题内容表" />
+        </EntityType>
+        <EntityType Name="练习设置表">
+          <Key>
+            <PropertyRef Name="试卷内容ID" />
+          </Key>
+          <Property Name="试卷内容ID" Type="Guid" Nullable="false" />
+          <Property Name="考试时长" Type="Int16" Nullable="false" />
+          <Property Name="及格条件" Type="Int32" Nullable="false" />
+          <Property Name="设置人ID" Type="Guid" Nullable="false" />
+          <Property Name="设置时间" Type="DateTime" Nullable="false" />
+          <Property Name="是否删除" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="试卷内容表" Relationship="LoveKaoExamModel.练习设置表_试卷内容表" FromRole="练习设置表" ToRole="试卷内容表" />
+        </EntityType>
+        <EntityType Name="判断题答案表">
+          <Key>
+            <PropertyRef Name="试题内容ID" />
+          </Key>
+          <Property Name="试题内容ID" Type="Guid" Nullable="false" />
+          <Property Name="答案" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="试题内容表" Relationship="LoveKaoExamModel.判断题答案表_试题内容表" FromRole="判断题答案表" ToRole="试题内容表" />
+        </EntityType>
+        <EntityType Name="试卷大题中试题表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="试卷中大题ID" Type="Guid" Nullable="false" />
+          <Property Name="试题内容ID" Type="Guid" Nullable="false" />
+          <Property Name="每小题分值" Type="Decimal" Nullable="false" Precision="4" Scale="1" />
+          <Property Name="顺序" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="考生考试回答表" Relationship="LoveKaoExamModel.考生考试回答表_试卷大题中试题表" FromRole="试卷大题中试题表" ToRole="考生考试回答表" />
+          <NavigationProperty Name="试卷中大题表" Relationship="LoveKaoExamModel.试卷大题中试题表_试卷中大题表" FromRole="试卷大题中试题表" ToRole="试卷中大题表" />
+        </EntityType>
+        <EntityType Name="试卷内容表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="试卷外部信息ID" Type="Guid" Nullable="false" />
+          <Property Name="名称" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="说明" Type="String" Nullable="false" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="提交人ID" Type="Guid" Nullable="false" />
+          <Property Name="提交时间" Type="DateTime" Nullable="false" />
+          <Property Name="提交备注" Type="String" Nullable="false" MaxLength="512" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="考试设置表" Relationship="LoveKaoExamModel.考试设置表_试卷内容表" FromRole="试卷内容表" ToRole="考试设置表" />
+          <NavigationProperty Name="练习设置表" Relationship="LoveKaoExamModel.练习设置表_试卷内容表" FromRole="试卷内容表" ToRole="练习设置表" />
+          <NavigationProperty Name="试卷外部信息表" Relationship="LoveKaoExamModel.试卷内容表_试卷外部信息表" FromRole="试卷内容表" ToRole="试卷外部信息表" />
+          <NavigationProperty Name="用户表" Relationship="LoveKaoExamModel.试卷内容表_用户表" FromRole="试卷内容表" ToRole="用户表" />
+          <NavigationProperty Name="试卷中大题表" Relationship="LoveKaoExamModel.试卷中大题表_试卷内容表" FromRole="试卷内容表" ToRole="试卷中大题表" />
+        </EntityType>
+        <EntityType Name="试卷外部信息表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="名称" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="说明" Type="String" Nullable="false" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="创建人ID" Type="Guid" Nullable="false" />
+          <Property Name="创建时间" Type="DateTime" Nullable="false" />
+          <Property Name="试卷状态Enum" Type="Byte" Nullable="false" />
+          <Property Name="最新更新时间" Type="DateTime" Nullable="false" />
+          <Property Name="总分" Type="Int32" Nullable="false" />
+          <Property Name="试卷内容ID" Type="Guid" Nullable="false" />
+          <Property Name="试卷类型" Type="Byte" Nullable="false" />
+          <Property Name="爱考网ID" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="试卷内容表" Relationship="LoveKaoExamModel.试卷内容表_试卷外部信息表" FromRole="试卷外部信息表" ToRole="试卷内容表" />
+          <NavigationProperty Name="用户表" Relationship="LoveKaoExamModel.试卷外部信息表_用户表" FromRole="试卷外部信息表" ToRole="用户表" />
+        </EntityType>
+        <EntityType Name="试卷中大题表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="试卷内容ID" Type="Guid" Nullable="false" />
+          <Property Name="名称" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="说明" Type="String" Nullable="false" MaxLength="320" Unicode="true" FixedLength="false" />
+          <Property Name="顺序" Type="Int16" Nullable="false" />
+          <Property Name="多选题评分策略" Type="Decimal" Nullable="false" Precision="3" Scale="1" />
+          <NavigationProperty Name="试卷大题中试题表" Relationship="LoveKaoExamModel.试卷大题中试题表_试卷中大题表" FromRole="试卷中大题表" ToRole="试卷大题中试题表" />
+          <NavigationProperty Name="试卷内容表" Relationship="LoveKaoExamModel.试卷中大题表_试卷内容表" FromRole="试卷中大题表" ToRole="试卷内容表" />
+        </EntityType>
+        <EntityType Name="试题内容表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="解题思路" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="题干HTML" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="题干文本" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="试题外部信息ID" Type="Guid" Nullable="false" />
+          <Property Name="操作时间" Type="DateTime" Nullable="false" />
+          <Property Name="操作人ID" Type="Guid" Nullable="false" />
+          <Property Name="小题型Enum" Type="Int32" Nullable="false" />
+          <Property Name="父试题内容ID" Type="Guid" />
+          <Property Name="本题在复合题中顺序" Type="Byte" Nullable="false" />
+          <Property Name="Json字符串" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="爱考网ID" Type="Guid" Nullable="false" />
+          <Property Name="难易度" Type="Decimal" Nullable="false" Precision="18" Scale="1" />
+          <NavigationProperty Name="连线题答案表" Relationship="LoveKaoExamModel.连线题答案表_试题内容表" FromRole="试题内容表" ToRole="连线题答案表" />
+          <NavigationProperty Name="连线题选项表" Relationship="LoveKaoExamModel.连线题选项表_试题内容表" FromRole="试题内容表" ToRole="连线题选项表" />
+          <NavigationProperty Name="判断题答案表" Relationship="LoveKaoExamModel.判断题答案表_试题内容表" FromRole="试题内容表" ToRole="判断题答案表" />
+          <NavigationProperty Name="试题内容表1" Relationship="LoveKaoExamModel.试题内容表_试题内容表" FromRole="试题内容表" ToRole="试题内容表1" />
+          <NavigationProperty Name="试题内容表2" Relationship="LoveKaoExamModel.试题内容表_试题内容表" FromRole="试题内容表1" ToRole="试题内容表" />
+          <NavigationProperty Name="试题外部信息表" Relationship="LoveKaoExamModel.试题外部信息表_试题内容表" FromRole="试题内容表" ToRole="试题外部信息表" />
+          <NavigationProperty Name="问答题答案表" Relationship="LoveKaoExamModel.问答题答案表_试题内容表" FromRole="试题内容表" ToRole="问答题答案表" />
+          <NavigationProperty Name="自由题空格表" Relationship="LoveKaoExamModel.自由题空格表_试题内容表" FromRole="试题内容表" ToRole="自由题空格表" />
+        </EntityType>
+        <EntityType Name="试题外部信息表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="创建人ID" Type="Guid" Nullable="false" />
+          <Property Name="创建时间" Type="DateTime" Nullable="false" />
+          <Property Name="最新更新时间" Type="DateTime" Nullable="false" />
+          <Property Name="试题查询内容" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="试题显示列" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="小题型Enum" Type="Int32" Nullable="false" />
+          <Property Name="试题状态Enum" Type="Byte" Nullable="false" />
+          <Property Name="试题内容ID" Type="Guid" Nullable="false" />
+          <Property Name="难易度" Type="Decimal" Nullable="false" Precision="18" Scale="1" />
+          <Property Name="试题类型" Type="Byte" Nullable="false" />
+          <Property Name="爱考网ID" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="试题内容表" Relationship="LoveKaoExamModel.试题外部信息表_试题内容表" FromRole="试题外部信息表" ToRole="试题内容表" />
+        </EntityType>
+        <EntityType Name="所属分类表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="相关信息ID" Type="Guid" Nullable="false" />
+          <Property Name="分类名" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="操作人ID" Type="Guid" Nullable="false" />
+          <Property Name="操作时间" Type="DateTime" Nullable="false" />
+          <Property Name="相关类型" Type="Byte" Nullable="false" />
+        </EntityType>
+        <EntityType Name="问答题答案表">
+          <Key>
+            <PropertyRef Name="试题内容ID" />
+          </Key>
+          <Property Name="试题内容ID" Type="Guid" Nullable="false" />
+          <Property Name="内容" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="试题内容表" Relationship="LoveKaoExamModel.问答题答案表_试题内容表" FromRole="问答题答案表" ToRole="试题内容表" />
+        </EntityType>
+        <EntityType Name="系统分类表">
+          <Key>
+            <PropertyRef Name="分类名称" />
+          </Key>
+          <Property Name="分类名称" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="操作人ID" Type="Guid" Nullable="false" />
+          <Property Name="操作时间" Type="DateTime" Nullable="false" />
+          <Property Name="分类类型" Type="Byte" Nullable="false" />
+          <Property Name="分类类别名称" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="同义词分类名称" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="用户表" Relationship="LoveKaoExamModel.系统分类表_用户表" FromRole="系统分类表" ToRole="用户表" />
+          <NavigationProperty Name="系统分类上下级关系表" Relationship="LoveKaoExamModel.系统分类上下级关系表_系统分类表" FromRole="系统分类表" ToRole="系统分类上下级关系表" />
+        </EntityType>
+        <EntityType Name="系统分类上下级关系表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="系统分类名称" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="分类关系名称" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="是否上级" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="系统分类表" Relationship="LoveKaoExamModel.系统分类上下级关系表_系统分类表" FromRole="系统分类上下级关系表" ToRole="系统分类表" />
+        </EntityType>
+        <EntityType Name="修改成绩记录">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="会员ID" Type="Guid" Nullable="false" />
+          <Property Name="试卷ID" Type="Guid" Nullable="false" />
+          <Property Name="原来的成绩" Type="Decimal" Nullable="false" Precision="18" Scale="1" />
+          <Property Name="修改后的成绩" Type="Decimal" Nullable="false" Precision="18" Scale="1" />
+          <Property Name="修改时间" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="用户表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="编号" Type="String" Nullable="false" MaxLength="64" Unicode="true" FixedLength="false" />
+          <Property Name="密码" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="姓名" Type="String" Nullable="false" MaxLength="8" Unicode="true" FixedLength="false" />
+          <Property Name="性别" Type="Byte" Nullable="false" />
+          <Property Name="邮箱" Type="String" Nullable="false" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="部门ID" Type="Guid" />
+          <Property Name="角色" Type="Byte" Nullable="false" />
+          <Property Name="添加时间" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="绑定账号表" Relationship="LoveKaoExamModel.绑定账号表_用户表" FromRole="用户表" ToRole="绑定账号表" />
+          <NavigationProperty Name="部门表" Relationship="LoveKaoExamModel.部门表_用户表" FromRole="用户表" ToRole="部门表" />
+          <NavigationProperty Name="部门表1" Relationship="LoveKaoExamModel.用户表_部门表" FromRole="用户表" ToRole="部门表" />
+          <NavigationProperty Name="考生范围表" Relationship="LoveKaoExamModel.考生范围表_用户表" FromRole="用户表" ToRole="考生范围表" />
+          <NavigationProperty Name="考生做过的试卷表" Relationship="LoveKaoExamModel.考生做过的试卷表_用户表" FromRole="用户表" ToRole="考生做过的试卷表" />
+          <NavigationProperty Name="考试设置表" Relationship="LoveKaoExamModel.考试设置表_用户表" FromRole="用户表" ToRole="考试设置表" />
+          <NavigationProperty Name="试卷内容表" Relationship="LoveKaoExamModel.试卷内容表_用户表" FromRole="用户表" ToRole="试卷内容表" />
+          <NavigationProperty Name="试卷外部信息表" Relationship="LoveKaoExamModel.试卷外部信息表_用户表" FromRole="用户表" ToRole="试卷外部信息表" />
+          <NavigationProperty Name="系统分类表" Relationship="LoveKaoExamModel.系统分类表_用户表" FromRole="用户表" ToRole="系统分类表" />
+        </EntityType>
+        <EntityType Name="自由题空格表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="试题内容ID" Type="Guid" Nullable="false" />
+          <Property Name="顺序" Type="Byte" Nullable="false" />
+          <Property Name="自由题选项组ID" Type="Guid" />
+          <Property Name="空格类型" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="试题内容表" Relationship="LoveKaoExamModel.自由题空格表_试题内容表" FromRole="自由题空格表" ToRole="试题内容表" />
+          <NavigationProperty Name="自由题选项组表" Relationship="LoveKaoExamModel.自由题空格表_自由题选项组表" FromRole="自由题空格表" ToRole="自由题选项组表" />
+          <NavigationProperty Name="自由题填空答案表" Relationship="LoveKaoExamModel.自由题填空答案表_自由题空格表" FromRole="自由题空格表" ToRole="自由题填空答案表" />
+          <NavigationProperty Name="自由题选项空格答案表" Relationship="LoveKaoExamModel.自由题选项空格答案表_自由题空格表" FromRole="自由题空格表" ToRole="自由题选项空格答案表" />
+        </EntityType>
+        <EntityType Name="自由题填空答案表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="自由题空格ID" Type="Guid" Nullable="false" />
+          <Property Name="该空答案" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="顺序" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="自由题空格表" Relationship="LoveKaoExamModel.自由题填空答案表_自由题空格表" FromRole="自由题填空答案表" ToRole="自由题空格表" />
+        </EntityType>
+        <EntityType Name="自由题选项表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="选项内容HTML" Type="String" Nullable="false" MaxLength="1" Unicode="true" FixedLength="false" />
+          <Property Name="选项内容文本" Type="String" Nullable="false" MaxLength="1024" Unicode="true" FixedLength="false" />
+          <Property Name="顺序" Type="Byte" Nullable="false" />
+          <Property Name="自由题选项组ID" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="自由题选项组表" Relationship="LoveKaoExamModel.自由题选项表_自由题选项组表" FromRole="自由题选项表" ToRole="自由题选项组表" />
+        </EntityType>
+        <EntityType Name="自由题选项空格答案表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <Property Name="自由题空格ID" Type="Guid" Nullable="false" />
+          <Property Name="自由题选项ID" Type="Guid" Nullable="false" />
+          <Property Name="顺序" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="自由题空格表" Relationship="LoveKaoExamModel.自由题选项空格答案表_自由题空格表" FromRole="自由题选项空格答案表" ToRole="自由题空格表" />
+        </EntityType>
+        <EntityType Name="自由题选项组表">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="自由题空格表" Relationship="LoveKaoExamModel.自由题空格表_自由题选项组表" FromRole="自由题选项组表" ToRole="自由题空格表" />
+          <NavigationProperty Name="自由题选项表" Relationship="LoveKaoExamModel.自由题选项表_自由题选项组表" FromRole="自由题选项组表" ToRole="自由题选项表" />
+        </EntityType>
+        <Association Name="绑定账号表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.用户表" Multiplicity="1" />
+          <End Role="绑定账号表" Type="LoveKaoExamModel.绑定账号表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="绑定账号表">
+              <PropertyRef Name="本地账号ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="部门表_部门表">
+          <End Role="部门表" Type="LoveKaoExamModel.部门表" Multiplicity="0..1" />
+          <End Role="部门表1" Type="LoveKaoExamModel.部门表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="部门表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="部门表1">
+              <PropertyRef Name="上级部门ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="部门表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.用户表" Multiplicity="1" />
+          <End Role="部门表" Type="LoveKaoExamModel.部门表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="部门表">
+              <PropertyRef Name="添加人ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="用户表_部门表">
+          <End Role="部门表" Type="LoveKaoExamModel.部门表" Multiplicity="0..1" />
+          <End Role="用户表" Type="LoveKaoExamModel.用户表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="部门表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="用户表">
+              <PropertyRef Name="部门ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生单选题回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.考生考试回答表" Multiplicity="1" />
+          <End Role="考生单选题回答表" Type="LoveKaoExamModel.考生单选题回答表" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生单选题回答表">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生多空选择题回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.考生考试回答表" Multiplicity="1" />
+          <End Role="考生多空选择题回答表" Type="LoveKaoExamModel.考生多空选择题回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生多空选择题回答表">
+              <PropertyRef Name="考生考试回答ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生多选题回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.考生考试回答表" Multiplicity="1" />
+          <End Role="考生多选题回答表" Type="LoveKaoExamModel.考生多选题回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生多选题回答表">
+              <PropertyRef Name="考生考试回答ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生范围表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.用户表" Multiplicity="1" />
+          <End Role="考生范围表" Type="LoveKaoExamModel.考生范围表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生范围表">
+              <PropertyRef Name="考生ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="会员填空题回答_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.考生考试回答表" Multiplicity="1" />
+          <End Role="考生填空题回答表" Type="LoveKaoExamModel.考生填空题回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生填空题回答表">
+              <PropertyRef Name="考生考试回答ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生考试回答表_考生做过的试卷表">
+          <End Role="考生做过的试卷表" Type="LoveKaoExamModel.考生做过的试卷表" Multiplicity="1" />
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.考生考试回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="考生做过的试卷表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生考试回答表">
+              <PropertyRef Name="考生做过的试卷ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生考试回答表_试卷大题中试题表">
+          <End Role="试卷大题中试题表" Type="LoveKaoExamModel.试卷大题中试题表" Multiplicity="1" />
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.考生考试回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试卷大题中试题表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生考试回答表">
+              <PropertyRef Name="试卷大题中试题ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生连线题回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.考生考试回答表" Multiplicity="1" />
+          <End Role="考生连线题回答表" Type="LoveKaoExamModel.考生连线题回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生连线题回答表">
+              <PropertyRef Name="考生考试回答ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生判断题回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.考生考试回答表" Multiplicity="1" />
+          <End Role="考生判断题回答表" Type="LoveKaoExamModel.考生判断题回答表" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生判断题回答表">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生问答题回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.考生考试回答表" Multiplicity="1" />
+          <End Role="考生问答题回答表" Type="LoveKaoExamModel.考生问答题回答表" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生问答题回答表">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生选词填空回答表_考生考试回答表">
+          <End Role="考生考试回答表" Type="LoveKaoExamModel.考生考试回答表" Multiplicity="1" />
+          <End Role="考生选词填空回答表" Type="LoveKaoExamModel.考生选词填空回答表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="考生考试回答表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生选词填空回答表">
+              <PropertyRef Name="考生考试回答ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考生做过的试卷表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.用户表" Multiplicity="1" />
+          <End Role="考生做过的试卷表" Type="LoveKaoExamModel.考生做过的试卷表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考生做过的试卷表">
+              <PropertyRef Name="考生ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考试设置表_试卷内容表">
+          <End Role="试卷内容表" Type="LoveKaoExamModel.试卷内容表" Multiplicity="1" />
+          <End Role="考试设置表" Type="LoveKaoExamModel.考试设置表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试卷内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考试设置表">
+              <PropertyRef Name="试卷内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="考试设置表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.用户表" Multiplicity="1" />
+          <End Role="考试设置表" Type="LoveKaoExamModel.考试设置表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="考试设置表">
+              <PropertyRef Name="设置人ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="连线题答案表_连线题选项表">
+          <End Role="连线题选项表" Type="LoveKaoExamModel.连线题选项表" Multiplicity="1" />
+          <End Role="连线题答案表" Type="LoveKaoExamModel.连线题答案表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="连线题选项表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="连线题答案表">
+              <PropertyRef Name="左边ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="连线题答案表_试题内容表">
+          <End Role="试题内容表" Type="LoveKaoExamModel.试题内容表" Multiplicity="1" />
+          <End Role="连线题答案表" Type="LoveKaoExamModel.连线题答案表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试题内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="连线题答案表">
+              <PropertyRef Name="试题内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="连线题选项表_试题内容表">
+          <End Role="试题内容表" Type="LoveKaoExamModel.试题内容表" Multiplicity="1" />
+          <End Role="连线题选项表" Type="LoveKaoExamModel.连线题选项表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试题内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="连线题选项表">
+              <PropertyRef Name="试题内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="练习设置表_试卷内容表">
+          <End Role="试卷内容表" Type="LoveKaoExamModel.试卷内容表" Multiplicity="1" />
+          <End Role="练习设置表" Type="LoveKaoExamModel.练习设置表" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="试卷内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="练习设置表">
+              <PropertyRef Name="试卷内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="判断题答案表_试题内容表">
+          <End Role="试题内容表" Type="LoveKaoExamModel.试题内容表" Multiplicity="1" />
+          <End Role="判断题答案表" Type="LoveKaoExamModel.判断题答案表" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="试题内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="判断题答案表">
+              <PropertyRef Name="试题内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试卷大题中试题表_试卷中大题表">
+          <End Role="试卷中大题表" Type="LoveKaoExamModel.试卷中大题表" Multiplicity="1" />
+          <End Role="试卷大题中试题表" Type="LoveKaoExamModel.试卷大题中试题表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试卷中大题表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试卷大题中试题表">
+              <PropertyRef Name="试卷中大题ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试卷内容表_试卷外部信息表">
+          <End Role="试卷外部信息表" Type="LoveKaoExamModel.试卷外部信息表" Multiplicity="1" />
+          <End Role="试卷内容表" Type="LoveKaoExamModel.试卷内容表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试卷外部信息表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试卷内容表">
+              <PropertyRef Name="试卷外部信息ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试卷内容表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.用户表" Multiplicity="1" />
+          <End Role="试卷内容表" Type="LoveKaoExamModel.试卷内容表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试卷内容表">
+              <PropertyRef Name="提交人ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试卷中大题表_试卷内容表">
+          <End Role="试卷内容表" Type="LoveKaoExamModel.试卷内容表" Multiplicity="1" />
+          <End Role="试卷中大题表" Type="LoveKaoExamModel.试卷中大题表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试卷内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试卷中大题表">
+              <PropertyRef Name="试卷内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试卷外部信息表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.用户表" Multiplicity="1" />
+          <End Role="试卷外部信息表" Type="LoveKaoExamModel.试卷外部信息表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试卷外部信息表">
+              <PropertyRef Name="创建人ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试题内容表_试题内容表">
+          <End Role="试题内容表" Type="LoveKaoExamModel.试题内容表" Multiplicity="0..1" />
+          <End Role="试题内容表1" Type="LoveKaoExamModel.试题内容表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试题内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试题内容表1">
+              <PropertyRef Name="父试题内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="试题外部信息表_试题内容表">
+          <End Role="试题外部信息表" Type="LoveKaoExamModel.试题外部信息表" Multiplicity="1" />
+          <End Role="试题内容表" Type="LoveKaoExamModel.试题内容表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试题外部信息表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="试题内容表">
+              <PropertyRef Name="试题外部信息ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="问答题答案表_试题内容表">
+          <End Role="试题内容表" Type="LoveKaoExamModel.试题内容表" Multiplicity="1" />
+          <End Role="问答题答案表" Type="LoveKaoExamModel.问答题答案表" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="试题内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="问答题答案表">
+              <PropertyRef Name="试题内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="自由题空格表_试题内容表">
+          <End Role="试题内容表" Type="LoveKaoExamModel.试题内容表" Multiplicity="1" />
+          <End Role="自由题空格表" Type="LoveKaoExamModel.自由题空格表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="试题内容表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="自由题空格表">
+              <PropertyRef Name="试题内容ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="系统分类表_用户表">
+          <End Role="用户表" Type="LoveKaoExamModel.用户表" Multiplicity="1" />
+          <End Role="系统分类表" Type="LoveKaoExamModel.系统分类表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="用户表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="系统分类表">
+              <PropertyRef Name="操作人ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="系统分类上下级关系表_系统分类表">
+          <End Role="系统分类表" Type="LoveKaoExamModel.系统分类表" Multiplicity="1" />
+          <End Role="系统分类上下级关系表" Type="LoveKaoExamModel.系统分类上下级关系表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="系统分类表">
+              <PropertyRef Name="分类名称" />
+            </Principal>
+            <Dependent Role="系统分类上下级关系表">
+              <PropertyRef Name="系统分类名称" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="自由题空格表_自由题选项组表">
+          <End Role="自由题选项组表" Type="LoveKaoExamModel.自由题选项组表" Multiplicity="0..1" />
+          <End Role="自由题空格表" Type="LoveKaoExamModel.自由题空格表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="自由题选项组表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="自由题空格表">
+              <PropertyRef Name="自由题选项组ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="自由题填空答案表_自由题空格表">
+          <End Role="自由题空格表" Type="LoveKaoExamModel.自由题空格表" Multiplicity="1" />
+          <End Role="自由题填空答案表" Type="LoveKaoExamModel.自由题填空答案表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="自由题空格表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="自由题填空答案表">
+              <PropertyRef Name="自由题空格ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="自由题选项空格答案表_自由题空格表">
+          <End Role="自由题空格表" Type="LoveKaoExamModel.自由题空格表" Multiplicity="1" />
+          <End Role="自由题选项空格答案表" Type="LoveKaoExamModel.自由题选项空格答案表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="自由题空格表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="自由题选项空格答案表">
+              <PropertyRef Name="自由题空格ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="自由题选项表_自由题选项组表">
+          <End Role="自由题选项组表" Type="LoveKaoExamModel.自由题选项组表" Multiplicity="1" />
+          <End Role="自由题选项表" Type="LoveKaoExamModel.自由题选项表" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="自由题选项组表">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="自由题选项表">
+              <PropertyRef Name="自由题选项组ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LoveKaoExamModelStoreContainer" CdmEntityContainer="LoveKaoExamEntities">
+          <EntitySetMapping Name="绑定账号表"><EntityTypeMapping TypeName="LoveKaoExamModel.绑定账号表"><MappingFragment StoreEntitySet="绑定账号表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="本地账号ID" ColumnName="本地账号ID" />
+            <ScalarProperty Name="爱考网账号" ColumnName="爱考网账号" />
+            <ScalarProperty Name="爱考网密码" ColumnName="爱考网密码" />
+            <ScalarProperty Name="爱考网邮箱" ColumnName="爱考网邮箱" />
+            <ScalarProperty Name="绑定时间" ColumnName="绑定时间" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="部门表"><EntityTypeMapping TypeName="LoveKaoExamModel.部门表"><MappingFragment StoreEntitySet="部门表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="名称" ColumnName="名称" />
+            <ScalarProperty Name="上级部门ID" ColumnName="上级部门ID" />
+            <ScalarProperty Name="添加人ID" ColumnName="添加人ID" />
+            <ScalarProperty Name="添加时间" ColumnName="添加时间" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="考生单选题回答表"><EntityTypeMapping TypeName="LoveKaoExamModel.考生单选题回答表"><MappingFragment StoreEntitySet="考生单选题回答表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="回答的选项ID" ColumnName="回答的选项ID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="考生多空选择题回答表"><EntityTypeMapping TypeName="LoveKaoExamModel.考生多空选择题回答表"><MappingFragment StoreEntitySet="考生多空选择题回答表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="考生考试回答ID" ColumnName="考生考试回答ID" />
+            <ScalarProperty Name="该空ID" ColumnName="该空ID" />
+            <ScalarProperty Name="该空的回答ID" ColumnName="该空的回答ID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="考生多选题回答表"><EntityTypeMapping TypeName="LoveKaoExamModel.考生多选题回答表"><MappingFragment StoreEntitySet="考生多选题回答表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="考生考试回答ID" ColumnName="考生考试回答ID" />
+            <ScalarProperty Name="回答的选项ID" ColumnName="回答的选项ID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="考生范围表"><EntityTypeMapping TypeName="LoveKaoExamModel.考生范围表"><MappingFragment StoreEntitySet="考生范围表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="相关ID" ColumnName="相关ID" />
+            <ScalarProperty Name="考生ID" ColumnName="考生ID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="考生考试回答表"><EntityTypeMapping TypeName="LoveKaoExamModel.考生考试回答表"><MappingFragment StoreEntitySet="考生考试回答表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="考生做过的试卷ID" ColumnName="考生做过的试卷ID" />
+            <ScalarProperty Name="试卷大题中试题ID" ColumnName="试卷大题中试题ID" />
+            <ScalarProperty Name="该题的用时" ColumnName="该题的用时" />
+            <ScalarProperty Name="该题的得分" ColumnName="该题的得分" />
+            <ScalarProperty Name="评语" ColumnName="评语" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="考生连线题回答表"><EntityTypeMapping TypeName="LoveKaoExamModel.考生连线题回答表"><MappingFragment StoreEntitySet="考生连线题回答表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="考生考试回答ID" ColumnName="考生考试回答ID" />
+            <ScalarProperty Name="连线题左边小题ID" ColumnName="连线题左边小题ID" />
+            <ScalarProperty Name="回答的选项ID" ColumnName="回答的选项ID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="考生判断题回答表"><EntityTypeMapping TypeName="LoveKaoExamModel.考生判断题回答表"><MappingFragment StoreEntitySet="考生判断题回答表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="回答的内容" ColumnName="回答的内容" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="考生填空题回答表"><EntityTypeMapping TypeName="LoveKaoExamModel.考生填空题回答表"><MappingFragment StoreEntitySet="考生填空题回答表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="考生考试回答ID" ColumnName="考生考试回答ID" />
+            <ScalarProperty Name="回答的内容" ColumnName="回答的内容" />
+            <ScalarProperty Name="该空ID" ColumnName="该空ID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="考生问答题回答表"><EntityTypeMapping TypeName="LoveKaoExamModel.考生问答题回答表"><MappingFragment StoreEntitySet="考生问答题回答表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="回答的内容" ColumnName="回答的内容" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="考生选词填空回答表"><EntityTypeMapping TypeName="LoveKaoExamModel.考生选词填空回答表"><MappingFragment StoreEntitySet="考生选词填空回答表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="考生考试回答ID" ColumnName="考生考试回答ID" />
+            <ScalarProperty Name="该空ID" ColumnName="该空ID" />
+            <ScalarProperty Name="该空的回答ID" ColumnName="该空的回答ID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="考生做过的试卷表"><EntityTypeMapping TypeName="LoveKaoExamModel.考生做过的试卷表"><MappingFragment StoreEntitySet="考生做过的试卷表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="考生ID" ColumnName="考生ID" />
+            <ScalarProperty Name="答题开始时间" ColumnName="答题开始时间" />
+            <ScalarProperty Name="答题结束时间" ColumnName="答题结束时间" />
+            <ScalarProperty Name="客观题得分" ColumnName="客观题得分" />
+            <ScalarProperty Name="主观题得分" ColumnName="主观题得分" />
+            <ScalarProperty Name="是否是已提交的试卷" ColumnName="是否是已提交的试卷" />
+            <ScalarProperty Name="批改状态" ColumnName="批改状态" />
+            <ScalarProperty Name="相关ID" ColumnName="相关ID" />
+            <ScalarProperty Name="类型" ColumnName="类型" />
+            <ScalarProperty Name="批改时间" ColumnName="批改时间" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="考试设置表"><EntityTypeMapping TypeName="LoveKaoExamModel.考试设置表"><MappingFragment StoreEntitySet="考试设置表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="试卷内容ID" ColumnName="试卷内容ID" />
+            <ScalarProperty Name="考试开始时间" ColumnName="考试开始时间" />
+            <ScalarProperty Name="考试结束时间" ColumnName="考试结束时间" />
+            <ScalarProperty Name="考试时长" ColumnName="考试时长" />
+            <ScalarProperty Name="及格条件" ColumnName="及格条件" />
+            <ScalarProperty Name="是否公布考试结果" ColumnName="是否公布考试结果" />
+            <ScalarProperty Name="设置人ID" ColumnName="设置人ID" />
+            <ScalarProperty Name="设置时间" ColumnName="设置时间" />
+            <ScalarProperty Name="是否删除" ColumnName="是否删除" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="连线题答案表"><EntityTypeMapping TypeName="LoveKaoExamModel.连线题答案表"><MappingFragment StoreEntitySet="连线题答案表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+            <ScalarProperty Name="左边ID" ColumnName="左边ID" />
+            <ScalarProperty Name="右边ID" ColumnName="右边ID" />
+            <ScalarProperty Name="顺序" ColumnName="顺序" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="连线题选项表"><EntityTypeMapping TypeName="LoveKaoExamModel.连线题选项表"><MappingFragment StoreEntitySet="连线题选项表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+            <ScalarProperty Name="选项内容HTML" ColumnName="选项内容HTML" />
+            <ScalarProperty Name="选项内容文本" ColumnName="选项内容文本" />
+            <ScalarProperty Name="连线标记" ColumnName="连线标记" />
+            <ScalarProperty Name="顺序" ColumnName="顺序" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="练习设置表"><EntityTypeMapping TypeName="LoveKaoExamModel.练习设置表"><MappingFragment StoreEntitySet="练习设置表">
+            <ScalarProperty Name="试卷内容ID" ColumnName="试卷内容ID" />
+            <ScalarProperty Name="考试时长" ColumnName="考试时长" />
+            <ScalarProperty Name="及格条件" ColumnName="及格条件" />
+            <ScalarProperty Name="设置人ID" ColumnName="设置人ID" />
+            <ScalarProperty Name="设置时间" ColumnName="设置时间" />
+            <ScalarProperty Name="是否删除" ColumnName="是否删除" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="判断题答案表"><EntityTypeMapping TypeName="LoveKaoExamModel.判断题答案表"><MappingFragment StoreEntitySet="判断题答案表">
+            <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+            <ScalarProperty Name="答案" ColumnName="答案" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="试卷大题中试题表"><EntityTypeMapping TypeName="LoveKaoExamModel.试卷大题中试题表"><MappingFragment StoreEntitySet="试卷大题中试题表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="试卷中大题ID" ColumnName="试卷中大题ID" />
+            <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+            <ScalarProperty Name="每小题分值" ColumnName="每小题分值" />
+            <ScalarProperty Name="顺序" ColumnName="顺序" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="试卷内容表"><EntityTypeMapping TypeName="LoveKaoExamModel.试卷内容表"><MappingFragment StoreEntitySet="试卷内容表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="试卷外部信息ID" ColumnName="试卷外部信息ID" />
+            <ScalarProperty Name="名称" ColumnName="名称" />
+            <ScalarProperty Name="说明" ColumnName="说明" />
+            <ScalarProperty Name="提交人ID" ColumnName="提交人ID" />
+            <ScalarProperty Name="提交时间" ColumnName="提交时间" />
+            <ScalarProperty Name="提交备注" ColumnName="提交备注" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="试卷外部信息表"><EntityTypeMapping TypeName="LoveKaoExamModel.试卷外部信息表"><MappingFragment StoreEntitySet="试卷外部信息表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="名称" ColumnName="名称" />
+            <ScalarProperty Name="说明" ColumnName="说明" />
+            <ScalarProperty Name="创建人ID" ColumnName="创建人ID" />
+            <ScalarProperty Name="创建时间" ColumnName="创建时间" />
+            <ScalarProperty Name="试卷状态Enum" ColumnName="试卷状态Enum" />
+            <ScalarProperty Name="最新更新时间" ColumnName="最新更新时间" />
+            <ScalarProperty Name="总分" ColumnName="总分" />
+            <ScalarProperty Name="试卷内容ID" ColumnName="试卷内容ID" />
+            <ScalarProperty Name="试卷类型" ColumnName="试卷类型" />
+            <ScalarProperty Name="爱考网ID" ColumnName="爱考网ID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="试卷中大题表"><EntityTypeMapping TypeName="LoveKaoExamModel.试卷中大题表"><MappingFragment StoreEntitySet="试卷中大题表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="试卷内容ID" ColumnName="试卷内容ID" />
+            <ScalarProperty Name="名称" ColumnName="名称" />
+            <ScalarProperty Name="说明" ColumnName="说明" />
+            <ScalarProperty Name="顺序" ColumnName="顺序" />
+            <ScalarProperty Name="多选题评分策略" ColumnName="多选题评分策略" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="试题内容表"><EntityTypeMapping TypeName="LoveKaoExamModel.试题内容表"><MappingFragment StoreEntitySet="试题内容表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="解题思路" ColumnName="解题思路" />
+            <ScalarProperty Name="题干HTML" ColumnName="题干HTML" />
+            <ScalarProperty Name="题干文本" ColumnName="题干文本" />
+            <ScalarProperty Name="试题外部信息ID" ColumnName="试题外部信息ID" />
+            <ScalarProperty Name="操作时间" ColumnName="操作时间" />
+            <ScalarProperty Name="操作人ID" ColumnName="操作人ID" />
+            <ScalarProperty Name="小题型Enum" ColumnName="小题型Enum" />
+            <ScalarProperty Name="父试题内容ID" ColumnName="父试题内容ID" />
+            <ScalarProperty Name="本题在复合题中顺序" ColumnName="本题在复合题中顺序" />
+            <ScalarProperty Name="Json字符串" ColumnName="Json字符串" />
+            <ScalarProperty Name="爱考网ID" ColumnName="爱考网ID" />
+            <ScalarProperty Name="难易度" ColumnName="难易度" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="试题外部信息表"><EntityTypeMapping TypeName="LoveKaoExamModel.试题外部信息表"><MappingFragment StoreEntitySet="试题外部信息表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="创建人ID" ColumnName="创建人ID" />
+            <ScalarProperty Name="创建时间" ColumnName="创建时间" />
+            <ScalarProperty Name="最新更新时间" ColumnName="最新更新时间" />
+            <ScalarProperty Name="试题查询内容" ColumnName="试题查询内容" />
+            <ScalarProperty Name="试题显示列" ColumnName="试题显示列" />
+            <ScalarProperty Name="小题型Enum" ColumnName="小题型Enum" />
+            <ScalarProperty Name="试题状态Enum" ColumnName="试题状态Enum" />
+            <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+            <ScalarProperty Name="难易度" ColumnName="难易度" />
+            <ScalarProperty Name="试题类型" ColumnName="试题类型" />
+            <ScalarProperty Name="爱考网ID" ColumnName="爱考网ID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="所属分类表"><EntityTypeMapping TypeName="LoveKaoExamModel.所属分类表"><MappingFragment StoreEntitySet="所属分类表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="相关信息ID" ColumnName="相关信息ID" />
+            <ScalarProperty Name="分类名" ColumnName="分类名" />
+            <ScalarProperty Name="操作人ID" ColumnName="操作人ID" />
+            <ScalarProperty Name="操作时间" ColumnName="操作时间" />
+            <ScalarProperty Name="相关类型" ColumnName="相关类型" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="问答题答案表"><EntityTypeMapping TypeName="LoveKaoExamModel.问答题答案表"><MappingFragment StoreEntitySet="问答题答案表">
+            <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+            <ScalarProperty Name="内容" ColumnName="内容" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="系统分类表"><EntityTypeMapping TypeName="LoveKaoExamModel.系统分类表"><MappingFragment StoreEntitySet="系统分类表">
+            <ScalarProperty Name="分类名称" ColumnName="分类名称" />
+            <ScalarProperty Name="操作人ID" ColumnName="操作人ID" />
+            <ScalarProperty Name="操作时间" ColumnName="操作时间" />
+            <ScalarProperty Name="分类类型" ColumnName="分类类型" />
+            <ScalarProperty Name="分类类别名称" ColumnName="分类类别名称" />
+            <ScalarProperty Name="同义词分类名称" ColumnName="同义词分类名称" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="系统分类上下级关系表"><EntityTypeMapping TypeName="LoveKaoExamModel.系统分类上下级关系表"><MappingFragment StoreEntitySet="系统分类上下级关系表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="系统分类名称" ColumnName="系统分类名称" />
+            <ScalarProperty Name="分类关系名称" ColumnName="分类关系名称" />
+            <ScalarProperty Name="是否上级" ColumnName="是否上级" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="修改成绩记录"><EntityTypeMapping TypeName="LoveKaoExamModel.修改成绩记录"><MappingFragment StoreEntitySet="修改成绩记录">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="会员ID" ColumnName="会员ID" />
+            <ScalarProperty Name="试卷ID" ColumnName="试卷ID" />
+            <ScalarProperty Name="原来的成绩" ColumnName="原来的成绩" />
+            <ScalarProperty Name="修改后的成绩" ColumnName="修改后的成绩" />
+            <ScalarProperty Name="修改时间" ColumnName="修改时间" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="用户表"><EntityTypeMapping TypeName="LoveKaoExamModel.用户表"><MappingFragment StoreEntitySet="用户表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="编号" ColumnName="编号" />
+            <ScalarProperty Name="密码" ColumnName="密码" />
+            <ScalarProperty Name="姓名" ColumnName="姓名" />
+            <ScalarProperty Name="性别" ColumnName="性别" />
+            <ScalarProperty Name="邮箱" ColumnName="邮箱" />
+            <ScalarProperty Name="部门ID" ColumnName="部门ID" />
+            <ScalarProperty Name="角色" ColumnName="角色" />
+            <ScalarProperty Name="添加时间" ColumnName="添加时间" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="自由题空格表"><EntityTypeMapping TypeName="LoveKaoExamModel.自由题空格表"><MappingFragment StoreEntitySet="自由题空格表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+            <ScalarProperty Name="顺序" ColumnName="顺序" />
+            <ScalarProperty Name="自由题选项组ID" ColumnName="自由题选项组ID" />
+            <ScalarProperty Name="空格类型" ColumnName="空格类型" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="自由题填空答案表"><EntityTypeMapping TypeName="LoveKaoExamModel.自由题填空答案表"><MappingFragment StoreEntitySet="自由题填空答案表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="自由题空格ID" ColumnName="自由题空格ID" />
+            <ScalarProperty Name="该空答案" ColumnName="该空答案" />
+            <ScalarProperty Name="顺序" ColumnName="顺序" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="自由题选项表"><EntityTypeMapping TypeName="LoveKaoExamModel.自由题选项表"><MappingFragment StoreEntitySet="自由题选项表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="选项内容HTML" ColumnName="选项内容HTML" />
+            <ScalarProperty Name="选项内容文本" ColumnName="选项内容文本" />
+            <ScalarProperty Name="顺序" ColumnName="顺序" />
+            <ScalarProperty Name="自由题选项组ID" ColumnName="自由题选项组ID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="自由题选项空格答案表"><EntityTypeMapping TypeName="LoveKaoExamModel.自由题选项空格答案表"><MappingFragment StoreEntitySet="自由题选项空格答案表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+            <ScalarProperty Name="自由题空格ID" ColumnName="自由题空格ID" />
+            <ScalarProperty Name="自由题选项ID" ColumnName="自由题选项ID" />
+            <ScalarProperty Name="顺序" ColumnName="顺序" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="自由题选项组表"><EntityTypeMapping TypeName="LoveKaoExamModel.自由题选项组表"><MappingFragment StoreEntitySet="自由题选项组表">
+            <ScalarProperty Name="ID" ColumnName="ID" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1">
+        <EntityTypeShape EntityType="LoveKaoExamModel.绑定账号表" Width="1.5" PointX="3" PointY="15.5" Height="2.1280729166666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.部门表" Width="1.5" PointX="3" PointY="18.375" Height="2.465312499999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.考生单选题回答表" Width="1.5" PointX="7.5" PointY="16.25" Height="1.453593749999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.考生多空选择题回答表" Width="1.5" PointX="7.5" PointY="23.5" Height="1.7908333333333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.考生多选题回答表" Width="1.5" PointX="7.5" PointY="26" Height="1.6222135416666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.考生范围表" Width="1.5" PointX="3" PointY="21.5" Height="1.6222135416666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.考生考试回答表" Width="1.5" PointX="5.25" PointY="23.625" Height="3.6456510416666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.考生连线题回答表" Width="1.5" PointX="7.5" PointY="28.375" Height="1.7908333333333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.考生判断题回答表" Width="1.5" PointX="7.5" PointY="31" Height="1.453593749999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.考生填空题回答表" Width="1.5" PointX="7.5" PointY="33.125" Height="1.7908333333333246" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.考生问答题回答表" Width="1.5" PointX="7.5" PointY="35.75" Height="1.4535937500000102" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.考生选词填空回答表" Width="1.5" PointX="7.5" PointY="37.875" Height="1.7908333333333246" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.考生做过的试卷表" Width="1.5" PointX="3" PointY="23.875" Height="3.1397916666666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.考试设置表" Width="1.5" PointX="6" PointY="19.25" Height="2.971171874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.连线题答案表" Width="1.5" PointX="16.5" PointY="7.875" Height="2.1280729166666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.连线题选项表" Width="1.5" PointX="14.25" PointY="8.375" Height="2.2966927083333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.练习设置表" Width="1.5" PointX="7.5" PointY="41.125" Height="2.1280729166666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.判断题答案表" Width="1.5" PointX="14.25" PointY="11.5" Height="1.4535937500000031" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.试卷大题中试题表" Width="1.5" PointX="9.75" PointY="44" Height="2.1280729166666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.试卷内容表" Width="1.5" PointX="5.25" PointY="30.125" Height="2.971171874999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.试卷外部信息表" Width="1.5" PointX="3" PointY="37.5" Height="3.1397916666666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.试卷中大题表" Width="1.5" PointX="7.5" PointY="44" Height="2.2966927083333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.试题内容表" Width="1.5" PointX="12" PointY="6.625" Height="4.48875000000001" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.试题外部信息表" Width="1.5" PointX="9.75" PointY="7.375" Height="3.1397916666666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.所属分类表" Width="1.5" PointX="0.75" PointY="0.75" Height="1.9594531250000102" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.问答题答案表" Width="1.5" PointX="14.25" PointY="13.625" Height="1.453593749999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.系统分类表" Width="1.5" PointX="3" PointY="41.375" Height="2.2966927083333388" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.系统分类上下级关系表" Width="1.5" PointX="5.25" PointY="41.625" Height="1.7908333333333246" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.修改成绩记录" Width="1.5" PointX="2.75" PointY="0.75" Height="1.9594531250000102" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.用户表" Width="1.5" PointX="0.75" PointY="22.75" Height="3.9828906250000102" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.自由题空格表" Width="1.5" PointX="14.25" PointY="4.625" Height="2.465312499999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.自由题填空答案表" Width="1.5" PointX="16.5" PointY="3.75" Height="1.7908333333333246" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.自由题选项表" Width="1.5" PointX="14.25" PointY="1.875" Height="1.959453124999996" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.自由题选项空格答案表" Width="1.5" PointX="16.5" PointY="11.25" Height="1.7908333333333246" IsExpanded="true" />
+        <EntityTypeShape EntityType="LoveKaoExamModel.自由题选项组表" Width="1.5" PointX="12" PointY="4.125" Height="1.4535937500000102" IsExpanded="true" />
+        <AssociationConnector Association="LoveKaoExamModel.绑定账号表_用户表" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="22.75" />
+          <ConnectorPoint PointX="1.5" PointY="16.564036458333334" />
+          <ConnectorPoint PointX="3" PointY="16.564036458333334" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.部门表_部门表" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.5319230769230767" PointY="20.840312499999996" />
+          <ConnectorPoint PointX="3.5319230769230767" PointY="21.090312499999996" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="21.090312499999996" />
+          <ConnectorPoint PointX="3.9784615384615383" PointY="20.840312499999996" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.部门表_用户表" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.9062525" PointY="22.75" />
+          <ConnectorPoint PointX="1.9062525" PointY="19.607656249999998" />
+          <ConnectorPoint PointX="3" PointY="19.607656249999998" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.用户表_部门表" ManuallyRouted="false">
+          <ConnectorPoint PointX="3" PointY="20.255236874999998" />
+          <ConnectorPoint PointX="1.9895858333333332" PointY="20.255236874999998" />
+          <ConnectorPoint PointX="1.8229191666666667" PointY="20.255236874999998" />
+          <ConnectorPoint PointX="1.5833333333333333" PointY="20.255236874999998" />
+          <ConnectorPoint PointX="1.4166666666666667" PointY="20.255236874999998" />
+          <ConnectorPoint PointX="1.0937475" PointY="20.255236874999998" />
+          <ConnectorPoint PointX="1.0937475" PointY="22.75" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.考生单选题回答表_考生考试回答表" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.59375" PointY="23.625" />
+          <ConnectorPoint PointX="5.59375" PointY="16.976796874999998" />
+          <ConnectorPoint PointX="7.5" PointY="16.976796874999998" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.考生多空选择题回答表_考生考试回答表" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="24.457916666666666" />
+          <ConnectorPoint PointX="7.088541666666667" PointY="24.457916666666666" />
+          <ConnectorPoint PointX="7.255208333333333" PointY="24.457916666666666" />
+          <ConnectorPoint PointX="7.5" PointY="24.457916666666666" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.考生多选题回答表_考生考试回答表" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="26.635325520833334" />
+          <ConnectorPoint PointX="7.088541666666667" PointY="26.635325520833334" />
+          <ConnectorPoint PointX="7.255208333333333" PointY="26.635325520833334" />
+          <ConnectorPoint PointX="7.5" PointY="26.635325520833334" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.考生范围表_用户表" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="22.936106770833334" />
+          <ConnectorPoint PointX="3" PointY="22.936106770833334" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.会员填空题回答_考生考试回答表" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="27.247573118589742" />
+          <ConnectorPoint PointX="7.1129494349011217" PointY="27.610522553490863" />
+          <ConnectorPoint PointX="7.2308005650988791" PointY="27.72837368368862" />
+          <ConnectorPoint PointX="7.34375" PointY="27.841323118589742" />
+          <ConnectorPoint PointX="7.34375" PointY="34.020416666666662" />
+          <ConnectorPoint PointX="7.5" PointY="34.020416666666662" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.考生考试回答表_考生做过的试卷表" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="25.444895833333334" />
+          <ConnectorPoint PointX="5.25" PointY="25.444895833333334" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.考生考试回答表_试卷大题中试题表" ManuallyRouted="false">
+          <ConnectorPoint PointX="10.5" PointY="44" />
+          <ConnectorPoint PointX="10.5" PointY="25.645416666666666" />
+          <ConnectorPoint PointX="7.255208333333333" PointY="25.645416666666666" />
+          <ConnectorPoint PointX="7.088541666666667" PointY="25.645416666666666" />
+          <ConnectorPoint PointX="6.75" PointY="25.645416666666666" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.考生连线题回答表_考生考试回答表" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="27.223342349358973" />
+          <ConnectorPoint PointX="7.1129494349011217" PointY="27.586291784260094" />
+          <ConnectorPoint PointX="7.2308005650988791" PointY="27.704142914457851" />
+          <ConnectorPoint PointX="7.40625" PointY="27.879592349358973" />
+          <ConnectorPoint PointX="7.40625" PointY="29.270416666666666" />
+          <ConnectorPoint PointX="7.5" PointY="29.270416666666666" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.考生判断题回答表_考生考试回答表" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.7488461538461531" PointY="27.270651041666667" />
+          <ConnectorPoint PointX="7.1129494349011217" PointY="27.634754322721637" />
+          <ConnectorPoint PointX="7.2308005650988791" PointY="27.752605452919394" />
+          <ConnectorPoint PointX="7.28125" PointY="27.803054887820515" />
+          <ConnectorPoint PointX="7.28125" PointY="31.726796874999998" />
+          <ConnectorPoint PointX="7.5" PointY="31.726796874999998" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.考生问答题回答表_考生考试回答表" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="27.264880810897434" />
+          <ConnectorPoint PointX="7.21875" PointY="27.733630810897434" />
+          <ConnectorPoint PointX="7.21875" PointY="36.476796875000005" />
+          <ConnectorPoint PointX="7.322916666666667" PointY="36.476796875000005" />
+          <ConnectorPoint PointX="7.489583333333333" PointY="36.476796875000005" />
+          <ConnectorPoint PointX="7.5" PointY="36.476796875000005" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.考生选词填空回答表_考生考试回答表" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.7003846153846149" PointY="27.270651041666667" />
+          <ConnectorPoint PointX="7.125" PointY="27.695266426282053" />
+          <ConnectorPoint PointX="7.125" PointY="38.770416666666662" />
+          <ConnectorPoint PointX="7.197916666666667" PointY="38.770416666666662" />
+          <ConnectorPoint PointX="7.489583333333333" PointY="38.770416666666662" />
+          <ConnectorPoint PointX="7.5" PointY="38.770416666666662" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.考生做过的试卷表_用户表" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="25.303945312500005" />
+          <ConnectorPoint PointX="3" PointY="25.303945312500005" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.考试设置表_试卷内容表" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="30.894645937499998" />
+          <ConnectorPoint PointX="7.171875" PointY="30.894645937499998" />
+          <ConnectorPoint PointX="7.171875" PointY="22.221171874999996" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.考试设置表_用户表" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="23.373606770833334" />
+          <ConnectorPoint PointX="5.510416666666667" PointY="23.373606770833334" />
+          <ConnectorPoint PointX="5.677083333333333" PointY="23.373606770833334" />
+          <ConnectorPoint PointX="6.960935" PointY="23.373606770833334" />
+          <ConnectorPoint PointX="6.960935" PointY="22.221171874999996" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.连线题答案表_连线题选项表" ManuallyRouted="false">
+          <ConnectorPoint PointX="15.75" PointY="9.1890364583333337" />
+          <ConnectorPoint PointX="16.041666666666668" PointY="9.1890364583333337" />
+          <ConnectorPoint PointX="16.208333333333332" PointY="9.1890364583333337" />
+          <ConnectorPoint PointX="16.5" PointY="9.1890364583333337" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.连线题答案表_试题内容表" ManuallyRouted="false">
+          <ConnectorPoint PointX="13.5" PointY="8.09375" />
+          <ConnectorPoint PointX="16.041666666666668" PointY="8.09375" />
+          <ConnectorPoint PointX="16.208333333333332" PointY="8.09375" />
+          <ConnectorPoint PointX="16.5" PointY="8.09375" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.连线题选项表_试题内容表" ManuallyRouted="false">
+          <ConnectorPoint PointX="13.5" PointY="9.52334635416667" />
+          <ConnectorPoint PointX="14.25" PointY="9.52334635416667" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.练习设置表_试卷内容表" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="33.069632413461534" />
+          <ConnectorPoint PointX="7.0660744349011217" PointY="33.385706848362652" />
+          <ConnectorPoint PointX="7.2776755650988791" PointY="33.597307978560416" />
+          <ConnectorPoint PointX="7.2848244349011217" PointY="33.604456848362652" />
+          <ConnectorPoint PointX="7.4026755650988791" PointY="33.722307978560416" />
+          <ConnectorPoint PointX="7.40625" PointY="33.725882413461534" />
+          <ConnectorPoint PointX="7.40625" PointY="42.189036458333334" />
+          <ConnectorPoint PointX="7.5" PointY="42.189036458333334" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.判断题答案表_试题内容表" ManuallyRouted="false">
+          <ConnectorPoint PointX="12.75" PointY="11.11375000000001" />
+          <ConnectorPoint PointX="12.75" PointY="12.226796875000002" />
+          <ConnectorPoint PointX="13.072919166666667" PointY="12.226796875000002" />
+          <ConnectorPoint PointX="13.239585833333335" PointY="12.226796875000002" />
+          <ConnectorPoint PointX="14.25" PointY="12.226796875000002" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.试卷大题中试题表_试卷中大题表" ManuallyRouted="false">
+          <ConnectorPoint PointX="9" PointY="45.064036458333334" />
+          <ConnectorPoint PointX="9.75" PointY="45.064036458333334" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.试卷内容表_试卷外部信息表" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="37.5" />
+          <ConnectorPoint PointX="3.75" PointY="31.610585937499998" />
+          <ConnectorPoint PointX="5.25" PointY="31.610585937499998" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.试卷内容表_用户表" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="26.73289062500001" />
+          <ConnectorPoint PointX="1.5" PointY="30.836540468750005" />
+          <ConnectorPoint PointX="1.8229191666666667" PointY="30.836540468750005" />
+          <ConnectorPoint PointX="1.9895858333333332" PointY="30.836540468750005" />
+          <ConnectorPoint PointX="5.25" PointY="30.836540468750005" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.试卷中大题表_试卷内容表" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="33.088093951923078" />
+          <ConnectorPoint PointX="7.0660744349011217" PointY="33.404168386824196" />
+          <ConnectorPoint PointX="7.2776755650988791" PointY="33.61576951702196" />
+          <ConnectorPoint PointX="7.28125" PointY="33.619343951923078" />
+          <ConnectorPoint PointX="7.28125" PointY="45.148346354166669" />
+          <ConnectorPoint PointX="7.5" PointY="45.148346354166669" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.试卷外部信息表_用户表" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.9062525" PointY="26.73289062500001" />
+          <ConnectorPoint PointX="1.9062525" PointY="39.069895833333334" />
+          <ConnectorPoint PointX="3" PointY="39.069895833333334" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.试题内容表_试题内容表" ManuallyRouted="false">
+          <ConnectorPoint PointX="12.531923076923077" PointY="6.625" />
+          <ConnectorPoint PointX="12.531923076923077" PointY="6.375" />
+          <ConnectorPoint PointX="12.978461538461538" PointY="6.375" />
+          <ConnectorPoint PointX="12.978461538461538" PointY="6.625" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.试题外部信息表_试题内容表" ManuallyRouted="false">
+          <ConnectorPoint PointX="11.25" PointY="8.9448958333333337" />
+          <ConnectorPoint PointX="12" PointY="8.9448958333333337" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.问答题答案表_试题内容表" ManuallyRouted="false">
+          <ConnectorPoint PointX="13.1562525" PointY="11.11375000000001" />
+          <ConnectorPoint PointX="13.1562525" PointY="14.351796874999998" />
+          <ConnectorPoint PointX="14.25" PointY="14.351796874999998" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.自由题空格表_试题内容表" ManuallyRouted="false">
+          <ConnectorPoint PointX="13.5" PointY="6.857656249999998" />
+          <ConnectorPoint PointX="14.25" PointY="6.857656249999998" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.系统分类表_用户表" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.0937475" PointY="26.73289062500001" />
+          <ConnectorPoint PointX="1.0937475" PointY="42.523346354166669" />
+          <ConnectorPoint PointX="3" PointY="42.523346354166669" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.系统分类上下级关系表_系统分类表" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="42.520416666666662" />
+          <ConnectorPoint PointX="5.25" PointY="42.520416666666662" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.自由题空格表_自由题选项组表" ManuallyRouted="false">
+          <ConnectorPoint PointX="13.5" PointY="5.1017968750000051" />
+          <ConnectorPoint PointX="14.25" PointY="5.1017968750000051" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.自由题填空答案表_自由题空格表" ManuallyRouted="false">
+          <ConnectorPoint PointX="15.75" PointY="5.0829166666666623" />
+          <ConnectorPoint PointX="16.5" PointY="5.0829166666666623" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.自由题选项空格答案表_自由题空格表" ManuallyRouted="false">
+          <ConnectorPoint PointX="15.75" PointY="7.08915765384615" />
+          <ConnectorPoint PointX="16.125" PointY="7.4641576538461507" />
+          <ConnectorPoint PointX="16.125" PointY="12.145416666666662" />
+          <ConnectorPoint PointX="16.5" PointY="12.145416666666662" />
+        </AssociationConnector>
+        <AssociationConnector Association="LoveKaoExamModel.自由题选项表_自由题选项组表" ManuallyRouted="false">
+          <ConnectorPoint PointX="12.75" PointY="4.125" />
+          <ConnectorPoint PointX="12.75" PointY="2.854726562499998" />
+          <ConnectorPoint PointX="14.25" PointY="2.854726562499998" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

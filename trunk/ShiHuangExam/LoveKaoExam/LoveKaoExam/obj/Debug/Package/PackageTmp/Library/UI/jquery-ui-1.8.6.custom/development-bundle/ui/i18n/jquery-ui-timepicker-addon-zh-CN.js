@@ -1,0 +1,1 @@
+jQuery(function(a){a.timepicker.regional["zh-CN"]={currentText:"当前",ampm:false,timeFormat:"hh:mm tt",timeOnlyTitle:"选择时间",timeText:"时间",hourText:"小时",minuteText:"分钟",secondText:"秒"};a.timepicker.setDefaults(a.timepicker.regional["zh-CN"])})

@@ -1,0 +1,2 @@
+﻿
+$bar.css("background-repeat", 'no-repeat');

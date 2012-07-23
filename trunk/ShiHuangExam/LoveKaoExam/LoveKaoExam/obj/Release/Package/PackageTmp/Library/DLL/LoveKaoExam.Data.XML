@@ -1,0 +1,2824 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LoveKaoExam.Data</name>
+    </assembly>
+    <members>
+        <member name="M:LoveKaoExam.Data.问答题.类映射表赋值">
+            <summary>
+            界面无需使用此方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LoveKaoExam.Data.导入Excel.导入excel(System.IO.Stream,System.Int32)">
+            <summary>
+            返回已存在的编号集合
+            </summary>
+            <param name="fs">Excel文件流</param>
+            <param name="type">0学生，1员工</param>
+            <returns></returns>
+        </member>
+        <member name="M:LoveKaoExam.Data.选词填空.类映射表赋值">
+            <summary>
+            界面无需使用此方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LoveKaoExam.Data.多选题.类映射表赋值">
+            <summary>
+            界面无需使用此方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷大题中试题.子小题集合">
+            <summary>
+            复合题和多题干共选项题时读此属性
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.练习设置.判断某试卷是否能设置练习(System.Guid)">
+            <summary>
+            返回true能，false不能
+            </summary>      
+        </member>
+        <member name="M:LoveKaoExam.Data.用户.登录(System.String,System.String,LoveKaoExam.Data.用户@)">
+            <summary>
+            返回0成功，1编号不存在,2密码错误
+            </summary>        
+        </member>
+        <member name="M:LoveKaoExam.Data.用户.绑定新账号(System.String,System.String,System.String)">
+            <summary>
+            返回0成功，1用户名已被他人使用，2邮箱已被他人使用，3已经绑定过账号
+            </summary>      
+        </member>
+        <member name="M:LoveKaoExam.Data.用户.绑定已有账号(System.String,System.String)">
+            <summary>
+            返回0成功，1账号不存在，2密码错误，3账号已绑定过，4绑定账号被禁用,5禁止绑定任何账号
+            </summary>    
+        </member>
+        <member name="M:LoveKaoExam.Data.用户.更改绑定新账号(System.String,System.String,System.String)">
+            <summary>
+            返回0成功，1用户名已被他人使用，2邮箱已被他人使用
+            </summary>       
+        </member>
+        <member name="M:LoveKaoExam.Data.用户.更改绑定已有账号(System.String,System.String)">
+            <summary>
+            返回0成功，1账号不存在，2密码错误，3已绑定过，4绑定账号被禁用,5禁止绑定任何账号
+            </summary>    
+        </member>
+        <member name="M:LoveKaoExam.Data.用户.解除绑定账号">
+            <summary>
+            返回0成功，1失败
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.用户.修改用户密码(System.Guid,System.String,System.String)">
+            <summary>
+            返回0成功,1原密码错误
+            </summary>    
+        </member>
+        <member name="M:LoveKaoExam.Data.用户.添加用户(LoveKaoExam.Data.用户)">
+            <summary>
+            返回0成功，1编号重复，2邮箱重复
+            </summary>      
+        </member>
+        <member name="M:LoveKaoExam.Data.用户.得到用户绑定信息(System.Guid,LoveKao.Page.LKPageException@)">
+            <summary>
+            返回null说明未绑定
+            </summary>
+            <param name="result">0正常，1绑定账号被禁用，2禁止绑定任何账号</param>
+        </member>
+        <member name="M:LoveKaoExam.Data.用户.修改用户个人信息(LoveKaoExam.Data.用户)">
+            <summary>
+            返回0成功，1编号重复，2邮箱重复
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.用户.查询用户(System.Int32,System.Nullable{System.Guid},System.String,System.Int32,System.Int32,System.Int32@)">
+            <param name="用户类型">0考生，1考官，2管理员</param>     
+        </member>
+        <member name="P:LoveKaoExam.Data.用户.性别">
+            <summary>
+             0保密，1男，2女
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户.角色">
+            <summary>
+            0考生，1考官，2管理员
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生.ListConvertToDataTable``1(System.Collections.Generic.List{``0},System.Collections.Generic.List{System.String})">
+            <summary>
+            List集合转化为DataTable
+            </summary>
+            <param name="list">泛型集合</param>
+            <param name="listName">不被转化的属性名集合</param>
+            <returns></returns>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生.CreateTable``1(System.Collections.Generic.List{System.String})">
+            <param name="listName">不被转化的属性名集合</param>
+        </member>
+        <member name="M:LoveKaoExam.Data.判断题.类映射表赋值">
+            <summary>
+            界面无需使用此方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:LoveKaoExam.Data.判断题.答案">
+            <summary>
+            true正确，false错误
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.分类.分类处理(System.Collections.Generic.List{System.String})">
+            <summary>
+            去掉重复的，空的，和父级分类
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.分类.分类类型">
+            <summary>
+            0代表系统分类，1代表扩展分类
+            </summary>       
+        </member>
+        <member name="P:LoveKaoExam.Data.分类相关联分类.是类别的父分类数量">
+            <summary>
+            不包含父分类的同义词
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.完形填空.类映射表赋值">
+            <summary>
+            界面无需使用此方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LoveKaoExam.Data.异常处理.抛出异常(System.Int32)">
+            <param name="类型">-1未绑定,1绑定账号被禁用，2禁止绑定任何账号，3没有足够的积分下载</param>
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷设置.得到某试卷设置根据ID(System.Guid,System.Int32)">
+            <param name="设置ID">练习设置为试卷内容ID，考试设置为考试设置ID</param>
+            <param name="设置类型">0练习设置，1考试设置</param>
+            <returns></returns>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷设置.设置类型">
+            <summary>
+            0练习设置，1考试设置
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考试设置.判断某试卷是否能设置考试(System.Guid)">
+            <summary>
+            返回true能，false不能
+            </summary>      
+        </member>
+        <member name="M:LoveKaoExam.Data.考试设置.判断是否能修改考试设置(System.Guid)">
+            <summary>
+            返回0能修改，1考试时间内不能修改，只有考试开始时间前能修改
+            2考试时间已结束，不能修改，只有考试开始时间前能修改
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考试设置.查询考试(System.String,System.Guid,System.Int32,System.Int32,System.Int32,System.Int32@)">
+            <param name="类型">0全部，1未考过，2已考过</param>      
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置.考试状态">
+            <summary>
+            0考试时间未到，1可以考试，2考试时间已过，3已考过
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.批改试卷.查询要批改的试卷(System.Nullable{System.Guid},System.String,System.Int32,System.Int32,System.Int32,System.Int32@)">
+            <param name="批改状态">0未批改，1批改未完成，2批改完毕</param>       
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷外部信息.上传试卷(System.Guid,System.Collections.Generic.List{LoveKaoExam.Data.试题外部信息}@)">
+            <summary>
+            返回0上传成功，1账号未绑定，2绑定账号被禁用，3该试卷已经上传过
+            </summary>     
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷外部信息.下载试卷(System.Guid,System.Int32,System.Int32)">
+            <summary>
+            返回0下载成功，1账号未绑定，2绑定账号被禁用
+            </summary>       
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷外部信息.保存试卷相关信息(LoveKaoExam.Data.试卷内容,LoveKaoExam.Data.试卷外部信息,System.Int32)">
+            <param name="类型">0保存本站试卷，1保存下载试卷</param>
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷外部信息.得到在线考试Json(System.Guid,System.Byte,System.Guid)">
+            <param name="相关ID">考试设置或试卷内容ID</param>
+            <param name="类型">0练习，1考试</param>          
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷外部信息.得到某考官试卷(System.String,System.Guid,System.Int32,System.Int32,System.Int32,System.Int32@)">
+            <param name="类型">0全部，1自己出的，2草稿,3已上传的，4下载的</param>       
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷外部信息.随机生成试卷(System.String,System.Int32@)">
+            <param name="试题充足情况">1说明生成成功且试题充足，为2说明生成成功且试题不足</param>
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷外部信息.把试卷外部信息WCF转化成试卷外部信息(LoveKaoExam.Data.LoveKaoServiceReference.试卷外部信息WCF)">
+            <summary>
+            因试卷大题中试题有无限循环，故无法用Mapper函数转化
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷外部信息.把试卷大题中试题WCF转化成试卷大题中试题(LoveKaoExam.Data.LoveKaoServiceReference.试卷大题中试题WCF)">
+            <summary>
+            因有无限循环，故无法用Mapper函数转化类
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷外部信息.把试卷外部信息转化成试卷外部信息WCF(LoveKaoExam.Data.试卷外部信息)">
+            <summary>
+             因试卷大题中试题有无限循环，故无法用Mapper函数转化
+            </summary>      
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷外部信息.把试卷大题中试题转化成试卷大题中试题WCF(LoveKaoExam.Data.试卷大题中试题)">
+            <summary>
+            因有无限循环，故无法用Mapper函数转化类
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷内容.保存下载试卷(LoveKaoExam.Data.LoveKaoExamEntities,System.Collections.Generic.List{System.String})">
+            <summary>
+            返回试卷中所有试题外部信息ID，插入试卷引用的试题表有用，全部保存成功才插入
+            </summary>     
+        </member>
+        <member name="P:LoveKaoExam.Data.考生范围.相关ID">
+            <summary>
+            考试设置ID或试卷内容ID
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生做过的试卷.转化成Json">
+            <summary>
+            得到在线考试Json用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生做过的试卷.得到考生做过的所有考试(System.String,System.Int32,System.Guid,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32,System.Int32,System.Int32@)">
+            <param name="类型">1已完成，2未完成</param>       
+        </member>
+        <member name="M:LoveKaoExam.Data.考生做过的试卷.得到考生做过的所有练习(System.String,System.Int32,System.Guid,System.Int32,System.Int32,System.Int32@)">
+            <param name="类型">1已完成，2未完成</param>   
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷.类型">
+            <summary>
+            0代表练习，1代表考试
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷.相关ID">
+            <summary>
+            类型为0时是试卷内容ID，为1时是考试设置ID
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷.批改状态类型">
+            <summary>
+            0未批改，1批改未完成，2批改完成
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.连线题.类映射表赋值">
+            <summary>
+            界面无需使用此方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LoveKaoExam.Data.试题外部信息.上传试题(System.Collections.Generic.List{System.Guid},System.Collections.Generic.List{LoveKaoExam.Data.试题外部信息}@)">
+            <summary>
+            返回0上传成功，1账号未绑定，2绑定账号被禁用，3禁止绑定任何账号
+            </summary>       
+        </member>
+        <member name="M:LoveKaoExam.Data.试题外部信息.下载试题(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            返回0下载成功，1账号未绑定，2绑定账号被禁用，3没有足够的下载积分，4禁止绑定任何账号
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.试题外部信息.得到某考官试题(System.String,System.Guid,System.Int32,System.Int32,System.Int32,System.Int32@)">
+            <param name="类型">0全部，1自己出的，2草稿,3已上传的，4下载的</param>      
+        </member>
+        <member name="M:LoveKaoExam.Data.试题外部信息.保存试题(System.Int32,LoveKaoExam.Data.试题外部信息,System.String,System.Int32,System.Collections.Generic.List{System.String},System.Boolean,LoveKaoExam.Data.LoveKaoExamEntities)">
+            <param name="类型">0保存本站试题，1保存下载试题，2保存下载试卷中试题</param>     
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息.试题类型">
+            <summary>
+            0本地试题，1本地试题且已上传，2下载试题
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息.试题状态Enum">
+            <summary>
+            0正常，1删除，4草稿
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.部门.添加部门(LoveKaoExam.Data.部门)">
+            <summary>
+            返回0成功,1部门名已存在
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.部门.修改部门(LoveKaoExam.Data.部门)">
+            <summary>
+            返回0修改成功,1部门名已存在，不能修改
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题选项.连线标记">
+            <summary>
+            0表示左，1表示右
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.单选题.类映射表赋值">
+            <summary>
+            界面无需使用此方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:LoveKaoExam.Data.单选题.答案ID">
+            <summary>
+            某选项的id
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.填空题.类映射表赋值">
+            <summary>
+            界面无需使用此方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:LoveKaoExam.Data.所属分类.相关ID">
+            <summary>
+            试题或试卷ID
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.取题条件.是否是自己出的">
+            <summary>
+            是否是自己出的，true是，false不是
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.取题条件.会员ID">
+            <summary>
+            会员id，必须赋值
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.取题条件.是否是做错的">
+            <summary>
+            是否是做错的，true是，false不是
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.取题条件.是否是没做过的">
+            <summary>
+            是否是没做过的，true是，false不是
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.取题条件.网站分类集合">
+            <summary>
+            网站分类名称集合字符串,以逗号隔开
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.取题条件.题干关键字">
+            <summary>
+            题干中包含此关键字
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.LoveKaoExamEntities">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.#ctor">
+            <summary>
+            请使用应用程序配置文件的“LoveKaoExamEntities”部分中的连接字符串初始化新 LoveKaoExamEntities 对象。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.#ctor(System.String)">
+            <summary>
+            初始化新的 LoveKaoExamEntities 对象。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.#ctor(System.Data.EntityClient.EntityConnection)">
+            <summary>
+            初始化新的 LoveKaoExamEntities 对象。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo绑定账号表(LoveKaoExam.Data.绑定账号表)">
+            <summary>
+            用于向 绑定账号表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo部门表(LoveKaoExam.Data.部门表)">
+            <summary>
+            用于向 部门表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo考生单选题回答表(LoveKaoExam.Data.考生单选题回答表)">
+            <summary>
+            用于向 考生单选题回答表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo考生多空选择题回答表(LoveKaoExam.Data.考生多空选择题回答表)">
+            <summary>
+            用于向 考生多空选择题回答表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo考生多选题回答表(LoveKaoExam.Data.考生多选题回答表)">
+            <summary>
+            用于向 考生多选题回答表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo考生范围表(LoveKaoExam.Data.考生范围表)">
+            <summary>
+            用于向 考生范围表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo考生考试回答表(LoveKaoExam.Data.考生考试回答表)">
+            <summary>
+            用于向 考生考试回答表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo考生连线题回答表(LoveKaoExam.Data.考生连线题回答表)">
+            <summary>
+            用于向 考生连线题回答表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo考生判断题回答表(LoveKaoExam.Data.考生判断题回答表)">
+            <summary>
+            用于向 考生判断题回答表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo考生填空题回答表(LoveKaoExam.Data.考生填空题回答表)">
+            <summary>
+            用于向 考生填空题回答表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo考生问答题回答表(LoveKaoExam.Data.考生问答题回答表)">
+            <summary>
+            用于向 考生问答题回答表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo考生选词填空回答表(LoveKaoExam.Data.考生选词填空回答表)">
+            <summary>
+            用于向 考生选词填空回答表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo考生做过的试卷表(LoveKaoExam.Data.考生做过的试卷表)">
+            <summary>
+            用于向 考生做过的试卷表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo考试设置表(LoveKaoExam.Data.考试设置表)">
+            <summary>
+            用于向 考试设置表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo连线题答案表(LoveKaoExam.Data.连线题答案表)">
+            <summary>
+            用于向 连线题答案表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo连线题选项表(LoveKaoExam.Data.连线题选项表)">
+            <summary>
+            用于向 连线题选项表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo练习设置表(LoveKaoExam.Data.练习设置表)">
+            <summary>
+            用于向 练习设置表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo判断题答案表(LoveKaoExam.Data.判断题答案表)">
+            <summary>
+            用于向 判断题答案表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo试卷大题中试题表(LoveKaoExam.Data.试卷大题中试题表)">
+            <summary>
+            用于向 试卷大题中试题表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo试卷内容表(LoveKaoExam.Data.试卷内容表)">
+            <summary>
+            用于向 试卷内容表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo试卷外部信息表(LoveKaoExam.Data.试卷外部信息表)">
+            <summary>
+            用于向 试卷外部信息表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo试卷中大题表(LoveKaoExam.Data.试卷中大题表)">
+            <summary>
+            用于向 试卷中大题表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo试题内容表(LoveKaoExam.Data.试题内容表)">
+            <summary>
+            用于向 试题内容表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo试题外部信息表(LoveKaoExam.Data.试题外部信息表)">
+            <summary>
+            用于向 试题外部信息表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo所属分类表(LoveKaoExam.Data.所属分类表)">
+            <summary>
+            用于向 所属分类表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo问答题答案表(LoveKaoExam.Data.问答题答案表)">
+            <summary>
+            用于向 问答题答案表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo系统分类表(LoveKaoExam.Data.系统分类表)">
+            <summary>
+            用于向 系统分类表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo系统分类上下级关系表(LoveKaoExam.Data.系统分类上下级关系表)">
+            <summary>
+            用于向 系统分类上下级关系表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo修改成绩记录(LoveKaoExam.Data.修改成绩记录)">
+            <summary>
+            用于向 修改成绩记录 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo用户表(LoveKaoExam.Data.用户表)">
+            <summary>
+            用于向 用户表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo自由题空格表(LoveKaoExam.Data.自由题空格表)">
+            <summary>
+            用于向 自由题空格表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo自由题填空答案表(LoveKaoExam.Data.自由题填空答案表)">
+            <summary>
+            用于向 自由题填空答案表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo自由题选项表(LoveKaoExam.Data.自由题选项表)">
+            <summary>
+            用于向 自由题选项表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo自由题选项空格答案表(LoveKaoExam.Data.自由题选项空格答案表)">
+            <summary>
+            用于向 自由题选项空格答案表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.LoveKaoExamEntities.AddTo自由题选项组表(LoveKaoExam.Data.自由题选项组表)">
+            <summary>
+            用于向 自由题选项组表 EntitySet 添加新对象的方法，已弃用。请考虑改用关联的 ObjectSet&lt;T&gt; 属性的 .Add 方法。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.绑定账号表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.部门表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.考生单选题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.考生多空选择题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.考生多选题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.考生范围表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.考生考试回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.考生连线题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.考生判断题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.考生填空题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.考生问答题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.考生选词填空回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.考生做过的试卷表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.考试设置表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.连线题答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.连线题选项表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.练习设置表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.判断题答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.试卷大题中试题表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.试卷内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.试卷外部信息表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.试卷中大题表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.试题内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.试题外部信息表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.所属分类表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.问答题答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.系统分类表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.系统分类上下级关系表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.修改成绩记录">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.用户表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.自由题空格表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.自由题填空答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.自由题选项表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.自由题选项空格答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.LoveKaoExamEntities.自由题选项组表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.绑定账号表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.绑定账号表.Create绑定账号表(System.Int32,System.Guid,System.String,System.String,System.String,System.DateTime)">
+            <summary>
+            创建新的 绑定账号表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="本地账号ID">本地账号ID 属性的初始值。</param>
+            <param name="爱考网账号">爱考网账号 属性的初始值。</param>
+            <param name="爱考网密码">爱考网密码 属性的初始值。</param>
+            <param name="爱考网邮箱">爱考网邮箱 属性的初始值。</param>
+            <param name="绑定时间">绑定时间 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.绑定账号表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.绑定账号表.本地账号ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.绑定账号表.爱考网账号">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.绑定账号表.爱考网密码">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.绑定账号表.爱考网邮箱">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.绑定账号表.绑定时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.绑定账号表.用户表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.绑定账号表.用户表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.部门表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.部门表.Create部门表(System.Guid,System.String,System.Guid,System.DateTime)">
+            <summary>
+            创建新的 部门表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="名称">名称 属性的初始值。</param>
+            <param name="添加人ID">添加人ID 属性的初始值。</param>
+            <param name="添加时间">添加时间 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.部门表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.部门表.名称">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.部门表.上级部门ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.部门表.添加人ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.部门表.添加时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.部门表.部门表1">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.部门表.部门表2">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.部门表.部门表2Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.部门表.用户表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.部门表.用户表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.部门表.用户表1">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.考生单选题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生单选题回答表.Create考生单选题回答表(System.Guid,System.Guid)">
+            <summary>
+            创建新的 考生单选题回答表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="回答的选项ID">回答的选项ID 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生单选题回答表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生单选题回答表.回答的选项ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生单选题回答表.考生考试回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生单选题回答表.考生考试回答表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.考生多空选择题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生多空选择题回答表.Create考生多空选择题回答表(System.Guid,System.Guid,System.Guid,System.Guid)">
+            <summary>
+            创建新的 考生多空选择题回答表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="考生考试回答ID">考生考试回答ID 属性的初始值。</param>
+            <param name="该空ID">该空ID 属性的初始值。</param>
+            <param name="该空的回答ID">该空的回答ID 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生多空选择题回答表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生多空选择题回答表.考生考试回答ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生多空选择题回答表.该空ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生多空选择题回答表.该空的回答ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生多空选择题回答表.考生考试回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生多空选择题回答表.考生考试回答表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.考生多选题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生多选题回答表.Create考生多选题回答表(System.Guid,System.Guid,System.Guid)">
+            <summary>
+            创建新的 考生多选题回答表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="考生考试回答ID">考生考试回答ID 属性的初始值。</param>
+            <param name="回答的选项ID">回答的选项ID 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生多选题回答表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生多选题回答表.考生考试回答ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生多选题回答表.回答的选项ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生多选题回答表.考生考试回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生多选题回答表.考生考试回答表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.考生范围表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生范围表.Create考生范围表(System.Guid,System.Guid,System.Guid)">
+            <summary>
+            创建新的 考生范围表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="相关ID">相关ID 属性的初始值。</param>
+            <param name="考生ID">考生ID 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生范围表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生范围表.相关ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生范围表.考生ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生范围表.用户表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生范围表.用户表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.考生考试回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生考试回答表.Create考生考试回答表(System.Guid,System.Guid,System.Guid,System.Int16,System.String)">
+            <summary>
+            创建新的 考生考试回答表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="考生做过的试卷ID">考生做过的试卷ID 属性的初始值。</param>
+            <param name="试卷大题中试题ID">试卷大题中试题ID 属性的初始值。</param>
+            <param name="该题的用时">该题的用时 属性的初始值。</param>
+            <param name="评语">评语 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生做过的试卷ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.试卷大题中试题ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.该题的用时">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.该题的得分">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.评语">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生单选题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生单选题回答表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生多空选择题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生多选题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生填空题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生做过的试卷表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生做过的试卷表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.试卷大题中试题表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.试卷大题中试题表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生连线题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生判断题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生判断题回答表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生问答题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生问答题回答表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生考试回答表.考生选词填空回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.考生连线题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生连线题回答表.Create考生连线题回答表(System.Guid,System.Guid,System.Guid,System.Guid)">
+            <summary>
+            创建新的 考生连线题回答表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="考生考试回答ID">考生考试回答ID 属性的初始值。</param>
+            <param name="连线题左边小题ID">连线题左边小题ID 属性的初始值。</param>
+            <param name="回答的选项ID">回答的选项ID 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生连线题回答表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生连线题回答表.考生考试回答ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生连线题回答表.连线题左边小题ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生连线题回答表.回答的选项ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生连线题回答表.考生考试回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生连线题回答表.考生考试回答表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.考生判断题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生判断题回答表.Create考生判断题回答表(System.Guid,System.Boolean)">
+            <summary>
+            创建新的 考生判断题回答表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="回答的内容">回答的内容 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生判断题回答表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生判断题回答表.回答的内容">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生判断题回答表.考生考试回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生判断题回答表.考生考试回答表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.考生填空题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生填空题回答表.Create考生填空题回答表(System.Guid,System.Guid,System.String,System.Guid)">
+            <summary>
+            创建新的 考生填空题回答表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="考生考试回答ID">考生考试回答ID 属性的初始值。</param>
+            <param name="回答的内容">回答的内容 属性的初始值。</param>
+            <param name="该空ID">该空ID 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生填空题回答表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生填空题回答表.考生考试回答ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生填空题回答表.回答的内容">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生填空题回答表.该空ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生填空题回答表.考生考试回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生填空题回答表.考生考试回答表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.考生问答题回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生问答题回答表.Create考生问答题回答表(System.Guid,System.String)">
+            <summary>
+            创建新的 考生问答题回答表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="回答的内容">回答的内容 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生问答题回答表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生问答题回答表.回答的内容">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生问答题回答表.考生考试回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生问答题回答表.考生考试回答表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.考生选词填空回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生选词填空回答表.Create考生选词填空回答表(System.Guid,System.Guid,System.Guid,System.Guid)">
+            <summary>
+            创建新的 考生选词填空回答表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="考生考试回答ID">考生考试回答ID 属性的初始值。</param>
+            <param name="该空ID">该空ID 属性的初始值。</param>
+            <param name="该空的回答ID">该空的回答ID 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生选词填空回答表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生选词填空回答表.考生考试回答ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生选词填空回答表.该空ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生选词填空回答表.该空的回答ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生选词填空回答表.考生考试回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生选词填空回答表.考生考试回答表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.考生做过的试卷表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考生做过的试卷表.Create考生做过的试卷表(System.Guid,System.Guid,System.DateTime,System.Decimal,System.Decimal,System.Boolean,System.Byte,System.Guid,System.Byte)">
+            <summary>
+            创建新的 考生做过的试卷表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="考生ID">考生ID 属性的初始值。</param>
+            <param name="答题开始时间">答题开始时间 属性的初始值。</param>
+            <param name="客观题得分">客观题得分 属性的初始值。</param>
+            <param name="主观题得分">主观题得分 属性的初始值。</param>
+            <param name="是否是已提交的试卷">是否是已提交的试卷 属性的初始值。</param>
+            <param name="批改状态">批改状态 属性的初始值。</param>
+            <param name="相关ID">相关ID 属性的初始值。</param>
+            <param name="类型">类型 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.考生ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.答题开始时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.答题结束时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.客观题得分">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.主观题得分">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.是否是已提交的试卷">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.批改状态">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.相关ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.类型">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.批改时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.考生考试回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.用户表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考生做过的试卷表.用户表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.考试设置表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.考试设置表.Create考试设置表(System.Guid,System.Guid,System.DateTime,System.DateTime,System.Int16,System.Int32,System.Boolean,System.Guid,System.DateTime,System.Boolean)">
+            <summary>
+            创建新的 考试设置表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="试卷内容ID">试卷内容ID 属性的初始值。</param>
+            <param name="考试开始时间">考试开始时间 属性的初始值。</param>
+            <param name="考试结束时间">考试结束时间 属性的初始值。</param>
+            <param name="考试时长">考试时长 属性的初始值。</param>
+            <param name="及格条件">及格条件 属性的初始值。</param>
+            <param name="是否公布考试结果">是否公布考试结果 属性的初始值。</param>
+            <param name="设置人ID">设置人ID 属性的初始值。</param>
+            <param name="设置时间">设置时间 属性的初始值。</param>
+            <param name="是否删除">是否删除 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.试卷内容ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.考试开始时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.考试结束时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.考试时长">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.及格条件">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.是否公布考试结果">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.设置人ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.设置时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.是否删除">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.试卷内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.试卷内容表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.用户表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.考试设置表.用户表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.连线题答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.连线题答案表.Create连线题答案表(System.Guid,System.Guid,System.Guid,System.Guid,System.Byte)">
+            <summary>
+            创建新的 连线题答案表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="试题内容ID">试题内容ID 属性的初始值。</param>
+            <param name="左边ID">左边ID 属性的初始值。</param>
+            <param name="右边ID">右边ID 属性的初始值。</param>
+            <param name="顺序">顺序 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题答案表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题答案表.试题内容ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题答案表.左边ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题答案表.右边ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题答案表.顺序">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题答案表.连线题选项表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题答案表.连线题选项表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题答案表.试题内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题答案表.试题内容表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.连线题选项表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.连线题选项表.Create连线题选项表(System.Guid,System.Guid,System.String,System.String,System.Byte,System.Byte)">
+            <summary>
+            创建新的 连线题选项表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="试题内容ID">试题内容ID 属性的初始值。</param>
+            <param name="选项内容HTML">选项内容HTML 属性的初始值。</param>
+            <param name="选项内容文本">选项内容文本 属性的初始值。</param>
+            <param name="连线标记">连线标记 属性的初始值。</param>
+            <param name="顺序">顺序 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题选项表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题选项表.试题内容ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题选项表.选项内容HTML">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题选项表.选项内容文本">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题选项表.连线标记">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题选项表.顺序">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题选项表.连线题答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题选项表.试题内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.连线题选项表.试题内容表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.练习设置表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.练习设置表.Create练习设置表(System.Guid,System.Int16,System.Int32,System.Guid,System.DateTime,System.Boolean)">
+            <summary>
+            创建新的 练习设置表 对象。
+            </summary>
+            <param name="试卷内容ID">试卷内容ID 属性的初始值。</param>
+            <param name="考试时长">考试时长 属性的初始值。</param>
+            <param name="及格条件">及格条件 属性的初始值。</param>
+            <param name="设置人ID">设置人ID 属性的初始值。</param>
+            <param name="设置时间">设置时间 属性的初始值。</param>
+            <param name="是否删除">是否删除 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.练习设置表.试卷内容ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.练习设置表.考试时长">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.练习设置表.及格条件">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.练习设置表.设置人ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.练习设置表.设置时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.练习设置表.是否删除">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.练习设置表.试卷内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.练习设置表.试卷内容表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.判断题答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.判断题答案表.Create判断题答案表(System.Guid,System.Boolean)">
+            <summary>
+            创建新的 判断题答案表 对象。
+            </summary>
+            <param name="试题内容ID">试题内容ID 属性的初始值。</param>
+            <param name="答案">答案 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.判断题答案表.试题内容ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.判断题答案表.答案">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.判断题答案表.试题内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.判断题答案表.试题内容表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.试卷大题中试题表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷大题中试题表.Create试卷大题中试题表(System.Guid,System.Guid,System.Guid,System.Decimal,System.Int16)">
+            <summary>
+            创建新的 试卷大题中试题表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="试卷中大题ID">试卷中大题ID 属性的初始值。</param>
+            <param name="试题内容ID">试题内容ID 属性的初始值。</param>
+            <param name="每小题分值">每小题分值 属性的初始值。</param>
+            <param name="顺序">顺序 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷大题中试题表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷大题中试题表.试卷中大题ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷大题中试题表.试题内容ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷大题中试题表.每小题分值">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷大题中试题表.顺序">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷大题中试题表.考生考试回答表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷大题中试题表.试卷中大题表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷大题中试题表.试卷中大题表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.试卷内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷内容表.Create试卷内容表(System.Guid,System.Guid,System.String,System.String,System.Guid,System.DateTime,System.String)">
+            <summary>
+            创建新的 试卷内容表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="试卷外部信息ID">试卷外部信息ID 属性的初始值。</param>
+            <param name="名称">名称 属性的初始值。</param>
+            <param name="说明">说明 属性的初始值。</param>
+            <param name="提交人ID">提交人ID 属性的初始值。</param>
+            <param name="提交时间">提交时间 属性的初始值。</param>
+            <param name="提交备注">提交备注 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.试卷外部信息ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.名称">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.说明">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.提交人ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.提交时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.提交备注">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.考试设置表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.练习设置表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.练习设置表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.试卷外部信息表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.试卷外部信息表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.用户表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.用户表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷内容表.试卷中大题表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.试卷外部信息表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷外部信息表.Create试卷外部信息表(System.Guid,System.String,System.String,System.Guid,System.DateTime,System.Byte,System.DateTime,System.Int32,System.Guid,System.Byte,System.Guid)">
+            <summary>
+            创建新的 试卷外部信息表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="名称">名称 属性的初始值。</param>
+            <param name="说明">说明 属性的初始值。</param>
+            <param name="创建人ID">创建人ID 属性的初始值。</param>
+            <param name="创建时间">创建时间 属性的初始值。</param>
+            <param name="试卷状态Enum">试卷状态Enum 属性的初始值。</param>
+            <param name="最新更新时间">最新更新时间 属性的初始值。</param>
+            <param name="总分">总分 属性的初始值。</param>
+            <param name="试卷内容ID">试卷内容ID 属性的初始值。</param>
+            <param name="试卷类型">试卷类型 属性的初始值。</param>
+            <param name="爱考网ID">爱考网ID 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.名称">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.说明">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.创建人ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.创建时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.试卷状态Enum">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.最新更新时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.总分">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.试卷内容ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.试卷类型">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.爱考网ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.试卷内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.用户表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷外部信息表.用户表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.试卷中大题表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.试卷中大题表.Create试卷中大题表(System.Guid,System.Guid,System.String,System.String,System.Int16,System.Decimal)">
+            <summary>
+            创建新的 试卷中大题表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="试卷内容ID">试卷内容ID 属性的初始值。</param>
+            <param name="名称">名称 属性的初始值。</param>
+            <param name="说明">说明 属性的初始值。</param>
+            <param name="顺序">顺序 属性的初始值。</param>
+            <param name="多选题评分策略">多选题评分策略 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷中大题表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷中大题表.试卷内容ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷中大题表.名称">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷中大题表.说明">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷中大题表.顺序">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷中大题表.多选题评分策略">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷中大题表.试卷大题中试题表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷中大题表.试卷内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试卷中大题表.试卷内容表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.试题内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.试题内容表.Create试题内容表(System.Guid,System.String,System.String,System.String,System.Guid,System.DateTime,System.Guid,System.Int32,System.Byte,System.String,System.Guid,System.Decimal)">
+            <summary>
+            创建新的 试题内容表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="解题思路">解题思路 属性的初始值。</param>
+            <param name="题干HTML">题干HTML 属性的初始值。</param>
+            <param name="题干文本">题干文本 属性的初始值。</param>
+            <param name="试题外部信息ID">试题外部信息ID 属性的初始值。</param>
+            <param name="操作时间">操作时间 属性的初始值。</param>
+            <param name="操作人ID">操作人ID 属性的初始值。</param>
+            <param name="小题型Enum">小题型Enum 属性的初始值。</param>
+            <param name="本题在复合题中顺序">本题在复合题中顺序 属性的初始值。</param>
+            <param name="json字符串">Json字符串 属性的初始值。</param>
+            <param name="爱考网ID">爱考网ID 属性的初始值。</param>
+            <param name="难易度">难易度 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.解题思路">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.题干HTML">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.题干文本">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.试题外部信息ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.操作时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.操作人ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.小题型Enum">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.父试题内容ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.本题在复合题中顺序">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.Json字符串">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.爱考网ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.难易度">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.连线题答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.连线题选项表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.判断题答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.判断题答案表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.试题内容表1">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.试题内容表2">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.试题内容表2Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.试题外部信息表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.试题外部信息表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.问答题答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.问答题答案表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题内容表.自由题空格表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.试题外部信息表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.试题外部信息表.Create试题外部信息表(System.Guid,System.Guid,System.DateTime,System.DateTime,System.String,System.String,System.Int32,System.Byte,System.Guid,System.Decimal,System.Byte,System.Guid)">
+            <summary>
+            创建新的 试题外部信息表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="创建人ID">创建人ID 属性的初始值。</param>
+            <param name="创建时间">创建时间 属性的初始值。</param>
+            <param name="最新更新时间">最新更新时间 属性的初始值。</param>
+            <param name="试题查询内容">试题查询内容 属性的初始值。</param>
+            <param name="试题显示列">试题显示列 属性的初始值。</param>
+            <param name="小题型Enum">小题型Enum 属性的初始值。</param>
+            <param name="试题状态Enum">试题状态Enum 属性的初始值。</param>
+            <param name="试题内容ID">试题内容ID 属性的初始值。</param>
+            <param name="难易度">难易度 属性的初始值。</param>
+            <param name="试题类型">试题类型 属性的初始值。</param>
+            <param name="爱考网ID">爱考网ID 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息表.创建人ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息表.创建时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息表.最新更新时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息表.试题查询内容">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息表.试题显示列">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息表.小题型Enum">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息表.试题状态Enum">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息表.试题内容ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息表.难易度">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息表.试题类型">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息表.爱考网ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.试题外部信息表.试题内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.所属分类表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.所属分类表.Create所属分类表(System.Guid,System.Guid,System.String,System.Guid,System.DateTime,System.Byte)">
+            <summary>
+            创建新的 所属分类表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="相关信息ID">相关信息ID 属性的初始值。</param>
+            <param name="分类名">分类名 属性的初始值。</param>
+            <param name="操作人ID">操作人ID 属性的初始值。</param>
+            <param name="操作时间">操作时间 属性的初始值。</param>
+            <param name="相关类型">相关类型 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.所属分类表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.所属分类表.相关信息ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.所属分类表.分类名">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.所属分类表.操作人ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.所属分类表.操作时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.所属分类表.相关类型">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.问答题答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.问答题答案表.Create问答题答案表(System.Guid,System.String)">
+            <summary>
+            创建新的 问答题答案表 对象。
+            </summary>
+            <param name="试题内容ID">试题内容ID 属性的初始值。</param>
+            <param name="内容">内容 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.问答题答案表.试题内容ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.问答题答案表.内容">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.问答题答案表.试题内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.问答题答案表.试题内容表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.系统分类表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.系统分类表.Create系统分类表(System.String,System.Guid,System.DateTime,System.Byte,System.String,System.String)">
+            <summary>
+            创建新的 系统分类表 对象。
+            </summary>
+            <param name="分类名称">分类名称 属性的初始值。</param>
+            <param name="操作人ID">操作人ID 属性的初始值。</param>
+            <param name="操作时间">操作时间 属性的初始值。</param>
+            <param name="分类类型">分类类型 属性的初始值。</param>
+            <param name="分类类别名称">分类类别名称 属性的初始值。</param>
+            <param name="同义词分类名称">同义词分类名称 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类表.分类名称">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类表.操作人ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类表.操作时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类表.分类类型">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类表.分类类别名称">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类表.同义词分类名称">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类表.用户表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类表.用户表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类表.系统分类上下级关系表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.系统分类上下级关系表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.系统分类上下级关系表.Create系统分类上下级关系表(System.Guid,System.String,System.String,System.Boolean)">
+            <summary>
+            创建新的 系统分类上下级关系表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="系统分类名称">系统分类名称 属性的初始值。</param>
+            <param name="分类关系名称">分类关系名称 属性的初始值。</param>
+            <param name="是否上级">是否上级 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类上下级关系表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类上下级关系表.系统分类名称">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类上下级关系表.分类关系名称">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类上下级关系表.是否上级">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类上下级关系表.系统分类表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.系统分类上下级关系表.系统分类表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.修改成绩记录">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.修改成绩记录.Create修改成绩记录(System.Guid,System.Guid,System.Guid,System.Decimal,System.Decimal,System.DateTime)">
+            <summary>
+            创建新的 修改成绩记录 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="会员ID">会员ID 属性的初始值。</param>
+            <param name="试卷ID">试卷ID 属性的初始值。</param>
+            <param name="原来的成绩">原来的成绩 属性的初始值。</param>
+            <param name="修改后的成绩">修改后的成绩 属性的初始值。</param>
+            <param name="修改时间">修改时间 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.修改成绩记录.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.修改成绩记录.会员ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.修改成绩记录.试卷ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.修改成绩记录.原来的成绩">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.修改成绩记录.修改后的成绩">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.修改成绩记录.修改时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.用户表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.用户表.Create用户表(System.Guid,System.String,System.String,System.String,System.Byte,System.String,System.Byte,System.DateTime)">
+            <summary>
+            创建新的 用户表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="编号">编号 属性的初始值。</param>
+            <param name="密码">密码 属性的初始值。</param>
+            <param name="姓名">姓名 属性的初始值。</param>
+            <param name="性别">性别 属性的初始值。</param>
+            <param name="邮箱">邮箱 属性的初始值。</param>
+            <param name="角色">角色 属性的初始值。</param>
+            <param name="添加时间">添加时间 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.编号">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.密码">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.姓名">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.性别">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.邮箱">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.部门ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.角色">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.添加时间">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.绑定账号表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.部门表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.部门表1">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.部门表1Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.考生范围表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.考生做过的试卷表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.考试设置表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.试卷内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.试卷外部信息表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.用户表.系统分类表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.自由题空格表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.自由题空格表.Create自由题空格表(System.Guid,System.Guid,System.Byte,System.Byte)">
+            <summary>
+            创建新的 自由题空格表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="试题内容ID">试题内容ID 属性的初始值。</param>
+            <param name="顺序">顺序 属性的初始值。</param>
+            <param name="空格类型">空格类型 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题空格表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题空格表.试题内容ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题空格表.顺序">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题空格表.自由题选项组ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题空格表.空格类型">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题空格表.试题内容表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题空格表.试题内容表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题空格表.自由题选项组表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题空格表.自由题选项组表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题空格表.自由题填空答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题空格表.自由题选项空格答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.自由题填空答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.自由题填空答案表.Create自由题填空答案表(System.Guid,System.Guid,System.String,System.Byte)">
+            <summary>
+            创建新的 自由题填空答案表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="自由题空格ID">自由题空格ID 属性的初始值。</param>
+            <param name="该空答案">该空答案 属性的初始值。</param>
+            <param name="顺序">顺序 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题填空答案表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题填空答案表.自由题空格ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题填空答案表.该空答案">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题填空答案表.顺序">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题填空答案表.自由题空格表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题填空答案表.自由题空格表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.自由题选项表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.自由题选项表.Create自由题选项表(System.Guid,System.String,System.String,System.Byte,System.Guid)">
+            <summary>
+            创建新的 自由题选项表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="选项内容HTML">选项内容HTML 属性的初始值。</param>
+            <param name="选项内容文本">选项内容文本 属性的初始值。</param>
+            <param name="顺序">顺序 属性的初始值。</param>
+            <param name="自由题选项组ID">自由题选项组ID 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项表.选项内容HTML">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项表.选项内容文本">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项表.顺序">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项表.自由题选项组ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项表.自由题选项组表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项表.自由题选项组表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.自由题选项空格答案表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.自由题选项空格答案表.Create自由题选项空格答案表(System.Guid,System.Guid,System.Guid,System.Byte)">
+            <summary>
+            创建新的 自由题选项空格答案表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+            <param name="自由题空格ID">自由题空格ID 属性的初始值。</param>
+            <param name="自由题选项ID">自由题选项ID 属性的初始值。</param>
+            <param name="顺序">顺序 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项空格答案表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项空格答案表.自由题空格ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项空格答案表.自由题选项ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项空格答案表.顺序">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项空格答案表.自由题空格表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项空格答案表.自由题空格表Reference">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="T:LoveKaoExam.Data.自由题选项组表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="M:LoveKaoExam.Data.自由题选项组表.Create自由题选项组表(System.Guid)">
+            <summary>
+            创建新的 自由题选项组表 对象。
+            </summary>
+            <param name="id">ID 属性的初始值。</param>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项组表.ID">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项组表.自由题空格表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+        <member name="P:LoveKaoExam.Data.自由题选项组表.自由题选项表">
+            <summary>
+            没有元数据文档可用。
+            </summary>
+        </member>
+    </members>
+</doc>

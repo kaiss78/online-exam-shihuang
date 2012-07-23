@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LoveKaoService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9999/LoveKaoService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9999/LoveKaoService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9999/LoveKaoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/LoveKao.Data" />
+      <xsd:import schemaLocation="http://localhost:9999/LoveKaoService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="LoveKaoServiceInterface_上传试卷_InputMessage">
+    <wsdl:part name="parameters" element="tns:上传试卷" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_上传试卷_OutputMessage">
+    <wsdl:part name="parameters" element="tns:上传试卷Response" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_上传试题_InputMessage">
+    <wsdl:part name="parameters" element="tns:上传试题" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_上传试题_OutputMessage">
+    <wsdl:part name="parameters" element="tns:上传试题Response" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_得到主站下载试题列表_InputMessage">
+    <wsdl:part name="parameters" element="tns:得到主站下载试题列表" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_得到主站下载试题列表_OutputMessage">
+    <wsdl:part name="parameters" element="tns:得到主站下载试题列表Response" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_下载试题_InputMessage">
+    <wsdl:part name="parameters" element="tns:下载试题" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_下载试题_OutputMessage">
+    <wsdl:part name="parameters" element="tns:下载试题Response" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_得到主站下载试卷列表_InputMessage">
+    <wsdl:part name="parameters" element="tns:得到主站下载试卷列表" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_得到主站下载试卷列表_OutputMessage">
+    <wsdl:part name="parameters" element="tns:得到主站下载试卷列表Response" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_下载试卷_InputMessage">
+    <wsdl:part name="parameters" element="tns:下载试卷" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_下载试卷_OutputMessage">
+    <wsdl:part name="parameters" element="tns:下载试卷Response" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_绑定新账号_InputMessage">
+    <wsdl:part name="parameters" element="tns:绑定新账号" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_绑定新账号_OutputMessage">
+    <wsdl:part name="parameters" element="tns:绑定新账号Response" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_绑定已有账号_InputMessage">
+    <wsdl:part name="parameters" element="tns:绑定已有账号" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_绑定已有账号_OutputMessage">
+    <wsdl:part name="parameters" element="tns:绑定已有账号Response" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_更改绑定新账号_InputMessage">
+    <wsdl:part name="parameters" element="tns:更改绑定新账号" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_更改绑定新账号_OutputMessage">
+    <wsdl:part name="parameters" element="tns:更改绑定新账号Response" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_更改绑定已有账号_InputMessage">
+    <wsdl:part name="parameters" element="tns:更改绑定已有账号" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_更改绑定已有账号_OutputMessage">
+    <wsdl:part name="parameters" element="tns:更改绑定已有账号Response" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_解除绑定账号_InputMessage">
+    <wsdl:part name="parameters" element="tns:解除绑定账号" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_解除绑定账号_OutputMessage">
+    <wsdl:part name="parameters" element="tns:解除绑定账号Response" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_得到上传下载信息_InputMessage">
+    <wsdl:part name="parameters" element="tns:得到上传下载信息" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_得到上传下载信息_OutputMessage">
+    <wsdl:part name="parameters" element="tns:得到上传下载信息Response" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_得到用户绑定信息_InputMessage">
+    <wsdl:part name="parameters" element="tns:得到用户绑定信息" />
+  </wsdl:message>
+  <wsdl:message name="LoveKaoServiceInterface_得到用户绑定信息_OutputMessage">
+    <wsdl:part name="parameters" element="tns:得到用户绑定信息Response" />
+  </wsdl:message>
+  <wsdl:portType name="LoveKaoServiceInterface">
+    <wsdl:operation name="上传试卷">
+      <wsdl:input wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/上传试卷" message="tns:LoveKaoServiceInterface_上传试卷_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/上传试卷Response" message="tns:LoveKaoServiceInterface_上传试卷_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="上传试题">
+      <wsdl:input wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/上传试题" message="tns:LoveKaoServiceInterface_上传试题_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/上传试题Response" message="tns:LoveKaoServiceInterface_上传试题_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="得到主站下载试题列表">
+      <wsdl:input wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/得到主站下载试题列表" message="tns:LoveKaoServiceInterface_得到主站下载试题列表_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/得到主站下载试题列表Response" message="tns:LoveKaoServiceInterface_得到主站下载试题列表_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="下载试题">
+      <wsdl:input wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/下载试题" message="tns:LoveKaoServiceInterface_下载试题_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/下载试题Response" message="tns:LoveKaoServiceInterface_下载试题_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="得到主站下载试卷列表">
+      <wsdl:input wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/得到主站下载试卷列表" message="tns:LoveKaoServiceInterface_得到主站下载试卷列表_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/得到主站下载试卷列表Response" message="tns:LoveKaoServiceInterface_得到主站下载试卷列表_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="下载试卷">
+      <wsdl:input wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/下载试卷" message="tns:LoveKaoServiceInterface_下载试卷_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/下载试卷Response" message="tns:LoveKaoServiceInterface_下载试卷_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="绑定新账号">
+      <wsdl:input wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/绑定新账号" message="tns:LoveKaoServiceInterface_绑定新账号_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/绑定新账号Response" message="tns:LoveKaoServiceInterface_绑定新账号_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="绑定已有账号">
+      <wsdl:input wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/绑定已有账号" message="tns:LoveKaoServiceInterface_绑定已有账号_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/绑定已有账号Response" message="tns:LoveKaoServiceInterface_绑定已有账号_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="更改绑定新账号">
+      <wsdl:input wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/更改绑定新账号" message="tns:LoveKaoServiceInterface_更改绑定新账号_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/更改绑定新账号Response" message="tns:LoveKaoServiceInterface_更改绑定新账号_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="更改绑定已有账号">
+      <wsdl:input wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/更改绑定已有账号" message="tns:LoveKaoServiceInterface_更改绑定已有账号_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/更改绑定已有账号Response" message="tns:LoveKaoServiceInterface_更改绑定已有账号_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="解除绑定账号">
+      <wsdl:input wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/解除绑定账号" message="tns:LoveKaoServiceInterface_解除绑定账号_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/解除绑定账号Response" message="tns:LoveKaoServiceInterface_解除绑定账号_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="得到上传下载信息">
+      <wsdl:input wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/得到上传下载信息" message="tns:LoveKaoServiceInterface_得到上传下载信息_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/得到上传下载信息Response" message="tns:LoveKaoServiceInterface_得到上传下载信息_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="得到用户绑定信息">
+      <wsdl:input wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/得到用户绑定信息" message="tns:LoveKaoServiceInterface_得到用户绑定信息_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/LoveKaoServiceInterface/得到用户绑定信息Response" message="tns:LoveKaoServiceInterface_得到用户绑定信息_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_LoveKaoServiceInterface" type="tns:LoveKaoServiceInterface">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="上传试卷">
+      <soap:operation soapAction="http://tempuri.org/LoveKaoServiceInterface/上传试卷" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="上传试题">
+      <soap:operation soapAction="http://tempuri.org/LoveKaoServiceInterface/上传试题" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="得到主站下载试题列表">
+      <soap:operation soapAction="http://tempuri.org/LoveKaoServiceInterface/得到主站下载试题列表" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="下载试题">
+      <soap:operation soapAction="http://tempuri.org/LoveKaoServiceInterface/下载试题" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="得到主站下载试卷列表">
+      <soap:operation soapAction="http://tempuri.org/LoveKaoServiceInterface/得到主站下载试卷列表" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="下载试卷">
+      <soap:operation soapAction="http://tempuri.org/LoveKaoServiceInterface/下载试卷" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="绑定新账号">
+      <soap:operation soapAction="http://tempuri.org/LoveKaoServiceInterface/绑定新账号" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="绑定已有账号">
+      <soap:operation soapAction="http://tempuri.org/LoveKaoServiceInterface/绑定已有账号" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="更改绑定新账号">
+      <soap:operation soapAction="http://tempuri.org/LoveKaoServiceInterface/更改绑定新账号" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="更改绑定已有账号">
+      <soap:operation soapAction="http://tempuri.org/LoveKaoServiceInterface/更改绑定已有账号" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="解除绑定账号">
+      <soap:operation soapAction="http://tempuri.org/LoveKaoServiceInterface/解除绑定账号" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="得到上传下载信息">
+      <soap:operation soapAction="http://tempuri.org/LoveKaoServiceInterface/得到上传下载信息" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="得到用户绑定信息">
+      <soap:operation soapAction="http://tempuri.org/LoveKaoServiceInterface/得到用户绑定信息" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LoveKaoService">
+    <wsdl:port name="BasicHttpBinding_LoveKaoServiceInterface" binding="tns:BasicHttpBinding_LoveKaoServiceInterface">
+      <soap:address location="http://localhost:9999/LoveKaoService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

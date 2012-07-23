@@ -1,0 +1,4 @@
+D:\Projects\LoveKaoExam\LoveKaoExam.Data\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\LoveKaoExam\LoveKaoExam.Data\obj\Release\Interop.ADODB.dll
+D:\Projects\LoveKaoExam\LoveKaoExam.Data\obj\Release\Interop.CDO.dll
+D:\Projects\LoveKaoExam\LoveKaoExam.Data\obj\Release\LoveKaoExam.Data.csproj.ResolveComReference.cache

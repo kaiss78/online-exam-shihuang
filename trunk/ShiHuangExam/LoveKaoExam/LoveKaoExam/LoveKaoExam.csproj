@@ -1,0 +1,1580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{095F9374-E764-494F-91FD-813A834F41E6}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LoveKaoExam</RootNamespace>
+    <AssemblyName>LoveKaoExam</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <ExcludeApp_Data>false</ExcludeApp_Data>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <DesktopBuildPackageLocation>e:\SHExam.zip</DesktopBuildPackageLocation>
+    <DeployIisAppPath>Default Web Site/shexam</DeployIisAppPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeSmith.Data, Version=3.0.0.0, Culture=neutral, PublicKeyToken=596a5eee5d207fdd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Lib\CodeSmith.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="ExportToExcel, Version=1.0.2959.21952, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Lib\ExportToExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="ExpressionMapper">
+      <HintPath>Library\Lib\ExpressionMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Fasterflect, Version=2.0.3732.24338, Culture=neutral, PublicKeyToken=d3b50d974897f4b5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Lib\Fasterflect.dll</HintPath>
+    </Reference>
+    <Reference Include="FredCK.FCKeditorV2">
+      <HintPath>..\..\LoveKao.Web\LoveKao.Web\Lib\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="LoveKao.Page, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DLL\LoveKao.Page.dll</HintPath>
+    </Reference>
+    <Reference Include="LoveKaoExam.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\LoveKaoExam.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MvcPager1.4ForMvc2.0Src_En">
+      <HintPath>..\..\MvcPager1.4ForMvc2.0Src_En\bin\Debug\MvcPager1.4ForMvc2.0Src_En.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>Library\DLL\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe.Entity, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\System.Data.SqlServerCe.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\DLL\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\Admin\ConfigurationController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\Admin\DepartmentController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\Admin\UserController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\BaseController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\Examinee\ExamController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\Examiner\AnalysisController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\Examiner\BindingController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\Examiner\OrganizationController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\Examiner\ShareController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\Examiner\SubjectController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\Examiner\TestController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\HomeController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\LKAssembly\LKImagesController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\LKAssembly\LKSortController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\LKAssembly\LKSubjectController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\LKAssembly\LKTestController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\LKAssembly\ViewSubject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\SharedController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HttpModule\AuthenticationModule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\CSharp\BasePage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\CSharp\LKExamChart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\CSharp\LKExamEnvironment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\CSharp\LKExamHtml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\CSharp\LKExamMvcPager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\CSharp\LKExamOffice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\CSharp\LKExamSelectList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\CSharp\LKExamText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\CSharp\LKExamURLDefaultName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\CSharp\LKExamURLQueryKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\CSharp\UserInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\HTML\CssJsExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\HTML\DropDownListExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\HTML\ExaminerExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\HTML\MvcPagerExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\HTML\URLRewriteExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Library\Plugins\LoginReg\VerifyCode.aspx.cs">
+      <DependentUpon>VerifyCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Library\Plugins\LoginReg\VerifyCode.aspx.designer.cs">
+      <DependentUpon>VerifyCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Examinee\考试排行Models.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Examiner\ExamReportModels.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Examiner\ExamResultModels.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Examiner\TestModels.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Examiner\公布考试结果Models.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Examiner\绑定账号信息Models.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Examiner\资源上传下载Models.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\爱考网服务器连接.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\爱考网绑定账号.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\爱考网资源共享.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\LoveKaoExam.sdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bk.jpg" />
+    <Content Include="Content\File\UnderLine\UnderLine.gif" />
+    <Content Include="Content\File\Word\Export.html" />
+    <Content Include="Content\Images\Base\bang-icon.png" />
+    <Content Include="Content\Images\Base\bg.png" />
+    <Content Include="Content\Images\Base\button.png" />
+    <Content Include="Content\Images\Base\corner.gif" />
+    <Content Include="Content\Images\Base\default-icons.gif" />
+    <Content Include="Content\Images\Base\icons.gif" />
+    <Content Include="Content\Images\Base\input.gif" />
+    <Content Include="Content\Images\Base\loading-16.gif" />
+    <Content Include="Content\Images\Base\loading-32.gif" />
+    <Content Include="Content\Images\Base\loading.gif" />
+    <Content Include="Content\Images\Base\pangnation.png" />
+    <Content Include="Content\Images\Base\reg-icons.png" />
+    <Content Include="Content\Images\Default\favicon.ico" />
+    <Content Include="Content\Images\Default\favicon.png" />
+    <Content Include="Content\Images\Icons\icon.gif" />
+    <Content Include="Content\Images\LogOn\bg.jpg" />
+    <Content Include="Content\Images\LogOn\body_left_bg.jpg" />
+    <Content Include="Content\Images\LogOn\body_right_bg.jpg" />
+    <Content Include="Content\Images\LogOn\button.png" />
+    <Content Include="Content\Images\LogOn\foot_bg.jpg" />
+    <Content Include="Content\Images\LogOn\head_bg.png" />
+    <Content Include="Content\Images\LogOn\head_bg1.2.png" />
+    <Content Include="Content\Images\LogOn\head_bg_0.png" />
+    <Content Include="Content\Images\LogOn\head_bg_1.png" />
+    <Content Include="Content\Images\Site\bg_ucnav.jpg" />
+    <Content Include="Content\Images\Site\icon.gif" />
+    <Content Include="Content\Images\Site\line_nav.gif" />
+    <Content Include="Content\Images\Site\main-bg.jpg" />
+    <Content Include="Content\Images\Site\nav-bottom.jpg" />
+    <Content Include="Content\Images\Site\nav-midden.jpg" />
+    <Content Include="Content\Images\Site\nav-top.jpg" />
+    <Content Include="Content\Images\Site\noavatar_middle.gif" />
+    <Content Include="Content\Images\Table\headbg.jpg" />
+    <Content Include="Content\Images\TabSwitch\navleft.jpg" />
+    <Content Include="Content\Images\TabSwitch\navright.jpg" />
+    <Content Include="Content\Images\TabSwitch\tab-end-on.png" />
+    <Content Include="Content\Images\TabSwitch\tab-end.png" />
+    <Content Include="Content\Images\TabSwitch\tab-first-on.png" />
+    <Content Include="Content\Images\TabSwitch\tab-first.png" />
+    <Content Include="Content\Images\TabSwitch\tab-middle-on.png" />
+    <Content Include="Content\Images\TabSwitch\tab-middle.png" />
+    <Content Include="Content\Images\TabSwitch\topBg.png" />
+    <Content Include="Content\LKAssembly\Images\AllPage\arrow.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\arrow2.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\btm_b.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\Buttom40.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\Buttom55.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\buttonBg.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\buttonBg_hover0.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\buttonBg_hover1.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\CirtiqueHeaderBg.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\CollectPrivacy.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\ErrorBottomLeft.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\ErrorBottomRight.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\ErrorTopLeft.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\ErrorTopRight.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\fckHandleLink.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\groupMbg.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\groupMbg2.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\HeaderNavSubmitBg.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconAdd.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconAddGreen.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconAddNoBg.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconCurrently.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconDateTime.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconDel.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconDelAcrossRed.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconDelGreen.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconDelNoBg.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconDelRed.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconDirection.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\iconDown.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconError.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconHover.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconInfor.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconInsertPic.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconInsertSpace.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconQnSaveLoading.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconRight.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconSet.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconSet2.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconSucceed.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconTriangleDown.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconTriangleLeft.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconTriangleRight.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconTriangleUp.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconTwoArrowDown.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconTwoArrowDown2.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconTwoArrowLeft.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconTwoArrowRight.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconTwoArrowUp.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\iconUp.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\IconWrite.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\ImagesBg.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\Input.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\InputArea.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\InputAreaBright.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\InputBright.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\InsertLoading.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\Level_Pawd.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\LoadBg.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\loadingBg.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\LoadValidate.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\maxmize.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\maxmize.gif.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\minimize.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\nextPreEmpty.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\nextPreFull.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\OutboxIcon.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\PicManage.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\RegTipErrorMsg.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\RegTipRightMsg.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\rx_1.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\rx_2.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\SubmitLoading.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\SystemMsg.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\TipBottomLeft.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\TipBottomRight.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\TipTopLeft.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\TipTopRight.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\UserAdd.gif" />
+    <Content Include="Content\LKAssembly\Images\AllPage\WrongType.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\BarMenuBg.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\CircleDynamic.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\CircleHeader.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\CircleHeaderBg.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\CircleIconList.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\CircleInvite.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\CircleListBg.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\CircleListUnHeader.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\CircleMemberHeader.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\CircleReply.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\CircleSearch.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\InputArea.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\InputAreaBright.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\InputNotice.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\InputNoticeBright.gif" />
+    <Content Include="Content\LKAssembly\Images\Circle\Security.jpg" />
+    <Content Include="Content\LKAssembly\Images\EditSubject\Checked.gif" />
+    <Content Include="Content\LKAssembly\Images\EditSubject\IconAdd.gif" />
+    <Content Include="Content\LKAssembly\Images\EditSubject\IconClose.gif" />
+    <Content Include="Content\LKAssembly\Images\EditSubject\IconTwoArrowRight.gif" />
+    <Content Include="Content\LKAssembly\Images\EditSubject\QTBoxBottom.gif" />
+    <Content Include="Content\LKAssembly\Images\EditSubject\QTBoxLeft.gif" />
+    <Content Include="Content\LKAssembly\Images\EditSubject\QTBoxRight.gif" />
+    <Content Include="Content\LKAssembly\Images\EditSubject\QTBoxTop.gif" />
+    <Content Include="Content\LKAssembly\Images\EditSubject\QTTag.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\AddSub.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\AddSubHeadBg.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\ask.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\border1.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\btn.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\DelSubType.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\ExamCenter.png" />
+    <Content Include="Content\LKAssembly\Images\EditTest\ExamTime.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\HeaderBg.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\Icons.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\inputbg.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\loading.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\loadingB.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\MoveDownSubType.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\MoveUpSubType.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\NoSure1.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\NoSure2.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\percent.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\RandomBottom.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\RandomTestIco.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\RegVerityIcon.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\Response1.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\Response2.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\SaveExam1.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\SetCount.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\SubmitExam.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\SubTypeBoxClose.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\SubTypeSet.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\tableheadbg.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\TestCenter.png" />
+    <Content Include="Content\LKAssembly\Images\EditTest\TestCommonIco.png" />
+    <Content Include="Content\LKAssembly\Images\EditTest\Testloading.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\titBg.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\titBg2.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\TitFBg.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\ViesTestMainbg.jpg" />
+    <Content Include="Content\LKAssembly\Images\EditTest\ViewTestbg.jpg" />
+    <Content Include="Content\LKAssembly\Images\EditTest\ViewTestBox.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\ViewTestFooter.jpg" />
+    <Content Include="Content\LKAssembly\Images\EditTest\ViewTestIco.jpg" />
+    <Content Include="Content\LKAssembly\Images\EditTest\wait.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\wtRed.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\勾叉.gif" />
+    <Content Include="Content\LKAssembly\Images\EditTest\未标题-3.gif" />
+    <Content Include="Content\LKAssembly\Subject\EditHtml.css" />
+    <Content Include="Content\LKAssembly\Subject\EditSubject.css" />
+    <Content Include="Content\LKAssembly\Subject\QuestionTypes.css" />
+    <Content Include="Content\LKAssembly\Subject\ViewLibSubject.css" />
+    <Content Include="Content\LKAssembly\Test\CreateExam.css" />
+    <Content Include="Content\LKAssembly\Test\EditExam.css" />
+    <Content Include="Content\LKAssembly\Test\FindSubType.css" />
+    <Content Include="Content\LKAssembly\Test\RandomTest.css" />
+    <Content Include="Content\LKAssembly\Test\SubjectType.css" />
+    <Content Include="Content\LKAssembly\Test\ViewTest.css" />
+    <Content Include="Content\StyleSheet\Basic.css" />
+    <Content Include="Content\StyleSheet\bk.jpg" />
+    <Content Include="Content\StyleSheet\Global.css" />
+    <Content Include="Content\StyleSheet\LogOn.css" />
+    <Content Include="Content\StyleSheet\MvcPager.css" />
+    <Content Include="Content\StyleSheet\Site.css" />
+    <Content Include="Content\StyleSheet\TabSwitch.css" />
+    <Content Include="Content\StyleSheet\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\StyleSheet\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\StyleSheet\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\StyleSheet\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\StyleSheet\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\StyleSheet\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\StyleSheet\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\StyleSheet\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\StyleSheet\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\StyleSheet\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\StyleSheet\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\StyleSheet\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\StyleSheet\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\StyleSheet\themes\base\jquery-ui.css" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Content\StyleSheet\themes\redmond\jquery-ui-1.8.9.custom.css" />
+    <Content Include="Content\StyleSheet\UseBox.css" />
+    <Content Include="Fckeditor\editor\css\behaviors\disablehandles.htc" />
+    <Content Include="Fckeditor\editor\css\behaviors\showtableborders.htc" />
+    <Content Include="Fckeditor\editor\css\fck_editorarea.css" />
+    <Content Include="Fckeditor\editor\css\fck_internal.css" />
+    <Content Include="Fckeditor\editor\css\fck_showtableborders_gecko.css" />
+    <Content Include="Fckeditor\editor\css\images\block_address.png" />
+    <Content Include="Fckeditor\editor\css\images\block_blockquote.png" />
+    <Content Include="Fckeditor\editor\css\images\block_div.png" />
+    <Content Include="Fckeditor\editor\css\images\block_h1.png" />
+    <Content Include="Fckeditor\editor\css\images\block_h2.png" />
+    <Content Include="Fckeditor\editor\css\images\block_h3.png" />
+    <Content Include="Fckeditor\editor\css\images\block_h4.png" />
+    <Content Include="Fckeditor\editor\css\images\block_h5.png" />
+    <Content Include="Fckeditor\editor\css\images\block_h6.png" />
+    <Content Include="Fckeditor\editor\css\images\block_p.png" />
+    <Content Include="Fckeditor\editor\css\images\block_pre.png" />
+    <Content Include="Fckeditor\editor\css\images\fck_anchor.gif" />
+    <Content Include="Fckeditor\editor\css\images\fck_flashlogo.gif" />
+    <Content Include="Fckeditor\editor\css\images\fck_hiddenfield.gif" />
+    <Content Include="Fckeditor\editor\css\images\fck_pagebreak.gif" />
+    <Content Include="Fckeditor\editor\css\images\fck_plugin.gif" />
+    <Content Include="Fckeditor\editor\dialog\common\fck_dialog_common.css" />
+    <Content Include="Fckeditor\editor\dialog\common\fck_dialog_common.js" />
+    <Content Include="Fckeditor\editor\dialog\common\images\locked.gif" />
+    <Content Include="Fckeditor\editor\dialog\common\images\reset.gif" />
+    <Content Include="Fckeditor\editor\dialog\common\images\unlocked.gif" />
+    <Content Include="Fckeditor\editor\dialog\fck_about.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_about\logo_fckeditor.gif" />
+    <Content Include="Fckeditor\editor\dialog\fck_about\logo_fredck.gif" />
+    <Content Include="Fckeditor\editor\dialog\fck_about\sponsors\spellchecker_net.gif" />
+    <Content Include="Fckeditor\editor\dialog\fck_anchor.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_button.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_checkbox.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_colorselector.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_div.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_docprops.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_docprops\fck_document_preview.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_flash.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_flash\fck_flash.js" />
+    <Content Include="Fckeditor\editor\dialog\fck_flash\fck_flash_preview.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_form.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_hiddenfield.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_image.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_image\fck_image.js" />
+    <Content Include="Fckeditor\editor\dialog\fck_image\fck_image_preview.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_link.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_link\fck_link.js" />
+    <Content Include="Fckeditor\editor\dialog\fck_listprop.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_paste.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_radiobutton.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_replace.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_scayt.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_scayt\scayt_dialog.css" />
+    <Content Include="Fckeditor\editor\dialog\fck_select.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_select\fck_select.js" />
+    <Content Include="Fckeditor\editor\dialog\fck_smiley.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_source.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_specialchar.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_spellerpages.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_spellerpages\spellerpages\blank.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_spellerpages\spellerpages\controls.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_spellerpages\spellerpages\controlWindow.js" />
+    <Content Include="Fckeditor\editor\dialog\fck_spellerpages\spellerpages\spellchecker.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_spellerpages\spellerpages\spellChecker.js" />
+    <Content Include="Fckeditor\editor\dialog\fck_spellerpages\spellerpages\spellerStyle.css" />
+    <Content Include="Fckeditor\editor\dialog\fck_spellerpages\spellerpages\wordWindow.js" />
+    <Content Include="Fckeditor\editor\dialog\fck_table.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_tablecell.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_template.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_template\images\template1.gif" />
+    <Content Include="Fckeditor\editor\dialog\fck_template\images\template2.gif" />
+    <Content Include="Fckeditor\editor\dialog\fck_template\images\template3.gif" />
+    <Content Include="Fckeditor\editor\dialog\fck_textarea.html" />
+    <Content Include="Fckeditor\editor\dialog\fck_textfield.html" />
+    <Content Include="Fckeditor\editor\dtd\fck_dtd_test.html" />
+    <Content Include="Fckeditor\editor\dtd\fck_xhtml10strict.js" />
+    <Content Include="Fckeditor\editor\dtd\fck_xhtml10transitional.js" />
+    <Content Include="Fckeditor\editor\fckdebug.html" />
+    <Content Include="Fckeditor\editor\fckdialog.html" />
+    <Content Include="Fckeditor\editor\fckeditor.html" />
+    <Content Include="Fckeditor\editor\fckeditor.original.html" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\browser.css" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\browser.html" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\frmactualfolder.html" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\frmcreatefolder.html" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\frmfolders.html" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\frmresourceslist.html" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\frmresourcetype.html" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\frmupload.html" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\ButtonArrow.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\Folder.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\Folder32.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\FolderOpened.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\FolderOpened32.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\FolderUp.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\ai.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\avi.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\bmp.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\cs.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\default.icon.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\dll.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\doc.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\exe.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\fla.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\gif.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\htm.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\html.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\jpg.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\js.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\mdb.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\mp3.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\pdf.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\png.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\ppt.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\rdp.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\swf.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\swt.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\txt.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\vsd.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\xls.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\xml.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\32\zip.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\ai.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\avi.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\bmp.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\cs.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\default.icon.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\dll.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\doc.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\exe.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\fla.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\gif.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\htm.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\html.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\jpg.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\js.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\mdb.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\mp3.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\pdf.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\png.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\ppt.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\rdp.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\swf.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\swt.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\txt.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\vsd.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\xls.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\xml.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\icons\zip.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\images\spacer.gif" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\js\common.js" />
+    <Content Include="Fckeditor\editor\filemanager\browser\default\js\fckxml.js" />
+    <Content Include="Fckeditor\editor\filemanager\connectors\aspx\config.ascx" />
+    <Content Include="Fckeditor\editor\filemanager\connectors\aspx\connector.aspx" />
+    <Content Include="Fckeditor\editor\filemanager\connectors\aspx\upload.aspx" />
+    <Content Include="Fckeditor\editor\images\anchor.gif" />
+    <Content Include="Fckeditor\editor\images\arrow_ltr.gif" />
+    <Content Include="Fckeditor\editor\images\arrow_rtl.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\angel_smile.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\angry_smile.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\broken_heart.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\cake.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\confused_smile.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\cry_smile.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\devil_smile.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\embaressed_smile.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\envelope.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\heart.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\kiss.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\lightbulb.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\omg_smile.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\regular_smile.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\sad_smile.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\shades_smile.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\teeth_smile.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\thumbs_down.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\thumbs_up.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\tounge_smile.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\whatchutalkingabout_smile.gif" />
+    <Content Include="Fckeditor\editor\images\smiley\msn\wink_smile.gif" />
+    <Content Include="Fckeditor\editor\images\spacer.gif" />
+    <Content Include="Fckeditor\editor\js\fckadobeair.js" />
+    <Content Include="Fckeditor\editor\js\fckeditorcode_gecko.js" />
+    <Content Include="Fckeditor\editor\js\fckeditorcode_ie.js" />
+    <Content Include="Fckeditor\editor\lang\en.js" />
+    <Content Include="Fckeditor\editor\lang\zh-cn.js" />
+    <Content Include="Fckeditor\editor\lang\zh.js" />
+    <Content Include="Fckeditor\editor\plugins\autogrow\fckplugin.js" />
+    <Content Include="Fckeditor\editor\plugins\bbcode\fckplugin.js" />
+    <Content Include="Fckeditor\editor\plugins\bbcode\_sample\sample.config.js" />
+    <Content Include="Fckeditor\editor\plugins\bbcode\_sample\sample.html" />
+    <Content Include="Fckeditor\editor\plugins\dragresizetable\fckplugin.js" />
+    <Content Include="Fckeditor\editor\plugins\placeholder\fckplugin.js" />
+    <Content Include="Fckeditor\editor\plugins\placeholder\fck_placeholder.html" />
+    <Content Include="Fckeditor\editor\plugins\placeholder\lang\de.js" />
+    <Content Include="Fckeditor\editor\plugins\placeholder\lang\en.js" />
+    <Content Include="Fckeditor\editor\plugins\placeholder\lang\es.js" />
+    <Content Include="Fckeditor\editor\plugins\placeholder\lang\fr.js" />
+    <Content Include="Fckeditor\editor\plugins\placeholder\lang\it.js" />
+    <Content Include="Fckeditor\editor\plugins\placeholder\lang\pl.js" />
+    <Content Include="Fckeditor\editor\plugins\placeholder\placeholder.gif" />
+    <Content Include="Fckeditor\editor\plugins\simplecommands\fckplugin.js" />
+    <Content Include="Fckeditor\editor\plugins\tablecommands\fckplugin.js" />
+    <Content Include="Fckeditor\editor\skins\default\fck_dialog.css" />
+    <Content Include="Fckeditor\editor\skins\default\fck_dialog_ie6.js" />
+    <Content Include="Fckeditor\editor\skins\default\fck_editor.css" />
+    <Content Include="Fckeditor\editor\skins\default\fck_strip.gif" />
+    <Content Include="Fckeditor\editor\skins\default\images\dialog.sides.gif" />
+    <Content Include="Fckeditor\editor\skins\default\images\dialog.sides.png" />
+    <Content Include="Fckeditor\editor\skins\default\images\dialog.sides.rtl.png" />
+    <Content Include="Fckeditor\editor\skins\default\images\sprites.gif" />
+    <Content Include="Fckeditor\editor\skins\default\images\sprites.png" />
+    <Content Include="Fckeditor\editor\skins\default\images\toolbar.arrowright.gif" />
+    <Content Include="Fckeditor\editor\skins\default\images\toolbar.buttonarrow.gif" />
+    <Content Include="Fckeditor\editor\skins\default\images\toolbar.collapse.gif" />
+    <Content Include="Fckeditor\editor\skins\default\images\toolbar.end.gif" />
+    <Content Include="Fckeditor\editor\skins\default\images\toolbar.expand.gif" />
+    <Content Include="Fckeditor\editor\skins\default\images\toolbar.separator.gif" />
+    <Content Include="Fckeditor\editor\skins\default\images\toolbar.start.gif" />
+    <Content Include="Fckeditor\editor\skins\office2003\fck_dialog.css" />
+    <Content Include="Fckeditor\editor\skins\office2003\fck_dialog_ie6.js" />
+    <Content Include="Fckeditor\editor\skins\office2003\fck_editor.css" />
+    <Content Include="Fckeditor\editor\skins\office2003\fck_NewQn.gif" />
+    <Content Include="Fckeditor\editor\skins\office2003\fck_strip.gif" />
+    <Content Include="Fckeditor\editor\skins\office2003\images\dialog.sides.gif" />
+    <Content Include="Fckeditor\editor\skins\office2003\images\dialog.sides.png" />
+    <Content Include="Fckeditor\editor\skins\office2003\images\dialog.sides.rtl.png" />
+    <Content Include="Fckeditor\editor\skins\office2003\images\sprites.gif" />
+    <Content Include="Fckeditor\editor\skins\office2003\images\sprites.png" />
+    <Content Include="Fckeditor\editor\skins\office2003\images\toolbar.arrowright.gif" />
+    <Content Include="Fckeditor\editor\skins\office2003\images\toolbar.bg.gif" />
+    <Content Include="Fckeditor\editor\skins\office2003\images\toolbar.buttonarrow.gif" />
+    <Content Include="Fckeditor\editor\skins\office2003\images\toolbar.collapse.gif" />
+    <Content Include="Fckeditor\editor\skins\office2003\images\toolbar.end.gif" />
+    <Content Include="Fckeditor\editor\skins\office2003\images\toolbar.expand.gif" />
+    <Content Include="Fckeditor\editor\skins\office2003\images\toolbar.separator.gif" />
+    <Content Include="Fckeditor\editor\skins\office2003\images\toolbar.start.gif" />
+    <Content Include="Fckeditor\editor\skins\silver\fck_dialog.css" />
+    <Content Include="Fckeditor\editor\skins\silver\fck_dialog_ie6.js" />
+    <Content Include="Fckeditor\editor\skins\silver\fck_editor.css" />
+    <Content Include="Fckeditor\editor\skins\silver\fck_strip.gif" />
+    <Content Include="Fckeditor\editor\skins\silver\images\dialog.sides.gif" />
+    <Content Include="Fckeditor\editor\skins\silver\images\dialog.sides.png" />
+    <Content Include="Fckeditor\editor\skins\silver\images\dialog.sides.rtl.png" />
+    <Content Include="Fckeditor\editor\skins\silver\images\sprites.gif" />
+    <Content Include="Fckeditor\editor\skins\silver\images\sprites.png" />
+    <Content Include="Fckeditor\editor\skins\silver\images\toolbar.arrowright.gif" />
+    <Content Include="Fckeditor\editor\skins\silver\images\toolbar.buttonarrow.gif" />
+    <Content Include="Fckeditor\editor\skins\silver\images\toolbar.buttonbg.gif" />
+    <Content Include="Fckeditor\editor\skins\silver\images\toolbar.collapse.gif" />
+    <Content Include="Fckeditor\editor\skins\silver\images\toolbar.end.gif" />
+    <Content Include="Fckeditor\editor\skins\silver\images\toolbar.expand.gif" />
+    <Content Include="Fckeditor\editor\skins\silver\images\toolbar.separator.gif" />
+    <Content Include="Fckeditor\editor\skins\silver\images\toolbar.start.gif" />
+    <Content Include="Fckeditor\editor\skins\_fckviewstrips.html" />
+    <Content Include="Fckeditor\editor\wsc\ciframe.html" />
+    <Content Include="Fckeditor\editor\wsc\tmpFrameset.html" />
+    <Content Include="Fckeditor\editor\wsc\w.html" />
+    <Content Include="Fckeditor\fckconfig.js" />
+    <Content Include="Fckeditor\fckeditor.js" />
+    <Content Include="Fckeditor\fckstyles.xml" />
+    <Content Include="Fckeditor\fcktemplates.xml" />
+    <Content Include="Library\DLL\CodeSmith.Data.dll" />
+    <Content Include="Library\DLL\ExportToExcel.dll" />
+    <Content Include="Library\DLL\ExpressionMapper.dll" />
+    <Content Include="Library\DLL\Fasterflect.dll" />
+    <Content Include="Library\DLL\Fasterflect.XML" />
+    <Content Include="Library\DLL\LoveKao.Page.dll" />
+    <Content Include="Library\DLL\LoveKao.Page.pdb" />
+    <Content Include="Library\DLL\LoveKaoExam.Data.dll" />
+    <Content Include="Library\DLL\LoveKaoExam.Data.XML" />
+    <Content Include="Library\DLL\MvcPager.dll" />
+    <Content Include="Library\DLL\MvcPager1.4ForMvc2.0Src_En.dll" />
+    <Content Include="Library\DLL\MvcPager1.4ForMvc2.0Src_En.pdb" />
+    <Content Include="Library\DLL\Newtonsoft.Json.dll" />
+    <Content Include="Library\DLL\NPOI.dll" />
+    <Content Include="Library\Plugins\Autocomplete\images\indicator.gif" />
+    <Content Include="Library\Plugins\Autocomplete\indicator.gif" />
+    <Content Include="Library\Plugins\Autocomplete\jquery.autocomplete.css" />
+    <Content Include="Library\Plugins\Autocomplete\jquery.autocomplete.js" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\boxy-b-b.png" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\boxy-b-l.png" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\boxy-b-r.png" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\boxy-close-btn-over.gif" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\boxy-close-btn-over.png" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\boxy-close-btn.gif" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\boxy-close-btn.png" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\boxy-l-l-1.png" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\boxy-l-l.png" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\boxy-r-r.png" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\boxy-t-l.png" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\boxy-t-r.png" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\boxy-t-t.png" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\icon_alert.gif" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\icon_dialog.gif" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\icon_query.gif" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\Images\window.gif" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\JavaScripts\jQuery.boxy.js" />
+    <Content Include="Library\Plugins\Boxy-0.1.4\StyleSheets\boxy.css" />
+    <Content Include="Library\Plugins\Equals\equals.js" />
+    <Content Include="Library\Plugins\Feeds\Example.htm" />
+    <Content Include="Library\Plugins\Feeds\jquery.gfeed.js" />
+    <Content Include="Library\Plugins\Form\Example.htm" />
+    <Content Include="Library\Plugins\Form\jquery.form.js" />
+    <Content Include="Library\Plugins\jquery.progressbar\change.txt" />
+    <Content Include="Library\Plugins\jquery.progressbar\demo.txt" />
+    <Content Include="Library\Plugins\jquery.progressbar\images\progress-bar-back.gif" />
+    <Content Include="Library\Plugins\jquery.progressbar\images\progress-bar.gif" />
+    <Content Include="Library\Plugins\jquery.progressbar\images\progressbar.gif" />
+    <Content Include="Library\Plugins\jquery.progressbar\images\progressbg_black.gif" />
+    <Content Include="Library\Plugins\jquery.progressbar\images\progressbg_green.gif" />
+    <Content Include="Library\Plugins\jquery.progressbar\images\progressbg_orange.gif" />
+    <Content Include="Library\Plugins\jquery.progressbar\images\progressbg_red.gif" />
+    <Content Include="Library\Plugins\jquery.progressbar\images\progressbg_yellow.gif" />
+    <Content Include="Library\Plugins\jquery.progressbar\images\transparentBg.png" />
+    <Content Include="Library\Plugins\jquery.progressbar\js\jquery.js" />
+    <Content Include="Library\Plugins\jquery.progressbar\js\jquery.progressbar.js" />
+    <Content Include="Library\Plugins\jquery.progressbar\js\jquery.progressbar.min.js" />
+    <Content Include="Library\Plugins\jquery.qtip-1.0.0-rc3.custom\jquery-qtip-1.0.0-rc3223659\jquery.qtip-1.0.0-rc3.js" />
+    <Content Include="Library\Plugins\jquery.qtip-1.0.0-rc3.custom\jquery-qtip-1.0.0-rc3223659\jquery.qtip-1.0.0-rc3.min.js" />
+    <Content Include="Library\Plugins\jquery.qtip-1.0.0-rc3.custom\jquery-qtip-1.0.0-rc3223659\jquery.qtip.debug-1.0.0-rc3.js" />
+    <Content Include="Library\Plugins\jquery_position\jquery-position.js" />
+    <Content Include="Library\Plugins\jquery_selection\index1.html" />
+    <Content Include="Library\Plugins\jquery_selection\jquery.selection.js" />
+    <Content Include="Library\Plugins\Json2\json2.js" />
+    <Content Include="Library\Plugins\LKSort\Images\zoom.png" />
+    <Content Include="Library\Plugins\LKSort\JavaScript\LKSort.js" />
+    <Content Include="Library\Plugins\LKSort\JavaScript\LKSortZJSY.js" />
+    <Content Include="Library\Plugins\LKSort\JavaScript\LKSortZJSY_IFRAME.js" />
+    <Content Include="Library\Plugins\LKSort\Page\LKSortZJSY.htm" />
+    <Content Include="Library\Plugins\LKSort\StyleSheets\LKSort.css" />
+    <Content Include="Library\Plugins\LKSort\StyleSheets\LKSortZJSY.css" />
+    <Content Include="Library\Plugins\lk_tags\images\input.gif" />
+    <Content Include="Library\Plugins\lk_tags\index.htm" />
+    <Content Include="Library\Plugins\lk_tags\lk.tags.js" />
+    <Content Include="Library\Plugins\lk_tags\tags.css" />
+    <Content Include="Library\Plugins\LoginReg\Images\key_go.png" />
+    <Content Include="Library\Plugins\LoginReg\Images\mtext.gif" />
+    <Content Include="Library\Plugins\LoginReg\Images\RegIcon.gif" />
+    <Content Include="Library\Plugins\LoginReg\JavaScript\Login.js" />
+    <Content Include="Library\Plugins\LoginReg\JavaScript\Register.js" />
+    <Content Include="Library\Plugins\LoginReg\Login.htm" />
+    <Content Include="Library\Plugins\LoginReg\Register.htm" />
+    <Content Include="Library\Plugins\LoginReg\StyleSheets\Register.css" />
+    <Content Include="Library\Plugins\LoginReg\VerifyCode.aspx" />
+    <Content Include="Library\Plugins\MsgBox\Images\bottom_left.gif" />
+    <Content Include="Library\Plugins\MsgBox\Images\bottom_middle.gif" />
+    <Content Include="Library\Plugins\MsgBox\Images\bottom_right.gif" />
+    <Content Include="Library\Plugins\MsgBox\Images\dire_bottom.gif" />
+    <Content Include="Library\Plugins\MsgBox\Images\dire_left.gif" />
+    <Content Include="Library\Plugins\MsgBox\Images\dire_left_reg.gif" />
+    <Content Include="Library\Plugins\MsgBox\Images\dire_top.gif" />
+    <Content Include="Library\Plugins\MsgBox\Images\left_middle.gif" />
+    <Content Include="Library\Plugins\MsgBox\Images\right_middle.gif" />
+    <Content Include="Library\Plugins\MsgBox\Images\top_left.gif" />
+    <Content Include="Library\Plugins\MsgBox\Images\top_left_0.gif" />
+    <Content Include="Library\Plugins\MsgBox\Images\top_middle.gif" />
+    <Content Include="Library\Plugins\MsgBox\Images\top_right.gif" />
+    <Content Include="Library\Plugins\MsgBox\JavaScripts\jQuery.msgBox.js" />
+    <Content Include="Library\Plugins\MsgBox\StyleSheets\msgBox.css" />
+    <Content Include="Library\Plugins\Select\css\select2css.css" />
+    <Content Include="Library\Plugins\Select\images\mac-select.gif" />
+    <Content Include="Library\Plugins\Select\images\tm2008-select.gif" />
+    <Content Include="Library\Plugins\Select\images\ubox-select.gif" />
+    <Content Include="Library\Plugins\Select\index.html" />
+    <Content Include="Library\Plugins\Select\index.jpg" />
+    <Content Include="Library\Plugins\Select\js\select2css.js" />
+    <Content Include="Library\Plugins\TabSwitch\jquery.tabswitch.js" />
+    <Content Include="Library\UI\blockUI\jquery.blockUI.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\redmond\jquery-ui-1.8.6.custom.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\css\ui-lightness\jquery-ui-1.8.6.custom.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\AUTHORS.txt" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\accordion\collapsible.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\accordion\custom-icons.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\accordion\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\accordion\fillspace.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\accordion\hoverintent.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\accordion\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\accordion\mouseover.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\accordion\no-auto-height.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\accordion\sortable.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\addClass\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\addClass\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\animate\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\animate\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\categories.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\combobox.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\custom-data.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\folding.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\images\jqueryui_32x32.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\images\jquery_32x32.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\images\sizzlejs_32x32.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\images\transparent_1x1.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\images\ui-anim_basic_16x16.gif" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\london.xml" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\maxheight.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\multiple-remote.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\multiple.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\remote-jsonp.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\remote-with-cache.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\remote.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\xml.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\button\checkbox.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\button\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\button\icons.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\button\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\button\radio.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\button\splitbutton.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\button\toolbar.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\alt-field.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\animation.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\buttonbar.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\date-formats.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\dropdown-month-year.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\event-search.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\icon-trigger.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\images\calendar.gif" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\inline.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\localization.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\min-max.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\multiple-calendars.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\other-months.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\datepicker\show-week.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\demos.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\dialog\animated.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\dialog\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\dialog\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\dialog\modal-confirmation.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\dialog\modal-form.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\dialog\modal-message.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\dialog\modal.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\draggable\constrain-movement.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\draggable\cursor-style.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\draggable\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\draggable\delay-start.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\draggable\events.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\draggable\handle.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\draggable\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\draggable\revert.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\draggable\scroll.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\draggable\snap-to.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\draggable\sortable.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\draggable\visual-feedback.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\accepted-elements.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\images\high_tatras.jpg" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\images\high_tatras2.jpg" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\images\high_tatras2_min.jpg" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\images\high_tatras3.jpg" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\images\high_tatras3_min.jpg" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\images\high_tatras4.jpg" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\images\high_tatras4_min.jpg" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\images\high_tatras_min.jpg" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\photo-manager.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\propagation.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\revert.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\shopping-cart.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\droppable\visual-feedback.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\effect\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\effect\easing.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\effect\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\hide\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\hide\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\images\calendar.gif" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\images\demo-config-on-tile.gif" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\images\demo-config-on.gif" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\images\demo-spindown-closed.gif" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\images\demo-spindown-open.gif" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\images\icon-docs-info.gif" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\images\pbar-ani.gif" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\position\cycler.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\position\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\position\images\earth.jpg" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\position\images\flight.jpg" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\position\images\rocket.jpg" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\position\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\progressbar\animated.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\progressbar\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\progressbar\images\pbar-ani.gif" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\progressbar\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\progressbar\resize.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\removeClass\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\removeClass\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\resizable\animate.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\resizable\aspect-ratio.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\resizable\constrain-area.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\resizable\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\resizable\delay-start.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\resizable\helper.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\resizable\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\resizable\max-min.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\resizable\snap-to-grid.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\resizable\synchronous-resize.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\resizable\textarea.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\resizable\visual-feedback.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\selectable\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\selectable\display-grid.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\selectable\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\selectable\serialize.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\show\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\show\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\slider\colorpicker.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\slider\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\slider\hotelrooms.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\slider\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\slider\multiple-vertical.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\slider\range-vertical.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\slider\range.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\slider\rangemax.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\slider\rangemin.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\slider\side-scroll.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\slider\slider-vertical.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\slider\steps.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\slider\tabs.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\sortable\connect-lists-through-tabs.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\sortable\connect-lists.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\sortable\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\sortable\delay-start.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\sortable\display-grid.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\sortable\empty-lists.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\sortable\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\sortable\items.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\sortable\placeholder.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\sortable\portlets.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\switchClass\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\switchClass\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\ajax.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\ajax\content1.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\ajax\content2.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\bottom.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\collapsible.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\cookie.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\manipulation.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\mouseover.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\sortable.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\vertical.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\toggleClass\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\toggleClass\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\toggle\default.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\toggle\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\accordion.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\addClass.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\animate.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\autocomplete.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\button.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\datepicker.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\dialog.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\draggable.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\droppable.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\effect.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\hide.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\position.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\progressbar.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\removeClass.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\resizable.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\selectable.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\show.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\slider.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\sortable.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\switchClass.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\tabs.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\toggle.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\docs\toggleClass.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\external\jquery.bgiframe-2.1.2.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\external\jquery.cookie.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\external\jquery.metadata.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\external\qunit.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\external\qunit.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\GPL-LICENSE.txt" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\MIT-LICENSE.txt" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.all.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.base.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.button.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.core.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.slider.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\base\jquery.ui.theme.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery-ui-1.8.6.custom.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.accordion.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.all.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.autocomplete.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.base.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.button.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.core.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.datepicker.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.dialog.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.progressbar.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.resizable.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.selectable.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.slider.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.tabs.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\redmond\jquery.ui.theme.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery-ui-1.8.6.custom.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.accordion.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.all.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.autocomplete.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.base.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.button.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.core.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.datepicker.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.dialog.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.progressbar.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.resizable.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.selectable.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.slider.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.tabs.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\themes\ui-lightness\jquery.ui.theme.css" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery-ui-i18n.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery-ui-timepicker-addon-zh-CN.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-af.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ar.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-az.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-bg.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-bs.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ca.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-cs.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-da.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-de.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-el.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-eo.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-es.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-et.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-eu.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fa.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fi.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fo.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fr-CH.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-fr.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-gl.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-he.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-hr.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-hu.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-hy.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-id.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-is.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-it.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ja.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ko.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-kz.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-lt.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-lv.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ms.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-nl.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-no.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-pl.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-pt.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ro.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ru.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sk.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sl.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sq.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sr-SR.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sr.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-sv.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-ta.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-th.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-tr.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-uk.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-vi.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-zh-CN.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-zh-HK.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\i18n\jquery.ui.datepicker-zh-TW.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery-ui-1.8.6.custom.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery-ui-timepicker-addon.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.blind.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.bounce.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.clip.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.core.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.drop.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.explode.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.fade.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.fold.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.highlight.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.pulsate.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.scale.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.shake.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.slide.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.effects.transfer.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.accordion.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.autocomplete.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.button.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.core.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.datepicker.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.dialog.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.draggable.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.droppable.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.mouse.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.position.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.progressbar.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.resizable.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.selectable.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.slider.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.sortable.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.tabs.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\jquery.ui.widget.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.blind.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.bounce.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.clip.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.core.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.drop.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.explode.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.fade.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.fold.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.highlight.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.pulsate.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.scale.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.shake.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.slide.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.effects.transfer.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.accordion.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.autocomplete.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.button.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.core.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.datepicker.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.dialog.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.draggable.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.droppable.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.mouse.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.position.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.progressbar.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.resizable.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.selectable.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.slider.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.sortable.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.tabs.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\ui\minified\jquery.ui.widget.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\version.txt" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\index.html" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\js\jquery-1.4.2.min.js" />
+    <Content Include="Library\UI\jquery-ui-1.8.6.custom\js\jquery-ui-1.8.6.custom.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\JQuery\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\JQuery\jquery-1.4.1.js" />
+    <Content Include="Scripts\JQuery\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\JQuery\jquery-1.4.2-vsdoc.js" />
+    <Content Include="Scripts\JQuery\jquery-1.4.2.js" />
+    <Content Include="Scripts\JQuery\jquery-1.5.js" />
+    <Content Include="Scripts\JQuery\jquery-ui-1.8.9.custom.js" />
+    <Content Include="Scripts\JQuery\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\JQuery\jquery.validate.js" />
+    <Content Include="Scripts\JQuery\jquery.validate.min.js" />
+    <Content Include="Scripts\Base\LKConfig.js" />
+    <Content Include="Scripts\Microsoft\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\Microsoft\MicrosoftAjax.js" />
+    <Content Include="Scripts\Microsoft\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\Microsoft\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\Microsoft\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Scripts\Microsoft\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\Views\Account.js" />
+    <Content Include="Scripts\Views\Admin\Configuration.js" />
+    <Content Include="Scripts\Views\Admin\Department.js" />
+    <Content Include="Scripts\Views\Admin\EmbedHandle.js" />
+    <Content Include="Scripts\Views\Admin\User.js" />
+    <Content Include="Scripts\Views\Examinee\EmbedHandle.js" />
+    <Content Include="Scripts\Views\Examiner\Analysis.js" />
+    <Content Include="Scripts\Views\Examiner\Binding.js" />
+    <Content Include="Scripts\Views\Examiner\EmbedHandle.js" />
+    <Content Include="Scripts\Views\Examiner\Organization.js" />
+    <Content Include="Scripts\Views\Examiner\Share.js" />
+    <Content Include="Scripts\Base\Global.js" />
+    <Content Include="Scripts\Base\GlobalManage.js" />
+    <Content Include="Scripts\Views\LKAssembly\Subject\ChildQuestionTypes.js" />
+    <Content Include="Scripts\Views\LKAssembly\Subject\EditSubjects.js" />
+    <Content Include="Scripts\Views\LKAssembly\Subject\IFrameSubjectImages.js" />
+    <Content Include="Scripts\Views\LKAssembly\Subject\IFrameSubjectRecog.js" />
+    <Content Include="Scripts\Views\LKAssembly\Subject\IFrameSubjectView.js" />
+    <Content Include="Scripts\Views\LKAssembly\Subject\QuestionTypes.js" />
+    <Content Include="Scripts\Views\LKAssembly\Subject\RecogLibSubject.js" />
+    <Content Include="Scripts\Views\LKAssembly\Subject\ViewLibSubject.js" />
+    <Content Include="Scripts\Views\LKAssembly\Subject\复件 EditSubjects.js" />
+    <Content Include="Scripts\Views\LKAssembly\Test\CreateExam.js" />
+    <Content Include="Scripts\Views\LKAssembly\Test\EditExam.js" />
+    <Content Include="Scripts\Views\LKAssembly\Test\FindSubType.js" />
+    <Content Include="Scripts\Views\LKAssembly\Test\Jquery.Object.js" />
+    <Content Include="Scripts\Views\LKAssembly\Test\RandomTest.js" />
+    <Content Include="Scripts\Views\LKAssembly\Test\SubjectManager.js" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Views\Account\Details.aspx" />
+    <Content Include="Views\Account\LogOn.aspx" />
+    <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Admin\Configuration\Environment.aspx" />
+    <Content Include="Views\Admin\Department\Add.aspx" />
+    <Content Include="Views\Admin\Department\IFrame.aspx" />
+    <Content Include="Views\Admin\Department\List.aspx" />
+    <Content Include="Views\Admin\Department\UCEditor.ascx" />
+    <Content Include="Views\Admin\Department\UCList.ascx" />
+    <Content Include="Views\Admin\User\Add.aspx" />
+    <Content Include="Views\Admin\User\Examinee.aspx" />
+    <Content Include="Views\Admin\User\Examiner.aspx" />
+    <Content Include="Views\Admin\User\IFrame.aspx" />
+    <Content Include="Views\Admin\User\Imexport.aspx" />
+    <Content Include="Views\Admin\User\UCEditor.ascx" />
+    <Content Include="Views\Admin\User\UCExaminee.ascx" />
+    <Content Include="Views\Admin\User\UCExaminer.ascx" />
+    <Content Include="Views\Examinee\Exam\LogExam.aspx" />
+    <Content Include="Views\Examinee\Exam\LogPractice.aspx" />
+    <Content Include="Views\Examinee\Exam\OnlineExam.aspx" />
+    <Content Include="Views\Examinee\Exam\Rank.aspx" />
+    <Content Include="Views\Examinee\Exam\SelectExam.aspx" />
+    <Content Include="Views\Examinee\Exam\SelectPractice.aspx" />
+    <Content Include="Views\Examinee\Exam\UCLogExam.ascx" />
+    <Content Include="Views\Examinee\Exam\UCLogPractice.ascx" />
+    <Content Include="Views\Examinee\Exam\UCRank.ascx" />
+    <Content Include="Views\Examinee\Exam\UCSelectExam.ascx" />
+    <Content Include="Views\Examinee\Exam\UCSelectPractice.ascx" />
+    <Content Include="Views\Examiner\Analysis\ExamReport.aspx" />
+    <Content Include="Views\Examiner\Analysis\ExamResult.aspx" />
+    <Content Include="Views\Examiner\Analysis\UCExamHead.ascx" />
+    <Content Include="Views\Examiner\Analysis\UCExamReport.ascx" />
+    <Content Include="Views\Examiner\Analysis\UCExamResult.ascx" />
+    <Content Include="Views\Examiner\Binding\LKAccount.ascx" />
+    <Content Include="Views\Examiner\Binding\LKAccount.aspx" />
+    <Content Include="Views\Examiner\Binding\Validate.aspx" />
+    <Content Include="Views\Examiner\Organization\Exam.aspx" />
+    <Content Include="Views\Examiner\Organization\Practice.aspx" />
+    <Content Include="Views\Examiner\Organization\Setup.aspx" />
+    <Content Include="Views\Examiner\Organization\UCExam.ascx" />
+    <Content Include="Views\Examiner\Organization\UCPractice.ascx" />
+    <Content Include="Views\Examiner\Organization\UCSetup.ascx" />
+    <Content Include="Views\Examiner\Organization\Share\Download.ascx" />
+    <Content Include="Views\Examiner\Organization\Share\Download.aspx" />
+    <Content Include="Views\Examiner\Organization\Share\Resource.ascx" />
+    <Content Include="Views\Examiner\Organization\Share\Resource.aspx" />
+    <Content Include="Views\Examiner\Organization\Share\Upload.ascx" />
+    <Content Include="Views\Examiner\Organization\Share\Upload.aspx" />
+    <Content Include="Views\Examiner\Subject\Add.aspx" />
+    <Content Include="Views\Examiner\Subject\IFrame.aspx" />
+    <Content Include="Views\Examiner\Subject\MySubject.aspx" />
+    <Content Include="Views\Examiner\Subject\UCEditor.ascx" />
+    <Content Include="Views\Examiner\Subject\UCMySubject.ascx" />
+    <Content Include="Views\Examiner\Test\Add.aspx" />
+    <Content Include="Views\Examiner\Test\EditExam.aspx" />
+    <Content Include="Views\Examiner\Test\MyPapers.aspx" />
+    <Content Include="Views\Examiner\Test\UCMyPapers.ascx" />
+    <Content Include="Views\Examiner\Test\ViewTest.aspx" />
+    <Content Include="Views\Home\About.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Home\IndexAdmin.aspx" />
+    <Content Include="Views\LKAssembly\IFrame\ChildQuestionTypes.htm" />
+    <Content Include="Views\LKAssembly\IFrame\Fckeditor.aspx" />
+    <Content Include="Views\LKAssembly\IFrame\FindSubType.htm" />
+    <Content Include="Views\LKAssembly\IFrame\QuestionTypes.htm" />
+    <Content Include="Views\LKAssembly\IFrame\SubjectImages.aspx" />
+    <Content Include="Views\LKAssembly\IFrame\SubjectRecog.htm" />
+    <Content Include="Views\LKAssembly\IFrame\SubjectType.htm" />
+    <Content Include="Views\LKAssembly\IFrame\SubjectView.htm" />
+    <Content Include="Views\Shared\bk.jpg" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\ImageCode.aspx" />
+    <Content Include="Views\Shared\LogOnUserControl.ascx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Shared\UnderLine.aspx" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="bin\amd64\Microsoft.VC90.CRT\msvcr90.dll" />
+    <Content Include="bin\amd64\Microsoft.VC90.CRT\README_ENU.txt" />
+    <Content Include="bin\amd64\sqlceca40.dll" />
+    <Content Include="bin\amd64\sqlcecompact40.dll" />
+    <Content Include="bin\amd64\sqlceer40EN.dll" />
+    <Content Include="bin\amd64\sqlceme40.dll" />
+    <Content Include="bin\amd64\sqlceqp40.dll" />
+    <Content Include="bin\amd64\sqlcese40.dll" />
+    <Content Include="bin\EN\System.Data.SqlServerCe.xml" />
+    <Content Include="bin\System.Data.SqlServerCe.dll" />
+    <Content Include="bin\System.Data.SqlServerCe.Entity\System.Data.SqlServerCe.Entity.dll" />
+    <Content Include="bin\x86\Microsoft.VC90.CRT\msvcr90.dll" />
+    <Content Include="bin\x86\Microsoft.VC90.CRT\README_ENU.txt" />
+    <Content Include="bin\x86\sqlceca40.dll" />
+    <Content Include="bin\x86\sqlcecompact40.dll" />
+    <Content Include="bin\x86\sqlceer40EN.dll" />
+    <Content Include="bin\x86\sqlceme40.dll" />
+    <Content Include="bin\x86\sqlceqp40.dll" />
+    <Content Include="bin\x86\sqlcese40.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\_bin_deployableAssemblies\" />
+    <Folder Include="Content\File\ExamChart\" />
+    <Folder Include="Content\LKAssembly\Test\Css\" />
+    <Folder Include="Content\LKAssembly\Test\Images\" />
+    <Folder Include="Library\Plugins\Tooltip\" />
+    <Folder Include="UploadFiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\File\Excel\员工模板.xls" />
+    <None Include="Content\File\Excel\学生模板.xls" />
+    <None Include="Content\Images\LogOn\head_bg.psd" />
+    <None Include="Content\LKAssembly\Images\AllPage\Thumbs.db" />
+    <None Include="Content\LKAssembly\Images\Circle\Thumbs.db" />
+    <None Include="Content\LKAssembly\Images\EditSubject\Thumbs.db" />
+    <None Include="Fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.cfm" />
+    <None Include="Fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.php" />
+    <None Include="Fckeditor\editor\dialog\fck_spellerpages\spellerpages\server-scripts\spellchecker.pl" />
+    <None Include="Library\Plugins\jquery.progressbar\demo.php" />
+    <None Include="Library\Plugins\jquery.qtip-1.0.0-rc3.custom\jquery-qtip-1.0.0-rc3223659\INSTALL" />
+    <None Include="Library\Plugins\jquery.qtip-1.0.0-rc3.custom\jquery-qtip-1.0.0-rc3223659\LICENSE" />
+    <None Include="Library\Plugins\jquery.qtip-1.0.0-rc3.custom\jquery-qtip-1.0.0-rc3223659\REQUIREMENTS" />
+    <None Include="Library\Plugins\MsgBox\Images\dire_left.psd" />
+    <None Include="Library\Plugins\Select\images\Thumbs.db" />
+    <None Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\autocomplete\search.php" />
+    <None Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\ajax\content3-slow.php" />
+    <None Include="Library\UI\jquery-ui-1.8.6.custom\development-bundle\demos\tabs\ajax\content4-broken.php" />
+    <None Include="LoveKaoExam.csproj.vs10x" />
+    <None Include="bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <None Include="bin\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <Content Include="Views\Home\IndexStudent.aspx" />
+    <Content Include="Views\Home\IndexTeacher.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8215</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/LoveKaoExam</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

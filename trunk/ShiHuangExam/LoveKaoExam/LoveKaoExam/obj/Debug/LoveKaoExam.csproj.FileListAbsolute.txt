@@ -1,0 +1,180 @@
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.dll
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.pdb
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\bin\CodeSmith.Data.dll
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\bin\ExportToExcel.dll
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\bin\ExpressionMapper.dll
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\bin\Fasterflect.dll
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.dll
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.dll
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\bin\Newtonsoft.Json.dll
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.pdb
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\bin\Fasterflect.xml
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.xml
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\obj\Debug\ResolveAssemblyReference.cache
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.dll
+E:\LoveKao项目\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.pdb
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.dll
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.pdb
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\CodeSmith.Data.dll
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\ExportToExcel.dll
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\ExpressionMapper.dll
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\Fasterflect.dll
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\FredCK.FCKeditorV2.dll
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.dll
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.dll
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.dll
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\Newtonsoft.Json.dll
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\NPOI.dll
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.pdb
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.pdb
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\Fasterflect.xml
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.xml
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\ResolveAssemblyReference.cache
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.dll
+E:\LveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.pdb
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.dll
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.pdb
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\CodeSmith.Data.dll
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\ExportToExcel.dll
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\ExpressionMapper.dll
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\Fasterflect.dll
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\FredCK.FCKeditorV2.dll
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.dll
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.dll
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.dll
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\Newtonsoft.Json.dll
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\NPOI.dll
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.pdb
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.pdb
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\Fasterflect.xml
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.xml
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.dll
+C:\Documents and Settings\LuoMingYi\桌面\LveKao团队\LveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.pdb
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.dll
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.pdb
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\CodeSmith.Data.dll
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\ExportToExcel.dll
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\ExpressionMapper.dll
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\Fasterflect.dll
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\FredCK.FCKeditorV2.dll
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.dll
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.dll
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.dll
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\Newtonsoft.Json.dll
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\NPOI.dll
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.pdb
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\Fasterflect.xml
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.xml
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.pdb
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\ResolveAssemblyReference.cache
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.dll
+E:\LoveKao项目\LoveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.pdb
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.dll
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.pdb
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\CodeSmith.Data.dll
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\ExportToExcel.dll
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\ExpressionMapper.dll
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\Fasterflect.dll
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\FredCK.FCKeditorV2.dll
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.dll
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.dll
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.dll
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\Newtonsoft.Json.dll
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\NPOI.dll
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.pdb
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\Fasterflect.xml
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.xml
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.pdb
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\ResolveAssemblyReference.cache
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.dll
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.pdb
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\App_Data\LoveKaoExam.sdf
+E:\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\System.Data.SqlServerCe.Entity.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\App_Data\LoveKaoExam.sdf
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.pdb
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\CodeSmith.Data.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\ExportToExcel.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\ExpressionMapper.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\Fasterflect.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\FredCK.FCKeditorV2.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\Newtonsoft.Json.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\NPOI.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.pdb
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\Fasterflect.xml
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.xml
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.pdb
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.pdb
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\System.Data.Entity.dll
+C:\Documents and Settings\LuoMingYi\桌面\LoveKao团队\LoveKao团队\LoveKaoExam\LoveKaoExam\bin\System.Web.Entity.dll
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\App_Data\LoveKaoExam.sdf
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.dll
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.pdb
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\CodeSmith.Data.dll
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\ExportToExcel.dll
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\ExpressionMapper.dll
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\Fasterflect.dll
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.dll
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\Newtonsoft.Json.dll
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\NPOI.dll
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\System.Data.Entity.dll
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\System.Web.Entity.dll
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.dll
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\Fasterflect.xml
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.xml
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.pdb
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.pdb
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\obj\Debug\ResolveAssemblyReference.cache
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.dll
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.pdb
+E:\网站发布IIS\2011LoveExam\源码\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\App_Data\LoveKaoExam.sdf
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.pdb
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\CodeSmith.Data.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\ExportToExcel.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\ExpressionMapper.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\Fasterflect.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\Newtonsoft.Json.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\NPOI.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\System.Data.Entity.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\System.Web.Entity.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\Fasterflect.xml
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.pdb
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.xml
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.pdb
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\obj\Debug\ResolveAssemblyReference.cache
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.dll
+E:\爱考在线考试系统源码安装\LoveKaoExam\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.pdb
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\App_Data\LoveKaoExam.sdf
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.pdb
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\CodeSmith.Data.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\ExportToExcel.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\ExpressionMapper.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\Fasterflect.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\Newtonsoft.Json.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\NPOI.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\System.Data.Entity.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\System.Data.SqlServerCe.Entity.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\System.Web.Entity.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\Fasterflect.xml
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\LoveKao.Page.pdb
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.xml
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\MvcPager1.4ForMvc2.0Src_En.pdb
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.dll
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\obj\Debug\LoveKaoExam.pdb
+D:\Projects\LoveKaoExam\LoveKaoExam\LoveKaoExam\bin\LoveKaoExam.Data.pdb

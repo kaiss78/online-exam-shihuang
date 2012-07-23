@@ -1,0 +1,223 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<%@ Import Namespace="LoveKaoExam.Library.CSharp" %>
+<%@ Import Namespace="LoveKaoExam.Library.HTML" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <%object pageTitle = ViewData["PageTitle"];
+      pageTitle = pageTitle != null ? pageTitle : Page.Header.Title;
+      Page.Header.Title = pageTitle.ToString(); %>
+    <title>
+        <%=Page.Header.Title + BasePage.PageTitle%>
+    </title>
+    <%=Html.CssJsMasterPage()%>
+    <script type="text/javascript" language="javascript">
+        window.onerror = function (e) {
+            //alert(e);
+            //return true;
+        }
+        window.onload = function () {
+            SiteMaster.nav_bg();
+        }
+        var SiteMaster = {
+            nav_bg: function () {
+                var Nav_List = document.getElementById("Nav_List");
+                var Nav_As = Nav_List.getElementsByTagName("a");
+                var LH = location.href;
+                for (var i = 0; i < Nav_As.length; i++) {
+                    if (LH.indexOf(Nav_As[i].pathname) != -1) {
+                        Nav_As[i].parentNode.className = "nav-bg";
+                        break;
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body style="background:url(/Content/Images/LogOn/bg.jpg) #deebf3 repeat-x">
+    <div class="page">
+        <div id="header">
+            <div class="site-nav">
+                <p class="login-info" id="Login-Info">
+                    <%UserInfo userInfo = UserInfo.CurrentUser; %>
+                    <em>欢迎您：<%=userInfo.用户ID%></em> [<%= Html.ActionLink("退出", "LogOff", "Account") %>]
+                <script type="text/javascript">
+                    try {
+                        LK_LoginReg.welcome = function (uname, uguid) {
+                            var elem_welcome = document.getElementById("Login-Info") || {};
+                            uname = "<%=userInfo.用户名%>";
+                            //alert(u);
+                            if (uname && uguid) {
+                                elem_welcome.innerHTML = "<em title=\"欢迎您，" + uname + "！\" >欢迎您，" + uname + "！<\/em><a target=\"_top\"  href=\"/Account/LogOff/\" title=\"退出\" >退出<\/a>";
+                            }
+                            else {
+                                elem_welcome.innerHTML = "<em title=\"您好，欢迎使用石黄高速管理处考试系统！\" >您好，欢迎使用石黄高速管理处考试系统！<\/em><a href=\"javascript:void(0)\" onclick=\"LK_LoginReg.default_mp(true);return false;\" title=\"请登录\" >请登录<\/a>";
+                            }
+                        }
+                        var c_uname = GlobalManage.get_cookie_uname(),
+                              c_uid = GlobalManage.get_cookie_uid();
+                        LK_LoginReg.welcome(c_uname, c_uid);
+                    } catch (e) {
+
+                    }
+                    
+                </script>
+                </p>
+                <ul class="quick-menu">
+                    <li><a href="http://www.hbshgs.com/" target="_blank" title="驿路石黄 一生阳光">
+                        石黄管理处</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td id="main_left">
+                            <div class="main-nav">
+                                <div class="nav-head">
+                                    <div class="nav-uhead">
+                                        <img src="/Content/Images/Site/noavatar_middle.gif" alt="石黄高速管理处" />
+                                    </div>
+                                    <dl class="nav-uinfo">
+                                        <dt>石黄管理处</dt>
+                                        <dd class="uinfo-1">
+                                            <%byte UserType = userInfo.用户类型;%>
+                                            <%if (UserType == 2) //管理员
+                                              {%>
+                                            <%=Html.ActionLink("用户中心", "IndexAdmin", "Home")%>
+                                        <%   } %>
+                                        <%if (UserType == 1) //主管
+                                              {%>
+                                            <%=Html.ActionLink("用户中心", "IndexTeacher", "Home")%>
+                                        <%   } %>
+                                        <%if (UserType == 0)//考生
+                                              {%>
+                                            <%=Html.ActionLink("用户中心", "IndexStudent", "Home")%>
+                                        <%   } %>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <ul class="nav-list" id="Nav_List">
+                                    <%byte 用户类型 = userInfo.用户类型;%>
+                                    <%if (用户类型 == 2)
+                                      {%>
+                                    <li class="nav-title">账户管理</li>
+                                    <li>
+                                        <%=Html.ActionLink("添加账户", "Add", "User")%></li>
+                                    <li>
+                                        <%=Html.ActionLink(LKExamEnvironment.考生名称 + "信息", "Examinee", "User")%></li>
+                                    <li>
+                                        <%=Html.ActionLink(LKExamEnvironment.考官名称 + "信息", "Examiner", "User")%></li>
+                                    <li>
+                                        <%=Html.ActionLink("导入导出", "Imexport", "User")%></li>
+                                    <li class="nav-title">部门管理</li>
+                                    <li>
+                                        <%=Html.ActionLink("添加" + LKExamEnvironment.部门名称, "Add", "Department")%></li>
+                                    <li>
+                                        <%=Html.ActionLink(LKExamEnvironment.部门名称 + "信息", "List", "Department")%></li>
+                                    <li class="nav-title">高级设置</li>
+                                    <li>
+                                        <%=Html.ActionLink("环境配置", "Environment", "Configuration")%></li>
+                                    <%   } %>
+                                    <%if (用户类型 == 1)
+                                      { %>
+                                    <li class="nav-title">试卷管理</li>
+                                    <li>
+                                        <%=Html.ActionLink("我要组卷", "Add", "Test")%></li>
+                                    <li>
+                                        <%=Html.ActionLink("我的试卷", "MyPapers", "Test")%></li>
+                                    <li class="nav-title">试题管理</li>
+                                    <li>
+                                        <%=Html.ActionLink("我要出题", "Add", "Subject")%></li>
+                                    <li>
+                                        <%=Html.ActionLink("我的试题", "MySubject", "Subject")%></li>
+                                    <li class="nav-title">组织考试</li>
+                                    <li>
+                                        <%=Html.ActionLink("已组织考试", "Exam", "Organization")%></li>
+                                    <li>
+                                        <%=Html.ActionLink("已组织练习", "Practice", "Organization")%></li>
+                                    <%--<li>
+                                        <%=Html.ActionLink("已参加考试", "Attend", "Organization")%></li>
+                                    <li class="nav-title">试卷解析</li>
+                                    <li>
+                                        <%=Html.ActionLink(LKExamEnvironment.考生名称 + "成绩", "Result", "Analysis")%></li>
+                                    <li>
+                                        <%=Html.ActionLink("批改试卷", "Correct", "Analysis")%></li>
+                                    <li>
+                                        <%=Html.ActionLink("试卷报表", "Report", "Analysis")%></li>--%>
+                                   <%-- <li class="nav-title">资源共享</li>
+                                    <li>
+                                        <%=Html.ActionLink("上传试题/试卷", "Upload", "Share")%></li>
+                                    <li>
+                                        <%=Html.ActionLink("下载试题/试卷", "Download", "Share")%></li>
+                                    <li class="nav-title">绑定账号</li>
+                                    <li>
+                                        <%=Html.ActionLink("绑定爱考网账号", "LKAccount", "Binding")%></li>--%>
+                                    <%            
+                                        }
+                                    %>
+                                    <%if (用户类型 == 0)
+                                      { %>
+                                    <li class="nav-title">我的考试</li>
+                                    <li>
+                                        <%=Html.ActionLink("我要考试", "SelectExam", "Exam")%></li>
+                                    <li>
+                                        <%=Html.ActionLink("我要练习", "SelectPractice", "Exam")%></li>
+                                    <li>
+                                        <%=Html.ActionLink("考试记录", "LogExam", "Exam", new { DDStaticValItem = 0 }, (object)null)%></li>
+                                    <li>
+                                        <%=Html.ActionLink("练习记录", "LogPractice", "Exam", new { DDStaticValItem = 0 }, (object)null)%></li>
+                                    <%} %>
+                                    <li class="nav-title">我的信息</li>
+                                    <%if (用户类型 == 0 || 用户类型 == 1)
+                                      { %>
+                                    <li>
+                                        <%=Html.ActionLink("修改资料", "Details", "Account")%></li>
+                                    <%} %>
+                                    <li>
+                                        <%=Html.ActionLink("修改密码", "ChangePassword", "Account")%></li>
+                                </ul>
+                                <div class="nav-foot">
+                                </div>
+                            </div>
+                        </td>
+                        <td id="main_right">
+                            <div class="position">
+                                <label class="icon">
+                                    <%--<%=Html.ActionLink("用户中心", "Index", "Home")%>--%>
+                                    <%if (UserType == 2) //管理员
+                                      {%>
+                                    <%=Html.ActionLink("用户中心", "IndexAdmin", "Home")%>
+                                    <%   } %>
+                                    <%if (UserType == 1) //主管
+                                      {%>
+                                    <%=Html.ActionLink("用户中心", "IndexTeacher", "Home")%>
+                                    <%   } %>
+                                    <%if (UserType == 0)//考生
+                                      {%>
+                                    <%=Html.ActionLink("用户中心", "IndexStudent", "Home")%>
+                                    <%   } %>
+                                </label>
+                                <%=Page.Header.Title == "用户中心" ? "" : " > " + Page.Header.Title%>
+                            </div>
+                            <fieldset>
+                                <div id="Master_Main_Content">
+                                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                                </div>
+                            </fieldset>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="footer">
+                <p>
+                    未经<a href="http://www.hbshgs.com/" title="驿路石黄 一生阳光" target="_blank">石黄管理处</a>授权，不得用于商业用途，违反必究</p>
+                <p>
+                    Copyright 2012, 版权所有 石黄管理处</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

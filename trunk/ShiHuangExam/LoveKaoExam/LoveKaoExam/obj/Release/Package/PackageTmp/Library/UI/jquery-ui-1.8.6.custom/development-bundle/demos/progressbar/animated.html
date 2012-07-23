@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery UI Progressbar - Animated</title>
+    <link href="../../themes/ui-lightness/jquery.ui.theme.css" rel="stylesheet" type="text/css" />
+    <link href="../../themes/ui-lightness/jquery.ui.progressbar.css" rel="stylesheet"
+        type="text/css" />
+    <script src="/Scripts/JQuery/jquery-1.4.2.js" type="text/javascript"></script>
+    <script src="../../../../../Plugins/jquery.progressbar/js/jquery.progressbar.js"
+        type="text/javascript"></script>
+    <link rel="stylesheet" href="../demos.css">
+    <style>
+        .ui-progressbar-value
+        {
+            background-image: url(images/pbar-ani.gif);
+        }
+    </style>
+    <script>
+        function aa(val) {
+            $("#progressbar").progressBar(val, {
+                value: val,
+                min:0,
+                max: 100,
+                width: 220,
+                height: 19,
+                boxImage: "/Library/Plugins/jquery.progressbar/images/transparentBg.png",
+                barImage: "/Library/Plugins/jquery.progressbar/images/progress-bar.gif",
+                callback:function () {alert();
+                }
+            });
+        }
+        $(function () {
+            var ancount = 1;
+            var setID = setInterval(function () {
+                aa(ancount);
+                ancount++;
+                if (ancount > 100) {
+                    clearInterval(setID);
+                }
+            }, 10);
+        });
+	</script>
+</head>
+<body>
+    <div class="demo">
+        <div id="progressbar">
+        </div>
+    </div>
+    <!-- End demo -->
+    <div class="demo-description">
+        <p>
+            This progressbar has an animated fill by setting the <code>background-image</code>
+            on the <code>.ui-progressbar-value</code> element, using css.
+        </p>
+    </div>
+    <!-- End demo-description -->
+</body>
+</html>
