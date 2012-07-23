@@ -1,0 +1,1 @@
+(function(a){a.fn.selectRange=function(a,b){return this.each(function(){if(this.setSelectionRange){this.focus();this.setSelectionRange(a,b)}else if(this.createTextRange){var c=this.createTextRange();c.collapse(true);c.moveEnd("character",b);c.moveStart("character",a);c.select()}})}})(jQuery)

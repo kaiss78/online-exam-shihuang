@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LoveKaoExamModelStoreContainer" CdmEntityContainer="LoveKaoExamEntities">
+    <EntitySetMapping Name="绑定账号表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.绑定账号表">
+        <MappingFragment StoreEntitySet="绑定账号表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="本地账号ID" ColumnName="本地账号ID" />
+          <ScalarProperty Name="爱考网账号" ColumnName="爱考网账号" />
+          <ScalarProperty Name="爱考网密码" ColumnName="爱考网密码" />
+          <ScalarProperty Name="爱考网邮箱" ColumnName="爱考网邮箱" />
+          <ScalarProperty Name="绑定时间" ColumnName="绑定时间" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="部门表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.部门表">
+        <MappingFragment StoreEntitySet="部门表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="名称" ColumnName="名称" />
+          <ScalarProperty Name="上级部门ID" ColumnName="上级部门ID" />
+          <ScalarProperty Name="添加人ID" ColumnName="添加人ID" />
+          <ScalarProperty Name="添加时间" ColumnName="添加时间" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="考生单选题回答表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.考生单选题回答表">
+        <MappingFragment StoreEntitySet="考生单选题回答表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="回答的选项ID" ColumnName="回答的选项ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="考生多空选择题回答表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.考生多空选择题回答表">
+        <MappingFragment StoreEntitySet="考生多空选择题回答表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="考生考试回答ID" ColumnName="考生考试回答ID" />
+          <ScalarProperty Name="该空ID" ColumnName="该空ID" />
+          <ScalarProperty Name="该空的回答ID" ColumnName="该空的回答ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="考生多选题回答表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.考生多选题回答表">
+        <MappingFragment StoreEntitySet="考生多选题回答表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="考生考试回答ID" ColumnName="考生考试回答ID" />
+          <ScalarProperty Name="回答的选项ID" ColumnName="回答的选项ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="考生范围表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.考生范围表">
+        <MappingFragment StoreEntitySet="考生范围表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="相关ID" ColumnName="相关ID" />
+          <ScalarProperty Name="考生ID" ColumnName="考生ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="考生考试回答表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.考生考试回答表">
+        <MappingFragment StoreEntitySet="考生考试回答表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="考生做过的试卷ID" ColumnName="考生做过的试卷ID" />
+          <ScalarProperty Name="试卷大题中试题ID" ColumnName="试卷大题中试题ID" />
+          <ScalarProperty Name="该题的用时" ColumnName="该题的用时" />
+          <ScalarProperty Name="该题的得分" ColumnName="该题的得分" />
+          <ScalarProperty Name="评语" ColumnName="评语" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="考生连线题回答表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.考生连线题回答表">
+        <MappingFragment StoreEntitySet="考生连线题回答表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="考生考试回答ID" ColumnName="考生考试回答ID" />
+          <ScalarProperty Name="连线题左边小题ID" ColumnName="连线题左边小题ID" />
+          <ScalarProperty Name="回答的选项ID" ColumnName="回答的选项ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="考生判断题回答表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.考生判断题回答表">
+        <MappingFragment StoreEntitySet="考生判断题回答表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="回答的内容" ColumnName="回答的内容" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="考生填空题回答表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.考生填空题回答表">
+        <MappingFragment StoreEntitySet="考生填空题回答表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="考生考试回答ID" ColumnName="考生考试回答ID" />
+          <ScalarProperty Name="回答的内容" ColumnName="回答的内容" />
+          <ScalarProperty Name="该空ID" ColumnName="该空ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="考生问答题回答表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.考生问答题回答表">
+        <MappingFragment StoreEntitySet="考生问答题回答表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="回答的内容" ColumnName="回答的内容" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="考生选词填空回答表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.考生选词填空回答表">
+        <MappingFragment StoreEntitySet="考生选词填空回答表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="考生考试回答ID" ColumnName="考生考试回答ID" />
+          <ScalarProperty Name="该空ID" ColumnName="该空ID" />
+          <ScalarProperty Name="该空的回答ID" ColumnName="该空的回答ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="考生做过的试卷表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.考生做过的试卷表">
+        <MappingFragment StoreEntitySet="考生做过的试卷表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="考生ID" ColumnName="考生ID" />
+          <ScalarProperty Name="答题开始时间" ColumnName="答题开始时间" />
+          <ScalarProperty Name="答题结束时间" ColumnName="答题结束时间" />
+          <ScalarProperty Name="客观题得分" ColumnName="客观题得分" />
+          <ScalarProperty Name="主观题得分" ColumnName="主观题得分" />
+          <ScalarProperty Name="是否是已提交的试卷" ColumnName="是否是已提交的试卷" />
+          <ScalarProperty Name="批改状态" ColumnName="批改状态" />
+          <ScalarProperty Name="相关ID" ColumnName="相关ID" />
+          <ScalarProperty Name="类型" ColumnName="类型" />
+          <ScalarProperty Name="批改时间" ColumnName="批改时间" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="考试设置表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.考试设置表">
+        <MappingFragment StoreEntitySet="考试设置表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="试卷内容ID" ColumnName="试卷内容ID" />
+          <ScalarProperty Name="考试开始时间" ColumnName="考试开始时间" />
+          <ScalarProperty Name="考试结束时间" ColumnName="考试结束时间" />
+          <ScalarProperty Name="考试时长" ColumnName="考试时长" />
+          <ScalarProperty Name="及格条件" ColumnName="及格条件" />
+          <ScalarProperty Name="是否公布考试结果" ColumnName="是否公布考试结果" />
+          <ScalarProperty Name="设置人ID" ColumnName="设置人ID" />
+          <ScalarProperty Name="设置时间" ColumnName="设置时间" />
+          <ScalarProperty Name="是否删除" ColumnName="是否删除" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="连线题答案表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.连线题答案表">
+        <MappingFragment StoreEntitySet="连线题答案表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+          <ScalarProperty Name="左边ID" ColumnName="左边ID" />
+          <ScalarProperty Name="右边ID" ColumnName="右边ID" />
+          <ScalarProperty Name="顺序" ColumnName="顺序" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="连线题选项表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.连线题选项表">
+        <MappingFragment StoreEntitySet="连线题选项表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+          <ScalarProperty Name="选项内容HTML" ColumnName="选项内容HTML" />
+          <ScalarProperty Name="选项内容文本" ColumnName="选项内容文本" />
+          <ScalarProperty Name="连线标记" ColumnName="连线标记" />
+          <ScalarProperty Name="顺序" ColumnName="顺序" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="练习设置表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.练习设置表">
+        <MappingFragment StoreEntitySet="练习设置表">
+          <ScalarProperty Name="试卷内容ID" ColumnName="试卷内容ID" />
+          <ScalarProperty Name="考试时长" ColumnName="考试时长" />
+          <ScalarProperty Name="及格条件" ColumnName="及格条件" />
+          <ScalarProperty Name="设置人ID" ColumnName="设置人ID" />
+          <ScalarProperty Name="设置时间" ColumnName="设置时间" />
+          <ScalarProperty Name="是否删除" ColumnName="是否删除" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="判断题答案表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.判断题答案表">
+        <MappingFragment StoreEntitySet="判断题答案表">
+          <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+          <ScalarProperty Name="答案" ColumnName="答案" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="试卷大题中试题表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.试卷大题中试题表">
+        <MappingFragment StoreEntitySet="试卷大题中试题表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="试卷中大题ID" ColumnName="试卷中大题ID" />
+          <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+          <ScalarProperty Name="每小题分值" ColumnName="每小题分值" />
+          <ScalarProperty Name="顺序" ColumnName="顺序" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="试卷内容表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.试卷内容表">
+        <MappingFragment StoreEntitySet="试卷内容表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="试卷外部信息ID" ColumnName="试卷外部信息ID" />
+          <ScalarProperty Name="名称" ColumnName="名称" />
+          <ScalarProperty Name="说明" ColumnName="说明" />
+          <ScalarProperty Name="提交人ID" ColumnName="提交人ID" />
+          <ScalarProperty Name="提交时间" ColumnName="提交时间" />
+          <ScalarProperty Name="提交备注" ColumnName="提交备注" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="试卷外部信息表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.试卷外部信息表">
+        <MappingFragment StoreEntitySet="试卷外部信息表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="名称" ColumnName="名称" />
+          <ScalarProperty Name="说明" ColumnName="说明" />
+          <ScalarProperty Name="创建人ID" ColumnName="创建人ID" />
+          <ScalarProperty Name="创建时间" ColumnName="创建时间" />
+          <ScalarProperty Name="试卷状态Enum" ColumnName="试卷状态Enum" />
+          <ScalarProperty Name="最新更新时间" ColumnName="最新更新时间" />
+          <ScalarProperty Name="总分" ColumnName="总分" />
+          <ScalarProperty Name="试卷内容ID" ColumnName="试卷内容ID" />
+          <ScalarProperty Name="试卷类型" ColumnName="试卷类型" />
+          <ScalarProperty Name="爱考网ID" ColumnName="爱考网ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="试卷中大题表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.试卷中大题表">
+        <MappingFragment StoreEntitySet="试卷中大题表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="试卷内容ID" ColumnName="试卷内容ID" />
+          <ScalarProperty Name="名称" ColumnName="名称" />
+          <ScalarProperty Name="说明" ColumnName="说明" />
+          <ScalarProperty Name="顺序" ColumnName="顺序" />
+          <ScalarProperty Name="多选题评分策略" ColumnName="多选题评分策略" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="试题内容表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.试题内容表">
+        <MappingFragment StoreEntitySet="试题内容表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="解题思路" ColumnName="解题思路" />
+          <ScalarProperty Name="题干HTML" ColumnName="题干HTML" />
+          <ScalarProperty Name="题干文本" ColumnName="题干文本" />
+          <ScalarProperty Name="试题外部信息ID" ColumnName="试题外部信息ID" />
+          <ScalarProperty Name="操作时间" ColumnName="操作时间" />
+          <ScalarProperty Name="操作人ID" ColumnName="操作人ID" />
+          <ScalarProperty Name="小题型Enum" ColumnName="小题型Enum" />
+          <ScalarProperty Name="父试题内容ID" ColumnName="父试题内容ID" />
+          <ScalarProperty Name="本题在复合题中顺序" ColumnName="本题在复合题中顺序" />
+          <ScalarProperty Name="Json字符串" ColumnName="Json字符串" />
+          <ScalarProperty Name="爱考网ID" ColumnName="爱考网ID" />
+          <ScalarProperty Name="难易度" ColumnName="难易度" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="试题外部信息表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.试题外部信息表">
+        <MappingFragment StoreEntitySet="试题外部信息表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="创建人ID" ColumnName="创建人ID" />
+          <ScalarProperty Name="创建时间" ColumnName="创建时间" />
+          <ScalarProperty Name="最新更新时间" ColumnName="最新更新时间" />
+          <ScalarProperty Name="试题查询内容" ColumnName="试题查询内容" />
+          <ScalarProperty Name="试题显示列" ColumnName="试题显示列" />
+          <ScalarProperty Name="小题型Enum" ColumnName="小题型Enum" />
+          <ScalarProperty Name="试题状态Enum" ColumnName="试题状态Enum" />
+          <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+          <ScalarProperty Name="难易度" ColumnName="难易度" />
+          <ScalarProperty Name="试题类型" ColumnName="试题类型" />
+          <ScalarProperty Name="爱考网ID" ColumnName="爱考网ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="所属分类表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.所属分类表">
+        <MappingFragment StoreEntitySet="所属分类表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="相关信息ID" ColumnName="相关信息ID" />
+          <ScalarProperty Name="分类名" ColumnName="分类名" />
+          <ScalarProperty Name="操作人ID" ColumnName="操作人ID" />
+          <ScalarProperty Name="操作时间" ColumnName="操作时间" />
+          <ScalarProperty Name="相关类型" ColumnName="相关类型" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="问答题答案表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.问答题答案表">
+        <MappingFragment StoreEntitySet="问答题答案表">
+          <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+          <ScalarProperty Name="内容" ColumnName="内容" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="系统分类表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.系统分类表">
+        <MappingFragment StoreEntitySet="系统分类表">
+          <ScalarProperty Name="分类名称" ColumnName="分类名称" />
+          <ScalarProperty Name="操作人ID" ColumnName="操作人ID" />
+          <ScalarProperty Name="操作时间" ColumnName="操作时间" />
+          <ScalarProperty Name="分类类型" ColumnName="分类类型" />
+          <ScalarProperty Name="分类类别名称" ColumnName="分类类别名称" />
+          <ScalarProperty Name="同义词分类名称" ColumnName="同义词分类名称" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="系统分类上下级关系表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.系统分类上下级关系表">
+        <MappingFragment StoreEntitySet="系统分类上下级关系表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="系统分类名称" ColumnName="系统分类名称" />
+          <ScalarProperty Name="分类关系名称" ColumnName="分类关系名称" />
+          <ScalarProperty Name="是否上级" ColumnName="是否上级" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="修改成绩记录">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.修改成绩记录">
+        <MappingFragment StoreEntitySet="修改成绩记录">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="会员ID" ColumnName="会员ID" />
+          <ScalarProperty Name="试卷ID" ColumnName="试卷ID" />
+          <ScalarProperty Name="原来的成绩" ColumnName="原来的成绩" />
+          <ScalarProperty Name="修改后的成绩" ColumnName="修改后的成绩" />
+          <ScalarProperty Name="修改时间" ColumnName="修改时间" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="用户表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.用户表">
+        <MappingFragment StoreEntitySet="用户表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="编号" ColumnName="编号" />
+          <ScalarProperty Name="密码" ColumnName="密码" />
+          <ScalarProperty Name="姓名" ColumnName="姓名" />
+          <ScalarProperty Name="性别" ColumnName="性别" />
+          <ScalarProperty Name="邮箱" ColumnName="邮箱" />
+          <ScalarProperty Name="部门ID" ColumnName="部门ID" />
+          <ScalarProperty Name="角色" ColumnName="角色" />
+          <ScalarProperty Name="添加时间" ColumnName="添加时间" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="自由题空格表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.自由题空格表">
+        <MappingFragment StoreEntitySet="自由题空格表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="试题内容ID" ColumnName="试题内容ID" />
+          <ScalarProperty Name="顺序" ColumnName="顺序" />
+          <ScalarProperty Name="自由题选项组ID" ColumnName="自由题选项组ID" />
+          <ScalarProperty Name="空格类型" ColumnName="空格类型" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="自由题填空答案表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.自由题填空答案表">
+        <MappingFragment StoreEntitySet="自由题填空答案表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="自由题空格ID" ColumnName="自由题空格ID" />
+          <ScalarProperty Name="该空答案" ColumnName="该空答案" />
+          <ScalarProperty Name="顺序" ColumnName="顺序" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="自由题选项表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.自由题选项表">
+        <MappingFragment StoreEntitySet="自由题选项表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="选项内容HTML" ColumnName="选项内容HTML" />
+          <ScalarProperty Name="选项内容文本" ColumnName="选项内容文本" />
+          <ScalarProperty Name="顺序" ColumnName="顺序" />
+          <ScalarProperty Name="自由题选项组ID" ColumnName="自由题选项组ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="自由题选项空格答案表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.自由题选项空格答案表">
+        <MappingFragment StoreEntitySet="自由题选项空格答案表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="自由题空格ID" ColumnName="自由题空格ID" />
+          <ScalarProperty Name="自由题选项ID" ColumnName="自由题选项ID" />
+          <ScalarProperty Name="顺序" ColumnName="顺序" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="自由题选项组表">
+      <EntityTypeMapping TypeName="LoveKaoExamModel.自由题选项组表">
+        <MappingFragment StoreEntitySet="自由题选项组表">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

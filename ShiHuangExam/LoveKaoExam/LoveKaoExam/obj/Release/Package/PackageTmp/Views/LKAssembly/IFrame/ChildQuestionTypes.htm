@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title></title>
+    <link href="../../../Content/LKAssembly/Subject/QuestionTypes.css" rel="stylesheet" type="text/css" />
+    <link href="../../../Content/StyleSheet/Basic.css" rel="stylesheet" type="text/css" />
+    <link href="../../../Content/StyleSheet/Global.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/JQuery/jquery-1.4.2.js" type="text/javascript"></script>
+    <script src="../../../Scripts/Views/LKAssembly/Subject/ChildQuestionTypes.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="q_t_box">
+    <div class="q_t_box_header">
+        <div class="q_t_box_h_fore"  id="ID_ChildHeader_Box">
+            <a href="javascript:void(0)" onclick="ChildQueTypesManage.switchTags(0);" class="TagsSelectUn TagsSelect" style="margin-left:8px;display:none;">常用题型</a>
+            <a href="javascript:void(0)" onclick="ChildQueTypesManage.switchTags(1);" class="TagsSelectUn" style="display:none;">问答题</a>
+            <!--<a href="javascript:void(0)" onclick="ChildQueTypesManage.switchTags(2);" class="TagsSelectUn" style="display:none;">复合题</a>-->
+        </div>
+        <div class="q_t_box_h_after">
+            <a href="javascript:void(0)" onclick="ChildQueTypesManage.minimize();" title="最小化">
+            </a>
+        </div>
+    </div>
+    <div class="q_t_box_content" id="ID_ChildContent_Box">
+        <div class="q_t_box_c_bar" style="display:none;">
+            
+        </div>
+        <div class="q_t_box_c_bar" style="display:none;" >
+
+        </div>
+        <!--<div class="q_t_box_c_bar" style="display:none;">
+           
+        </div>-->
+    </div>
+    <div class="q_t_box_foot">
+             <div class="q_t_box_foot_fore">
+             </div>
+             <div class="q_t_box_foot_after">
+                <span class="btn1" style="float:left; display:none;" id="ID_ChildButton_Box">
+                    <span>
+                        <input id="Button1" type="button" value="确定" onclick="ChildQueTypesManage.send();" />
+                    </span>
+                </span>
+                <span class="btn2" style="float:right;">
+                    <span>
+                        <input id="Button2" type="button" value="取消" onclick="ChildQueTypesManage.minimize();"  />
+                    </span>
+                </span>
+             </div>
+        </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d4654052-380c-4d7e-88ea-4e284530af0f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9999/LoveKaoService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LoveKaoService.wsdl" MetadataType="Wsdl" ID="78fe37db-7074-4b71-9a70-09445889b271" SourceId="1" SourceUrl="http://localhost:9999/LoveKaoService.svc?wsdl" />
+    <MetadataFile FileName="LoveKaoService.xsd" MetadataType="Schema" ID="ebc8cacf-fe10-42fb-b93b-75d51e66085e" SourceId="1" SourceUrl="http://localhost:9999/LoveKaoService.svc?xsd=xsd3" />
+    <MetadataFile FileName="LoveKaoService1.xsd" MetadataType="Schema" ID="52f4944a-74f1-4f9b-885a-e5accd1d2d35" SourceId="1" SourceUrl="http://localhost:9999/LoveKaoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LoveKaoService.disco" MetadataType="Disco" ID="dc971525-7af1-44f2-84a7-ed1e7b97b475" SourceId="1" SourceUrl="http://localhost:9999/LoveKaoService.svc?disco" />
+    <MetadataFile FileName="LoveKaoService2.xsd" MetadataType="Schema" ID="7e4690e7-3d78-4df7-b0df-7601fc54f7d8" SourceId="1" SourceUrl="http://localhost:9999/LoveKaoService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LoveKaoService3.xsd" MetadataType="Schema" ID="91376aab-148a-4e3c-b515-9e24a7806654" SourceId="1" SourceUrl="http://localhost:9999/LoveKaoService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

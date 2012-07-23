@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>注册 - 石黄高速在线考试系统</title>
+    <link href="../../../Content/StyleSheet/Basic.css" rel="stylesheet" type="text/css" />
+    <link href="../../../Content/StyleSheet/Global.css" rel="stylesheet" type="text/css" />
+    <link href="../MsgBox/StyleSheets/msgBox.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheets/Register.css" rel="stylesheet" type="text/css" />
+    
+    <script src="/Scripts/JQuery/jquery-1.4.2.js" type="text/javascript"></script>
+    <script src="/Scripts/Base/GlobalManage.js" type="text/javascript"></script>
+    <script src="../MsgBox/JavaScripts/jQuery.msgBox.js" type="text/javascript"></script>
+    <script src="JavaScript/Register.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="Register" class="reg-item">
+        <div class="head">
+            <img class="icon" alt="注册会员 - 爱考网(lovekao.com)" src="Images/RegIcon.gif" />
+            <span class="font">注册：开通您的在线考试系统账户</span>
+            <h4 id="account">已经有在线考试系统帐号？<a class="link" id="Reg_Login" onclick="LKRegister.set_boxy_title();" href="/Common/LoginReg/Login.htm" target="_self" tabindex="9">请登录</a> </h4>
+        </div>
+        <div class="cont">
+            <ul class="cont-ul">
+                <li id="field_uname" class="field-blur">
+                    <label class="mark-name">会员名：</label>
+                    <input type="text" class="text" id="uname" onfocus="LKRegister.exe_focus(this,'uname',false);LKRegister.exe_uname_len(this);" onblur="LKRegister.exe_check(this,'uname','blur');" onkeyup="LKRegister.exe_uname_len(this);" maxlength="16" tabindex="1" />
+                    <span class="icon-box" id="icon_uname"></span>
+                    <div style="position:relative; _width:100%;">
+                        <span id="uname_len"></span>
+                    </div>
+                </li>
+                <li id="field_upawd_1" class="field-blur">
+                    <label class="mark-name">登录密码：</label>
+                    <input type="password" class="text" id="upawd_1" onfocus="LKRegister.exe_focus(this,'upawd_1',false);LKRegister.exe_upawd_level(this);" onblur="LKRegister.exe_check(this,'upawd_1','blur');" onkeyup="LKRegister.exe_upawd_level(this);" maxlength="16" tabindex="2" />
+                    <span class="icon-box" id="icon_upawd_1"></span>
+                    <div style="position:relative; _width:100%;">
+                        <div class="upawd_level-box">
+                            <span>密码强度:</span>
+                            <input type="text" class="upawd_level level_1" id="upawd_1_level"  disabled="disabled" />
+                        </div>
+                    </div>
+                </li>
+                <li id="field_upawd_2" class="field-blur">
+                    <label class="mark-name">确认密码：</label>
+                    <input type="password" class="text" id="upawd_2" onfocus="LKRegister.exe_focus(this,'upawd_2',false);" onblur="LKRegister.exe_check(this,'upawd_2','blur');" maxlength="16" tabindex="3" />
+                    <span class="icon-box" id="icon_upawd_2"></span>
+                </li>
+                <li id="field_uemail" class="field-blur">
+                    <label class="mark-name">电子邮箱：</label>
+                    <input type="text" class="text" id="uemail" onfocus="LKRegister.exe_focus(this,'uemail',false);" onblur="LKRegister.exe_check(this,'uemail','blur');" maxlength="32" tabindex="4" />
+                    <span class="icon-box" id="icon_uemail"></span>
+                </li>
+                <li id="field_vcode" class="field-blur">
+                    <label class="mark-name">验证码：</label>
+                    <input type="text" class="text" id="vcode" onfocus="LKRegister.exe_focus(this,'vcode',false);" onblur="LKRegister.exe_check(this,'vcode','blur');" style="width:65px;" maxlength="4" tabindex="5" />
+                    <img id="img_vcode" /><!--title="看不清?点击更换" alt="看不清?点击更换" onclick="javascript:LKRegister.exe_reload_code(true);"-->
+                    <span class="re-img-vcode">看不清?
+                        <a href="javascript:LKRegister.exe_reload_code(true);" title="看不清?点击换一张" style="color:#3187e3;" tabindex="7">换一张</a>
+                    </span>
+                    <span class="icon-box" id="icon_vcode"></span>
+                </li>
+                <li>
+                    <span class="btn8-input" style="padding-left: 12px;">
+                        <span style="padding-right: 12px;">
+                            <input id="button_reg" type="button" tabindex="6" onclick="LKRegister.submit_reg();" title="立即注册为会员" value="同意条款，立即注册" />
+                        </span>
+                    </span>
+                    <a class="server-item" href="/Reg/ServiceItem.aspx" target="_blank" title="在线考试系统服务条款" tabindex="8">在线考试系统服务条款</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="FulFill">
+        <div class="head" style="padding-top: 10px; height: 70px;">
+        </div>
+        <div class="cont">
+            <div class="send-title">
+              您好<span id="reg_uname"></span>！欢迎来到在线考试系统。
+            </div>
+            <div class="send-email">
+                注册成功，激活邮件已发送到您的邮箱中,<span id="reg_uemail"></span><br />
+                请您到您的邮箱中点击激活链接来激活您的账号
+            </div>
+            <div class="login">
+                您的账号已处于登录状态
+            </div>
+            <div class="link">
+                <a href="javascript:void(0)" onclick="LKRegister.exe_timeout(false)">如果长时间没响应请点击此处</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

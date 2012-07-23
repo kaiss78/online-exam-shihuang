@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9999/LoveKaoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/LoveKao.Data" />
+  <xs:import schemaLocation="http://localhost:9999/LoveKaoService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://localhost:9999/LoveKaoService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="上传试卷">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/LoveKao.Data" minOccurs="0" name="outside" nillable="true" type="q1:试卷外部信息" />
+        <xs:element minOccurs="0" name="用户名" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="密码" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="上传试卷Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="上传试卷Result" type="xs:int" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listNewUploadProblemOutsideId" nillable="true" type="q2:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="上传试题">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="分站试题Json集合" nillable="true" type="q3:ArrayOfstring" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="试题图片集合" nillable="true" type="q4:ArrayOfKeyValueOfstringbase64Binary" />
+        <xs:element minOccurs="0" name="用户名" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="密码" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="上传试题Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="上传试题Result" type="xs:int" />
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="已存在试题集合" nillable="true" type="q5:ArrayOfguid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="得到主站下载试题列表">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="关键字" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="分站账号" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="第几页" type="xs:int" />
+        <xs:element minOccurs="0" name="页的大小" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="得到主站下载试题列表Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/LoveKao.Data" minOccurs="0" name="得到主站下载试题列表Result" nillable="true" type="q6:ArrayOf试题外部信息WCF" />
+        <xs:element minOccurs="0" name="返回总条数" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="下载试题">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="试题外部信息ID集合" nillable="true" type="q7:ArrayOfguid" />
+        <xs:element minOccurs="0" name="用户名" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="密码" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="下载试题Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="下载试题Result" type="xs:int" />
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="试题Json集合" nillable="true" type="q8:ArrayOfstring" />
+        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="试题图片集合" nillable="true" type="q9:ArrayOfKeyValueOfstringbase64Binary" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="得到主站下载试卷列表">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="关键字" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="第几页" type="xs:int" />
+        <xs:element minOccurs="0" name="页的大小" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="得到主站下载试卷列表Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/LoveKao.Data" minOccurs="0" name="得到主站下载试卷列表Result" nillable="true" type="q10:ArrayOf试卷外部信息WCF" />
+        <xs:element minOccurs="0" name="返回总条数" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="下载试卷">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="试卷外部信息ID" type="q11:guid" />
+        <xs:element minOccurs="0" name="试题总数" type="xs:int" />
+        <xs:element minOccurs="0" name="已下载试题个数" type="xs:int" />
+        <xs:element minOccurs="0" name="用户名" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="密码" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="下载试卷Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="下载试卷Result" type="xs:int" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/LoveKao.Data" minOccurs="0" name="试卷外部信息WCF" nillable="true" type="q12:试卷外部信息WCF" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="绑定新账号">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="用户名" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="密码" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="邮箱" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="绑定IP地址" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="分站账号" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="绑定新账号Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="绑定新账号Result" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="绑定已有账号">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="用户名" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="密码" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="绑定IP地址" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="分站账号" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="绑定已有账号Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="绑定已有账号Result" type="xs:int" />
+        <xs:element minOccurs="0" name="邮箱" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="账号" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="更改绑定新账号">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="用户名" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="密码" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="邮箱" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="绑定IP地址" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="分站账号" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="原绑定爱考网用户名" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="更改绑定新账号Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="更改绑定新账号Result" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="更改绑定已有账号">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="用户名" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="密码" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="绑定IP地址" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="分站账号" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="原绑定爱考网用户名" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="更改绑定已有账号Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="更改绑定已有账号Result" type="xs:int" />
+        <xs:element minOccurs="0" name="邮箱" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="账号" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="解除绑定账号">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="用户名" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="密码" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="分站账号" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="解除绑定账号Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="解除绑定账号Result" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="得到上传下载信息">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="用户名" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="密码" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="得到上传下载信息Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="得到上传下载信息Result" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="result" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="得到用户绑定信息">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="爱考网用户名" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="得到用户绑定信息Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="得到用户绑定信息Result" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

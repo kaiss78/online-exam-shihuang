@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>JQ插件：获取文本框（textarea）内的所选字符和光标位置索引值-selection</title>
+    <script type="text/javascript" src="http://www.css88.com/tool/css3Preview/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="jquery.selection.js"></script>
+    <!--http://jquery-plugin.buss.hk/my-plugins/jquery-caret-plugin/usage-->
+    <script type="text/javascript">
+        $(function () {
+            $("#description").select(function(){
+                $("#start").val($("#description").selection().start);
+                $("#end").val($("#description").selection().end);
+                $("#text").val($("#description").selection().text);
+            })
+            $("#description").click(function(){
+                $("#start").val($("#description").selection().start);
+            })
+            $("#description").focus(function(){
+                $("#start").val($("#description").selection().start);
+            })
+        });
+    </script>
+    <style type="text/css">
+    body { font-size:13px; font-family:Lucida Sans, Lucida Sans Unicode, Arial, Sans-Serif; color:#666; margin:20px;}
+        #main { width:960px; margin: 0px auto; border:solid 1px #b2b3b5; -moz-border-radius:10px; padding:20px; background-color:#f6f6f6;}
+        #header { text-align:center; border-bottom:solid 1px #b2b3b5; margin: 0 0 20px 0; }
+        
+    </style>
+    </head>
+    <body>
+    <div id="main">
+      <div id="header">
+        <h3>JQ插件：获取文本框（textarea）内的所选字符和光标文字-selection</h3>
+      </div>
+      <div>
+        <p style="font-size:16px;"> 选择、点击文本：<br />
+          <textarea id="description" rows="8" cols="50">和设计师一样细腻,和程序员一样严谨;游走在设计师和工程师之间,游刃与用户体验和技术实现之间,斡旋在用户利益和商业利益之间;
+网名：愚人码头
+QQ：148246293；
+msn：feiwen8772@hotmail.com(目前基本不上);
+email:feiwen8772@hotmail.com;</textarea>
+        </p>
+        start: <input type="text" id="start" size="3"/> end: <input type="text" id="end" size="3"/><br />
+        所选字符：<textarea id="text" rows="8" cols="50"></textarea>
+      </div>
+    </div>
+
+ <!-- 统计-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3448069-1");
+pageTracker._trackPageview();
+} catch(err) {}</script> 
+</body>
+</html>
